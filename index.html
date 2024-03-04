@@ -25,6 +25,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light bg-warning bg-opacity-50" id="ftco-navbar">
@@ -293,7 +295,7 @@
 
 		<section class="ftco-section img ftco-select-destination" style=" background-image:
                 linear-gradient(45deg,
-                    rgba(34, 33, 33, 0.75),
+                    rgba(192, 192, 192, 0.651),
                     rgba(34, 33, 33, 0.75)), 
                       url('images/kilibg.jpg');">
 			<div class="container">
@@ -304,11 +306,13 @@
 					</div>
 				</div>
 			</div>
+		  
 			<div class="container container-2">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="carousel-destination owl-carousel ftco-animate">
-							<div class="item">
+						<div class="carousel-destination owl-carousel ftco-animate overflow-x-auto">
+							
+							<div class="item" style="border:5px solid rgb(209, 88, 7);">
 								<div class="project-destination">
 									<a href="index.html#" class="img" style="background-image: url(images/lemosho.jpeg);">
 										<div class="text">
@@ -358,18 +362,29 @@
 									</a>
 								</div>
 							</div>
+							
 						</div>
 					</div>
 				</div>
 			</div>
+			
+
 		</section>
 
 		<section class="ftco-section">
 			<div class="container">
 				<div class="row justify-content-center pb-4">
 					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Destination</span>
-						<h2 class="mb-4">Tour Destination</h2>
+						<span class="subheading" style="font-family: 'Homemade Apple', cursive; font-weight: 400;color: #522e06;">Experience the Wild in Style & Comfort with Our Exceptional High-end Services</span>
+						<h4 class="mb-4 text-primary">Luxury Tanzania Wildlife and Beach Holiday Experience with Signature Safari</h4>
+						<p class="text-dark">Make your Tanzania & Zanzibar vacation an unforgettable experience with our high-end luxury safaris. We pay meticulous attention to detail to ensure you enjoy a truly unique and exceptional vacation. Safaris in Tanzania have been a way of life for many years, and Tanzania has some of the best game parks on the planet. Witness the Great Migration of wildebeest in the endless plains of the Serengeti, and spot the Big Five animals all year round in the Ngorongoro Crater’s extraordinary compact area, home to an extraordinary selection of predators. 
+							Our high-end safaris also include visits to Tarangire National Park, Lake Manyara, and Lake Eyasi, all of which offer breathtaking views and unforgettable direct interactions with a variety of free-roaming wild animals. Our luxury safari hotels & lodges such as Serengeti Four Season, Serengeti Gran Melia, Ngorongoro Crater Lodge, Elewana Collection, Singita’s Sasakwa Lodge, Coffee Lodge, Four Points By Sheraton Marriot Bonvoy and Jabali Private House in Ruaha National Park exude an air of grandeur that makes it difficult not to feel like royalty when stepping into the ultra-luxurious lodge. Experience the wild in style with our exceptional services that include butler service, night game drives, boat excursions, diving, snorkeling, hot-air balloon rides, children’s programs, babysitting service, and exclusive activities that will make your vacation a truly high-end and luxurious experience. Our high-end services can accommodate family safari, private safari, anniversary, honeymoon, weddings, high-end photographpy, solo travellers experiences, etc.</p>
+					    <button type="submit" class="bg-warning btn btn-primary">View High-End Safaris</button>
+					</div>
+				</div>
+				   <div class="row justify-content-center pt-4">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+						<h2 class="mb-4 text-primary">Popular Safari Packages</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -817,6 +832,18 @@
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 			<script src="js/google-map.js"></script>
 			<script src="js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                 $(document).ready(function(){
+                 $(".owl-carousel").owlCarousel({
+                 items: 1,
+                 loop: true,
+                 autoplay: true,
+                 autoplayTimeout: 5000, // Adjust the time (in milliseconds) between slides
+                 autoplayHoverPause: true // Pause autoplay when hovering over the carousel
+               });
+              });
+            </script>
 			
 		</body>
 		</html>
