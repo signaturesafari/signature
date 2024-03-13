@@ -10087,3 +10087,15 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* hover button*/
+.destination .link-head :hover{
+    color: var(--success);
+}
+.destination .img{
+  opacity: 1;
+  transition: 0.7s;
+}
+.destination .img:hover{
+  opacity: .8;
+}
