@@ -149,7 +149,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-6">
-            <p class="d-flex justify-content-between align-items-center row">
+            <!--  <p class="d-flex justify-content-between align-items-center row">
               <a
                 class="btn btn-primary rounded-pill col-md-2 col-4 my-2 mx-1 py-2"
                 data-bs-toggle="collapse"
@@ -204,13 +204,44 @@
                 aria-controls="collapseExample"
                 >Machame</a
               >
-            </p>
-
-            <div class="collapse" id="marangu-route">
-              <div class="card card-body" style="height: auto">
+            </p> -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#marangu"
+                  >Marangu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#machame"
+                  >Machame</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#lemosho"
+                  >Lemosho</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#rongai"
+                  >Rongai</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#shira">Shira</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#umbwe">Umbwe</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="marangu-route">
+              <div
+                class="card card-body tab-pane active"
+                id="marangu"
+                style="height: auto"
+              >
                 <div class="row">
                   <div
-                    class="col-md-6 border border-top-0 border-bottom-0 border-md-left-0 border-sm-left-0"
+                    class="col-md-6 border border-3"
                   >
                     <h2>Kilimanjaro Marangu Route</h2>
                     <p class="text-dark">
@@ -249,11 +280,15 @@
                 </div>
               </div>
             </div>
-            <div class="collapse" id="machame-route">
-              <div class="card card-body" style="height: auto">
+            <div class="tab-content">
+              <div
+                class="card card-body tab-pane"
+                id="machame"
+                style="height: auto"
+              >
                 <div class="row">
                   <div
-                    class="col-md-6 border border-top-0 border-bottom-0 border-md-left-0 border-sm-left-0"
+                    class="col-md-6 border border-3"
                   >
                     <h2>Kilimanjaro Machame Route</h2>
                     <p class="text-dark">
@@ -293,11 +328,15 @@
                 </div>
               </div>
             </div>
-            <div class="collapse" id="lemosho-route">
-              <div class="card card-body" style="height: auto">
+            <div class="tab-content">
+              <div
+                class="card card-body tab-pane"
+                id="lemosho"
+                style="height: auto"
+              >
                 <div class="row">
                   <div
-                    class="col-md-6 border border-top-0 border-bottom-0 border-md-left-0 border-sm-left-0"
+                    class="col-md-6 border border-3"
                   >
                     <h2>Kilimanjaro Lemosho Route</h2>
                     <p class="text-dark">
@@ -340,11 +379,15 @@
                 </div>
               </div>
             </div>
-            <div class="collapse" id="rongai-route">
-              <div class="card card-body" style="height: auto">
+            <div class="tab-content">
+              <div
+                class="card card-body tab-pane"
+                id="rongai"
+                style="height: auto"
+              >
                 <div class="row">
                   <div
-                    class="col-md-6 border border-top-0 border-bottom-0 border-md-left-0 border-sm-left-0"
+                    class="col-md-6 border border-3"
                   >
                     <h2>Kilimanjaro Rongai Route</h2>
                     <p class="text-dark">
@@ -392,6 +435,98 @@
                 </div>
               </div>
             </div>
+            <div class="tab-content">
+              <div
+                class="card card-body tab-pane"
+                id="shira"
+                style="height: auto"
+              >
+                <div class="row">
+                  <div
+                    class="col-md-6 border border-3"
+                  >
+                    <h2>Kilimanjaro Shira Route</h2>
+                    <p class="text-dark">
+                      The Shira Routes are renowned for their stunning
+                      landscapes, diverse ecosystems, and relatively low traffic
+                      compared to some of the more popular routes like Machame
+                      and Marangu. These routes offer adventurers the
+                      opportunity to explore Kilimanjaro's western side,
+                      beginning their journey at higher altitudes, which can
+                      contribute to better acclimatization.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="map w-100"
+                      style="
+                        height: 300px;
+                        background-image: url('images/kilimanjaro-routes-rongai.jpeg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <div class="col-md-12">
+                      <ul
+                        class="d-md-flex d-block justify-content-between text-dark"
+                      >
+                        <li class="px-2">Distance: 68km</li>
+                        <li class="px-2">Elevation: 100ft</li>
+                        <li class="px-2">Scenery: Excellent</li>
+                        <li class="px-2">Traffic: Low</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div
+                class="card card-body tab-pane"
+                id="umbwe"
+                style="height: auto"
+              >
+                <div class="row">
+                  <div
+                    class="col-md-6 border border-3"
+                  >
+                    <h2>Kilimanjaro Umbwe Route</h2>
+                    <p class="text-dark">
+                      The Umbwe Route is renowned for its steep ascent and
+                      rugged terrain, making it a favorite among experienced
+                      hikers seeking a more challenging climb. This route is
+                      often chosen by those looking to escape the crowds and
+                      immerse themselves in the pristine wilderness of
+                      Kilimanjaro.
+                    </p>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div
+                      class="map w-100"
+                      style="
+                        height: 300px;
+                        background-image: url('images/cylic-kili-route.jpg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                      "
+                    ></div>
+                    <div class="col-md-12">
+                      <ul
+                        class="d-md-flex d-block justify-content-between text-dark"
+                      >
+                        <li class="px-2">Distance: 68km</li>
+                        <li class="px-2">Elevation: 100ft</li>
+                        <li class="px-2">Scenery: Excellent</li>
+                        <li class="px-2">Traffic: high</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -400,11 +535,11 @@
     <section class="ftco-section">
       <div class="container">
         <h2 class="text-center pb-5 fw-bold">Our Trekking Packages</h2>
-        <div class="row ">
+        <div class="row">
           <div class="item col-md-4 my-3">
             <div class="project-destination">
               <a
-                href="index.html#"
+                href="lemosho-route-8-days.html"
                 class="img"
                 style="background-image: url(images/lemosho.jpeg)"
               >
@@ -418,7 +553,7 @@
           <div class="item col-md-4 my-3">
             <div class="project-destination">
               <a
-                href="index.html#"
+                href="machame-route-7-days.html"
                 class="img"
                 style="background-image: url(images/machame-route.jpeg)"
               >
@@ -430,26 +565,36 @@
             </div>
           </div>
           <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/Marangu-Route1_300x225.webp);">
-										<div class="text">
-											<h3>Marangu Route</h3>
-											<span>5 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
+            <div class="project-destination">
+              <a
+                href="index.html#"
+                class="img"
+                style="
+                  background-image: url(images/Marangu-Route1_300x225.webp);
+                "
+              >
+                <div class="text">
+                  <h3>Marangu Route</h3>
+                  <span>5 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
           <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/rongai-route.jpeg);">
-										<div class="text">
-											<h3>Rongai Route</h3>
-											<span>5 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
-        <!--   <div class="col-md-4 ftco-animate">
+            <div class="project-destination">
+              <a
+                href="rongai-route-6-days.html"
+                class="img"
+                style="background-image: url(images/rongai-route.jpeg)"
+              >
+                <div class="text">
+                  <h3>Rongai Route</h3>
+                  <span>5 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--   <div class="col-md-4 ftco-animate">
             <div class="project-wrap hotel">
               <a
                 href="hotel.html#"
@@ -476,15 +621,19 @@
             </div>
           </div> -->
           <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/umbwe3.png);">
-										<div class="text">
-											<h3>Umbwe Route</h3>
-											<span>7 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
+            <div class="project-destination">
+              <a
+                href="umbwe-route-6-days.html"
+                class="img"
+                style="background-image: url(images/umbwe3.png)"
+              >
+                <div class="text">
+                  <h3>Umbwe Route</h3>
+                  <span>7 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
           <!-- <div class="col-md-4 ftco-animate">
             <div class="project-wrap hotel">
               <a
@@ -508,45 +657,61 @@
             </div>
           </div> -->
           <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/Marangu_route_huts.jpg);">
-										<div class="text">
-											<h3>Marangu Route</h3>
-											<span>7 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
-              <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/crater-camp.jpg);">
-										<div class="text">
-											<h3>Lemosho Route</h3>
-											<span>9 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
-              <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/marangu-trekking.jpg);">
-										<div class="text">
-											<h3>Marangu Route</h3>
-											<span>6 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
-             <div class="item col-md-4 my-3">
-								<div class="project-destination">
-									<a href="index.html#" class="img" style="background-image: url(images/cyclic-tour.jpg);">
-										<div class="text">
-											<h3>Marangu Route</h3>
-											<span>7 Days</span>
-										</div>
-									</a>
-								</div>
-							</div>
+            <div class="project-destination">
+              <a
+                href="index.html#"
+                class="img"
+                style="background-image: url(images/Marangu_route_huts.jpg)"
+              >
+                <div class="text">
+                  <h3>Marangu Route</h3>
+                  <span>7 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item col-md-4 my-3">
+            <div class="project-destination">
+              <a
+                href="kilimanjaro-crater-9-days.html"
+                class="img"
+                style="background-image: url(images/crater-camp.jpg)"
+              >
+                <div class="text">
+                  <h3>Kilimanjaro Crater Camping</h3>
+                  <span>9 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item col-md-4 my-3">
+            <div class="project-destination">
+              <a
+                href="index.html#"
+                class="img"
+                style="background-image: url(images/marangu-trekking.jpg)"
+              >
+                <div class="text">
+                  <h3>Marangu Route</h3>
+                  <span>6 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item col-md-4 my-3">
+            <div class="project-destination">
+              <a
+                href="cyclic-kilimanjaro-5-days.html"
+                class="img"
+                style="background-image: url(images/cyclic-tour.jpg)"
+              >
+                <div class="text">
+                  <h3>Cyclic on Mountain Kilimanjaro</h3>
+                  <span>7 Days</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="row mt-5">
           <div class="col text-center">
