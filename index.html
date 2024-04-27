@@ -83,13 +83,13 @@
         </div>
       </div>
     </nav>
-	<div class="hero-wrap js-fullheight" style="background-image: url('images/amboseli-5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+	<div class="hero-wrap js-fullheight" id="hero" style="background-image: url('images/amboseli-5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;transition: background-image 2s ease-in-out;">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
 				<div class="col-md-7 ftco-animate">
 					<h1 class="mb-4">Signature Safari Ltd</h1>
-					<p class="caps text-primary">Travel with smile..</p>
+					<p class="caps text-white" style="font-family: 'Homemade Apple', cursive;font-size: 35px;">Travel with smile.</p>
 				</div>
 				<!--<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
 					<span class="fa fa-play"></span>
@@ -270,7 +270,7 @@
 					<div class="col-md-6">
 						<div class="row">
 							<div class="col-md-12 col-lg-6 d-flex ftco-animate" style="height: 250px;">
-								<a href="" class="services services-1 color-1 d-block img border border-black border-4" style="background-image: url(images/serengeti-national-park-1.jpg);">
+								<a href="" class="services services-1 color-1 d-block img border border-black border-4" style="background-image: url(images/mount-kilimanjaro.jpg);">
 									<!--<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>-->
 									<div class="media-body my-5">
 										<h2 class="text-center text-white">Tanzania</h2>
@@ -404,12 +404,12 @@
 		<section class="ftco-section">
 			<div class="container">
 				<div class="row justify-content-center pb-4">
-					<div class="col-md-12 heading-section text-center ftco-animate">
+					<div class="col-md-12 heading-section ftco-animate">
 						<span class="subheading" style="font-family: 'Homemade Apple', cursive; font-weight: 400;color: #522e06;">Experience the Wild in Style & Comfort with Our Exceptional High-end Services</span>
 						<h4 class="mb-4 text-primary">Luxury Tanzania Wildlife and Beach Holiday Experience with Signature Safari</h4>
 						<p class="text-dark">Make your Tanzania & Zanzibar vacation an unforgettable experience with our high-end luxury safaris. We pay meticulous attention to detail to ensure you enjoy a truly unique and exceptional vacation. Safaris in Tanzania have been a way of life for many years, and Tanzania has some of the best game parks on the planet. Witness the Great Migration of wildebeest in the endless plains of the Serengeti, and spot the Big Five animals all year round in the Ngorongoro Crater’s extraordinary compact area, home to an extraordinary selection of predators. 
 							Our high-end safaris also include visits to Tarangire National Park, Lake Manyara, and Lake Eyasi, all of which offer breathtaking views and unforgettable direct interactions with a variety of free-roaming wild animals. Our luxury safari hotels & lodges such as Serengeti Four Season, Serengeti Gran Melia, Ngorongoro Crater Lodge, Elewana Collection, Singita’s Sasakwa Lodge, Coffee Lodge, Four Points By Sheraton Marriot Bonvoy and Jabali Private House in Ruaha National Park exude an air of grandeur that makes it difficult not to feel like royalty when stepping into the ultra-luxurious lodge. Experience the wild in style with our exceptional services that include butler service, night game drives, boat excursions, diving, snorkeling, hot-air balloon rides, children’s programs, babysitting service, and exclusive activities that will make your vacation a truly high-end and luxurious experience. Our high-end services can accommodate family safari, private safari, anniversary, honeymoon, weddings, high-end photographpy, solo travellers experiences, etc.</p>
-					    <button type="submit" class="bg-warning btn btn-primary" href="tanzania-safari-packages.html">View High-End Safaris</button>
+					    <button type="submit" class="bg-warning btn btn-primary" ><a class="text-white" href="tanzania-safari-packages.html">High-End Safaris</a></button>
 					</div>
 				</div>
 				<div class="row justify-content-center pt-4">
@@ -927,7 +927,28 @@
                  autoplayHoverPause: true // Pause autoplay when hovering over the carousel
                });
               });
-            </script>
-			
+          
+    // Define an array of image URLs
+    var images = [
+        'images/kenya-banner.jpg',
+        'images/magical-kenya.jpg',
+        'images/wildbeest.jpg'
+    ];
+
+    var currentIndex = 0;
+    var container = document.getElementById('hero');
+
+    // Function to change the background image
+    function changeBackgroundImage() {
+        container.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+        currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+    }
+
+    // Initial background image change
+    changeBackgroundImage();
+
+    // Set interval to change background image every 5 seconds
+    setInterval(changeBackgroundImage, 5000);
+</script>
 		</body>
 		</html>
