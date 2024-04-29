@@ -10099,3 +10099,23 @@ textarea.form-control {
 .destination .img:hover{
   opacity: .8;
 }
+
+.mega-menu1 {
+        width: 900px;
+      }
+
+      .mega-menu1 a:hover{
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
+      }
+      /* Adjust width for mobile devices */
+      @media (max-width: 767px) {
+        .mega-menu1 {
+          max-width: 400px;
+        }
+        /* Style for navbar when screen width is less than or equal to 767px */
+  .navbar-nav {
+    max-height: 80vh; /* Adjust max-height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+      }
