@@ -10102,6 +10102,7 @@ textarea.form-control {
 
 .mega-menu1 {
         width: 900px;
+        margin-left: -100px;
       }
 
       .mega-menu1 a:hover{
@@ -10112,6 +10113,7 @@ textarea.form-control {
       @media (max-width: 767px) {
         .mega-menu1 {
           max-width: 400px;
+          margin-left: 5px;
         }
         /* Style for navbar when screen width is less than or equal to 767px */
   .navbar-nav {
