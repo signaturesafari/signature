@@ -10121,3 +10121,9 @@ textarea.form-control {
     overflow-y: auto; /* Enable vertical scrolling */
   }
       }
+.bolding{
+  font-weight: bold;
+}     
+.blog-head{
+  text-transform: capitalize;
+} 
