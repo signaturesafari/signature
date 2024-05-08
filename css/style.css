@@ -10127,3 +10127,17 @@ textarea.form-control {
 .blog-head{
   text-transform: capitalize;
 } 
+  .sticky {
+  position: sticky;
+  top: 20px;
+  z-index: 10; /* Ensure it's above other content */
+  background-color: white; /* Adjust as needed */
+  padding: 10px 0; /* Adjust as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.sticky button{
+  border: 1px solid #f15d30;
+}
+.sticky button:active{
+  background-color: #f15d30;
+}
