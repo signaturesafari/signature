@@ -29,6 +29,13 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Owl Carousel CSS -->
+
+
+<!-- Owl Carousel JavaScript -->
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -1285,17 +1292,9 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script>
-		$(document).ready(function () {
-			$(".owl-carousel").owlCarousel({
-				items: 1,
-				loop: true,
-				autoplay: true,
-				autoplayTimeout: 5000, // Adjust the time (in milliseconds) between slides
-				autoplayHoverPause: true // Pause autoplay when hovering over the carousel
-			});
-		});
+		
 
 		// Define an array of image URLs
 		var images = [
@@ -1318,7 +1317,30 @@
 
 		// Set interval to change background image every 5 seconds
 		setInterval(changeBackgroundImage, 5000);
-	</script>
+		
+	
+    $(document).ready(function(){
+    $(".carousel-destination").owlCarousel({
+      items: 6, // Number of items to display
+      loop: true, // Enable loop
+      autoplay: true, // Enable autoplay
+      autoplayTimeout: 1000, // Autoplay interval in milliseconds
+      autoplayHoverPause: true, // Pause autoplay on hover
+      responsive:{
+        0:{
+          items:1 // Number of items to display on small screens
+        },
+        600:{
+          items:6 // Number of items to display on medium screens
+        },
+        1000:{
+          items:6 // Number of items to display on large screens
+        }
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
