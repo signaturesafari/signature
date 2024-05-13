@@ -275,7 +275,7 @@ const multipleItemCarousel = document.querySelector("#testimonialCarousel");
 
     if (window.matchMedia("(min-width:576px)").matches) {
       const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-        interval: 1000,
+        interval: 5000,
       });
 
       var carouselWidth = $(".carousel-inner")[0].scrollWidth;
