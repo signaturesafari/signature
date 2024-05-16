@@ -300,3 +300,27 @@ const multipleItemCarousel = document.querySelector("#testimonialCarousel");
       $(multipleItemCarousel).addClass("slide");
     }
 
+    function shareOnWhatsApp() {
+        var url = encodeURIComponent(window.location.href);
+        window.open("https://api.whatsapp.com/send?text=" + url, "_blank");
+    }
+
+    function shareOnInstagram() {
+        // Instagram doesn't support direct sharing via URL. Users would need to share manually.
+        alert("To share on Instagram, please open the Instagram app and post manually.");
+    }
+
+    function shareOnFacebook() {
+        var url = encodeURIComponent(window.location.href);
+        window.open("https://www.facebook.com/sharer/sharer.php?u=" + url, "_blank");
+    }
+
+    function shareOnLinkedIn() {
+        var url = encodeURIComponent(window.location.href);
+        window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + url, "_blank");
+    }
+
+    function shareOnTwitter() {
+      var url = encodeURIComponent(window.location.href);
+      window.open("https://twitter.com/intent/tweet?url=" + url);
+    }

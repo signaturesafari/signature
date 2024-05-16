@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.timepicker.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
@@ -38,45 +38,68 @@
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about-us-signaturesafari.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item dropdown mega-menu">
-            <a href="safari-packages.html" class="nav-link dropdown-toggle active" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Safari</a>
-            <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
-              <div class="container w-100">
-                <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center w-100 py-3"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+        <div class="row px-4 d-flex flex-column justify-content-center">
+          <ul class="navbar-nav px-3 d-md-flex d-none justify-content-between border-bottom">
+            <Span class="d-md-flex">
+              <li class="nav-item ">
+                <a href="contact.html" class="nav-link text-white">info@signaturesafari.com</a>
+              </li>
+              <li class="nav-item ">
+                <a href="contact.html" class="nav-link text-white">+255 755 880 881</a>
+              </li>
+            </Span>
+            <span class="d-flex ">
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link text-white">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link text-white">Contact</a>
+              </li>
+            </span>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about-us-signaturesafari.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown mega-menu">
+              <a href="safari-packages.html" class="nav-link dropdown-toggle " role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Safari</a>
+              <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
+                <div class="container w-100">
+                  <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
+                    <div
+                      class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center w-100 py-3"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/kilinp.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; ">
-                    <h5 class="text-center text-white py-2 fw-bold">Tanzania Safari Packages</h5>
-                    <!-- <ul class=" text-white w-100">
+                      <h5 class="text-center text-white py-2 fw-bold">Tanzania Safari Packages
+                      </h5>
+                      <!-- <ul class=" text-white w-100">
                         <li class="text-center"><a class="dropdown-item text-white text-center" href="#">Serengeti Mara River Crossing & Zanzibar Beach</a></li>
                         <li>
                           <a class="dropdown-item text-white" href="#">Maasai Mara</a>
                         </li>
                       </ul> -->
-                    <p class="text-white text-center"><a
-                        href="14-days-amazing-tanzania-wildlife-safari-serengeti-mara-river-crossing-zanzibar-beach.html">Serengeti
-                        Mara River Crossing & Zanzibar Beach</a></p>
-                    <p class="text-center text-white"><a href="perfect-family-safari-in-tanzania.html">7 Days Perfect
-                        Family Safari in Tanzania</a></p>
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="tanzania-safari-packages.html">View all Packages</a></button>
+                      <p class="text-white text-center"><a
+                          href="14-days-amazing-tanzania-wildlife-safari-serengeti-mara-river-crossing-zanzibar-beach.html">Serengeti
+                          Mara River Crossing & Zanzibar Beach</a></p>
+                      <p class="text-center text-white"><a href="perfect-family-safari-in-tanzania.html">7 Days Perfect
+                          Family
+                          Safari in Tanzania</a></p>
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="tanzania-safari-packages.html">View all Packages</a></button>
 
-                  </div>
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/magical-kenya.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-                    <h5 class="text-center text-white py-2 fw-bold">Kenya Safari Packages</h5>
-                    <!-- <ul class="list-unstyled">
+                      <h5 class="text-center text-white py-2 fw-bold">Kenya Safari Packages</h5>
+                      <!-- <ul class="list-unstyled">
                         <li>
                           <a class="dropdown-item text-white" href="#">Luxury Safaris</a>
                         </li>
@@ -87,19 +110,21 @@
                           <a class="dropdown-item text-white" href="#">Family Safaris</a>
                         </li>
                       </ul> -->
-                    <p class="text-white text-center"><a href="5-days-masaimara-great-migration-safaris.html">05 Days
-                        Masai Mara Great Migration Safari</a></p>
-                    <p class="text-center text-white"><a href="7-days-kenya-affordable-safari.html">06 Days Kenya's
-                        Super Luxury Safari</a></p>
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="kenya-safari-packages.html">View all Packages</a></button>
-                  </div>
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+                      <p class="text-white text-center"><a href="5-days-masaimara-great-migration-safaris.html">05 Days
+                          Masai Mara
+                          Great Migration Safari</a></p>
+                      <p class="text-center text-white"><a href="7-days-kenya-affordable-safari.html">06 Days Kenya's
+                          Super Luxury
+                          Safari</a></p>
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="kenya-safari-packages.html">View all Packages</a></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/uganda-destination.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-                    <h5 class="text-center text-white py-2">Uganda Safari Packages</h5>
-                    <!-- <ul class="list-unstyled">
+                      <h5 class="text-center text-white py-2">Uganda Safari Packages</h5>
+                      <!-- <ul class="list-unstyled">
                         <li>
                           <a class="dropdown-item text-white" href="#">Game Drives</a>
                         </li>
@@ -112,26 +137,28 @@
                           <a class="dropdown-item text-white" href="#">Walking Safaris</a>
                         </li>
                       </ul> -->
-                    <p class="text-center text-white"><a href="7days-safari-queen-elizabeth-uganda.html">07 Days Lake
-                        Mburo Bwindi and Queen Elizabeth</a></p>
-                    <p class="text-center text-white"><a
-                        href="kidepo-valley-safari-nation-park-safari-uganda.html">Signature Kidepo Valley Nation park
-                        safari</a></p>
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="uganda-safari-packages.html">View all Packages</a></button>
-                  </div>
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+                      <p class="text-center text-white"><a href="7days-safari-queen-elizabeth-uganda.html">07 Days Lake
+                          Mburo
+                          Bwindi and Queen Elizabeth</a></p>
+                      <p class="text-center text-white"><a
+                          href="kidepo-valley-safari-nation-park-safari-uganda.html">Signature
+                          Kidepo Valley Nation park safari</a></p>
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="uganda-safari-packages.html">View all Packages</a></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/mud.avif'); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="safari-packages.html">View all Destinations</a></button>
-                    <h5 class="text-white pt-3">SAFARI TIPS</h5>
-                    <p class="text-center text-white"><a href="tanzania-safari-packing-list.html">Tanzania Safari
-                        Packing List</a></p>
-                    <p class="text-center text-white"><a href="">About Tanzania</a></p>
-                    <p class="text-center text-white"><a href="">Safari Faqs</a></p>
-                    <!-- <ul class="list-unstyled">
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="safari-packages.html">View all Destinations</a></button>
+                      <h5 class="text-white pt-3">SAFARI TIPS</h5>
+                      <p class="text-center text-white"><a href="tanzania-safari-packing-list.html">Tanzania Safari
+                          Packing
+                          List</a></p>
+                      <p class="text-center text-white"><a href="">About Tanzania</a></p>
+                      <p class="text-center text-white"><a href="">Safari Faqs</a></p>
+                      <!-- <ul class="list-unstyled">
                         <li>
                           <a class="dropdown-item text-white" href="#">Game Drives</a>
                         </li>
@@ -144,39 +171,44 @@
                           <a class="dropdown-item text-white" href="#">Walking Safaris</a>
                         </li>
                       </ul> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown mega-menu">
-            <a href="safari-packages.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Climbing</a>
-            <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
-              <div class="container w-100">
-                <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center w-100 py-3"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+            </li>
+            <li class="nav-item dropdown mega-menu">
+              <a href="safari-packages.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Climbing</a>
+              <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
+                <div class="container w-100">
+                  <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
+                    <div
+                      class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center w-100 py-3"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/kilibg.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; ">
-                    <h5 class="text-center text-white py-2 fw-bold">Mountain Kilimanjaro & Routes</h5>
-                    <!-- <ul class=" text-white w-100">
+                      <h5 class="text-center text-white py-2 fw-bold">Mountain Kilimanjaro &
+                        Routes
+                      </h5>
+                      <!-- <ul class=" text-white w-100">
                         <li class="text-center"><a class="dropdown-item text-white text-center" href="#">Serengeti Mara River Crossing & Zanzibar Beach</a></li>
                         <li>
                           <a class="dropdown-item text-white" href="#">Maasai Mara</a>
                         </li>
                       </ul> -->
 
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="kilimanjaro-climbing-routes.html">View all Routes</a> </button>
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="kilimanjaro-climbing-routes.html">View all Routes</a>
+                      </button>
 
-                  </div>
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/mount-kenya1.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-                    <h5 class="text-center text-white py-2 fw-bold">Kilimanjaro Group Joining 2024-2025</h5>
-                    <!-- <ul class="list-unstyled">
+                      <h5 class="text-center text-white py-2 fw-bold">Kilimanjaro Group Joining
+                        2024-2025</h5>
+                      <!-- <ul class="list-unstyled">
                         <li>
                           <a class="dropdown-item text-white" href="#">Luxury Safaris</a>
                         </li>
@@ -188,16 +220,16 @@
                         </li>
                       </ul> -->
 
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="best_kilimanjaro_trekking_group_join_with_signature_safari_2023_2024_2025.html">View all
-                        Groups</a></button>
-                  </div>
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="best_kilimanjaro_trekking_group_join_with_signature_safari_2023_2024_2025.html">View
+                          all Groups</a></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/ruwenzori.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-                    <h5 class="text-center text-white py-2">Mountain Kenya</h5>
-                    <!-- <ul class="list-unstyled">
+                      <h5 class="text-center text-white py-2">Mountain Kenya</h5>
+                      <!-- <ul class="list-unstyled">
                         <li>
                           <a class="dropdown-item text-white" href="#">Game Drives</a>
                         </li>
@@ -211,24 +243,27 @@
                         </li>
                       </ul> -->
 
-                    <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
-                        href="5days-4nights-mount-kenya-climbing-naromoru-route-sirimon.html">View all
-                        Routes</a></button>
-                  </div>
-                  <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-5"
-                    style="height: 350px; background-image: linear-gradient(45deg,
+                      <button type="button" class="btn btn-outline-white mb-2 rounded-pill"><a
+                          href="5days-4nights-mount-kenya-climbing-naromoru-route-sirimon.html">View
+                          all Routes</a></button>
+                    </div>
+                    <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-5"
+                      style="height: 350px; background-image: linear-gradient(45deg,
                     rgba(15, 15, 15, 0.612),
                     rgba(15, 15, 15, 0.612)), url('images/paper-bg.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
 
-                    <h5 class="text-white text-center pt-3">MOUNTAIN TREK TIPS</h5>
-                    <p class="text-center text-white"><a
-                        href="technical-clothing-for-mount-kilimanjaro-trek.html">Technical Clothing for Mount Trek</a>
-                    </p>
-                    <p class="text-center text-white"><a href="tip-for-kilimanjaro-climber-and-weather.html">Tips for
-                        climber and Kilimanjaro weather</a></p>
-                    <p class="text-center text-white"><a href="mt-kilimanjaro-and-meru-with-sar.html">Rescue Services on
-                        Mt. Kilimanjaro & Meru with SAR</a></p>
-                    <!-- <ul class="list-unstyled">
+                      <h5 class="text-white text-center pt-3">MOUNTAIN TREK TIPS</h5>
+                      <p class="text-center text-white"><a
+                          href="technical-clothing-for-mount-kilimanjaro-trek.html">Technical
+                          Clothing for Mount Trek</a></p>
+                      <p class="text-center text-white"><a href="tip-for-kilimanjaro-climber-and-weather.html">Tips for
+                          climber and
+                          Kilimanjaro weather</a></p>
+                      <p class="text-center text-white"><a href="mt-kilimanjaro-and-meru-with-sar.html">Rescue Services
+                          on
+                          Mt.
+                          Kilimanjaro & Meru with SAR</a></p>
+                      <!-- <ul class="list-unstyled">
                         <li>
                           <a class="dropdown-item text-white" href="#">Game Drives</a>
                         </li>
@@ -241,24 +276,30 @@
                           <a class="dropdown-item text-white" href="#">Walking Safaris</a>
                         </li>
                       </ul> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="tanzania-cyclic-tour.html" class="nav-link">Cyclic</a>
-          </li>
-          <li class="nav-item">
-            <a href="tanzania-day-trip-excursions.html" class="nav-link">DayTrips</a>
-          </li>
-          <li class="nav-item">
-            <a href="blog.html" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-        </ul>
+            </li>
+            <li class="nav-item">
+              <a href="tanzania-cyclic-tour.html" class="nav-link">Cyclic</a>
+            </li>
+            <li class="nav-item">
+              <a href="zanzibar-holiday-beaches.html" class="nav-link">Zanzibar</a>
+            </li>
+            <li class="nav-item">
+              <a href="tanzania-day-trip-excursions.html" class="nav-link">DayTrips</a>
+            </li>
+            <li class="nav-item d-md-none d-block">
+              <a href="blog.html" class="nav-link text-white active">Blog</a>
+            </li>
+            <li class="nav-item d-md-none d-block">
+              <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <p class=""><a href="tailor-made-safari-and-kilimanjaro.html" class="btn btn-primary">Let's Plan a
+            Tour</a></p>
       </div>
     </div>
   </nav>
@@ -270,8 +311,228 @@
       <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
           <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                  class="fa fa-chevron-right"></i></a></span> <span>Blog <i class="fa fa-chevron-right"></i></span></p>
-          <h1 class="mb-0 bread">Blog</h1>
+                  class="fa fa-chevron-right"></i></a></span> <span> Tanzania Blog <i
+                class="fa fa-chevron-right"></i></span></p>
+          <h1 class="mb-0 bread">Tanzania Blog</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-about ftco-no-pt img">
+    <div class="container">
+      <div class="col-md-12 about-intro">
+        <div class="row d-flex my-5 py-5">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC_0028.jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Sustainable
+                    Tourism in Tanzania with Signature Safari</a></h3>
+                <p>As a company dedicated to sustainable tourism, Signature Safari is committed to promoting
+                  travel opportunities that have minimal impact and positive..</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20"
+                style="background-image: url('images/Things-to-do-in-Africa-Bucket-List.png');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">30</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">August</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="top-10-bucket-list-safaris-in-tanzania.html">Top 10 bucket-list
+                    Safaris in Tanzania 2024</a></h3>
+                <p>Top 10 bucket-list Safaris in Tanzania 2024 Where To Travel And What To Do During Your
+                  Holiday Stay In Tanzania In 2024 – Signature Safari Tanzania.</p>
+                <p><a href="top-10-bucket-list-safaris-in-tanzania.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20"
+                style="background-image: url('images/Top-5-Reasons-to-Travel-to-Tanzania-28.webp');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">September</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="top-10-reasons-to-travel-to-tanzania.html">Top 10 Reasons To
+                    Travel To Tanzania</a></h3>
+                <p>Certainly! Tanzania is a remarkable destination with a diverse range of attractions and
+                  experiences that appeal to travelers from around the globe. </p>
+                <p><a href="top-10-reasons-to-travel-to-tanzania.html" class="btn btn-primary">Read more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC\ \(43\).jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Tips for
+                    Kilimanjaro Climber and Weather</a></h3>
+                <p>Although Kilimanjaro is not a technical mountain climb,
+                  it is a major challenge, and you should not
+                  underestimate the rigors of altitude.</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC_0028.jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Sustainable
+                    Tourism in Tanzania with Signature Safari</a></h3>
+                <p>As a company dedicated to sustainable tourism, Signature Safari is committed to promoting
+                  travel opportunities that have minimal impact and positive..</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC_0028.jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Sustainable
+                    Tourism in Tanzania with Signature Safari</a></h3>
+                <p>As a company dedicated to sustainable tourism, Signature Safari is committed to promoting
+                  travel opportunities that have minimal impact and positive..</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC_0028.jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Sustainable
+                    Tourism in Tanzania with Signature Safari</a></h3>
+                <p>As a company dedicated to sustainable tourism, Signature Safari is committed to promoting
+                  travel opportunities that have minimal impact and positive..</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC_0028.jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Sustainable
+                    Tourism in Tanzania with Signature Safari</a></h3>
+                <p>As a company dedicated to sustainable tourism, Signature Safari is committed to promoting
+                  travel opportunities that have minimal impact and positive..</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/DSC_0028.jpg');">
+              </a>
+              <div class="text">
+                <div class="d-flex align-items-center mb-4 topp">
+                  <div class="one">
+                    <span class="day">11</span>
+                  </div>
+                  <div class="two">
+                    <span class="yr">2024</span>
+                    <span class="mos">June</span>
+                  </div>
+                </div>
+                <h3 class="heading"><a href="sustainable-tourism-in-tanzania-with-signature-safari.html">Sustainable
+                    Tourism in Tanzania with Signature Safari</a></h3>
+                <p>As a company dedicated to sustainable tourism, Signature Safari is committed to promoting
+                  travel opportunities that have minimal impact and positive..</p>
+                <p><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="btn btn-primary">Read
+                    more</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

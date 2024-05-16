@@ -476,14 +476,16 @@
           <div class="tag-widget post-tag-container mb-5 mt-5">
             <p class="text-dark">Share this article:</p>
             <div class="tagcloud">
-              <a href="blog-single.html#" class="tag-cloud-link text-white" style="background-color: #1877f2"><i
+              <a href="" onclick="shareOnFacebook()" class="tag-cloud-link text-white" style="background-color: #1877f2"><i
                   class="bi bi-facebook"></i> facebook</a>
-              <a href="blog-single.html#" class="tag-cloud-link text-white" style="background-color: black"><i
+              <a href="" onclick="shareOnTwitter()" class="tag-cloud-link text-white" style="background-color: black"><i
                   class="bi bi-twitter-x"></i> twitter</a>
-              <a href="blog-single.html#" class="tag-cloud-link text-white" style="background-color: #0762c8"><i
+              <a href="" onclick="shareOnLinkedIn" class="tag-cloud-link text-white" style="background-color: #0762c8"><i
                   class="bi bi-linkedin"></i> linkedin</a>
-              <a href="blog-single.html#" class="tag-cloud-link text-white" style="background-color: #6228d7"><i
+              <a href="" onclick="shareOnInstagram()" class="tag-cloud-link text-white" style="background-color: #6228d7"><i
                   class="bi bi-instagram"></i> instagram</a>
+              <a href="" onclick="shareOnWhatsApp()" class="tag-cloud-link text-white" style="background-color: green"><i
+                  class="bi bi-whatsapp"></i> WhatsApp</a>    
             </div>
           </div>
 
@@ -645,130 +647,93 @@
           </div>
         </div>
         <!-- .col-md-8 -->
-        <div class="col-lg-4 sidebar ftco-animate bg-light py-md-5">
-          <div class="sidebar-box pt-md-5">
-            <form action="blog-single.html#" class="search-form">
-              <div class="form-group">
-                <span class="icon fa fa-search"></span>
-                <input type="text" class="form-control" placeholder="Search..." />
-              </div>
-            </form>
-          </div>
-          <!--  <div class="sidebar-box ftco-animate">
-              <div class="categories">
-                <h3>Categories</h3>
-                <li>
-                  <a href="blog-single.html#">Travel <span>(12)</span></a>
-                </li>
-                <li>
-                  <a href="blog-single.html#">Tour <span>(22)</span></a>
-                </li>
-                <li>
-                  <a href="blog-single.html#">Destination <span>(37)</span></a>
-                </li>
-                <li>
-                  <a href="blog-single.html#">Drinks <span>(42)</span></a>
-                </li>
-                <li>
-                  <a href="blog-single.html#">Foods <span>(14)</span></a>
-                </li>
-              </div>
-            </div> -->
+        <div class="col-lg-4 sidebar ftco-animate bg-light py-md-5 ">
+          <div class="sticky ">
+            <div class="sidebar-box pt-md-5">
+              <form action="blog-single.html#" class="search-form">
+                <div class="form-group">
+                  <span class="icon fa fa-search"></span>
+                  <input type="text" class="form-control" placeholder="Search..." />
+                </div>
+              </form>
+            </div>
 
-          <div class="sidebar-box ftco-animate">
-            <h3>Recent Blog</h3>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="blog-single.html#">Even the all-powerful Pointing has no control about the
-                    blind texts</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-calendar"></span> September 11,
-                      2020</a>
-                  </div>
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-user"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-comment"></span> 19</a>
+            <div class="sidebar-box ftco-animate">
+              <h3>Recent Blog</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/3-camping3.jpg)"></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="blog-single.html#">Sustainable tourism in Tanzania with Signature Safari</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-calendar"></span> September 11,
+                        2024</a>
+                    </div>
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-user"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-comment"></span> 0</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="blog-single.html#">Even the all-powerful Pointing has no control about the
-                    blind texts</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-calendar"></span> September 11,
-                      2020</a>
-                  </div>
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-user"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-comment"></span> 19</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg)"></a>
-              <div class="text">
-                <h3 class="heading">
-                  <a href="blog-single.html#">Even the all-powerful Pointing has no control about the
-                    blind texts</a>
-                </h3>
-                <div class="meta">
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-calendar"></span> September 11,
-                      2020</a>
-                  </div>
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-user"></span> Admin</a>
-                  </div>
-                  <div>
-                    <a href="blog-single.html#"><span class="fa fa-comment"></span> 19</a>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/DSC\ \(43\).jpg)"></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="blog-single.html#">Tips for Kilimanjaro Climber and Weather</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-calendar"></span> August 21,
+                        2024</a>
+                    </div>
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-user"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-comment"></span> 0</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <!--  <div class="sidebar-box ftco-animate">
-              <h3>Tag Cloud</h3>
-              <div class="tagcloud">
-                <a href="blog-single.html#" class="tag-cloud-link">dish</a>
-                <a href="blog-single.html#" class="tag-cloud-link">menu</a>
-                <a href="blog-single.html#" class="tag-cloud-link">food</a>
-                <a href="blog-single.html#" class="tag-cloud-link">sweet</a>
-                <a href="blog-single.html#" class="tag-cloud-link">tasty</a>
-                <a href="blog-single.html#" class="tag-cloud-link">delicious</a>
-                <a href="blog-single.html#" class="tag-cloud-link">desserts</a>
-                <a href="blog-single.html#" class="tag-cloud-link">drinks</a>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/perfect-safari2.jpg)"></a>
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="blog-single.html#">Top 10 reasons to travel to Tanzania</a>
+                  </h3>
+                  <div class="meta">
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-calendar"></span> November 03,
+                        2024</a>
+                    </div>
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-user"></span> Admin</a>
+                    </div>
+                    <div>
+                      <a href="blog-single.html#"><span class="fa fa-comment"></span> 0</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div> -->
-
-          <div class="sidebar-box ftco-animate">
-            <div class="row">
-              <div
-                class="col-md-12 d-flex flex-column justify-content-around align-items-center rounded-3 py-4 bg-primary">
-                <h3 class="text-white">Customize Your Own Safari</h3>
-                <p class="text-center text-white">
-                  Maybe you didn’t what you want. Do worry you can customized
-                  your ow Please tell us what you want, and we can deliver
-                  what you want.
-                </p>
-                <button type="button" class="btn bg-warning mb-2 rounded-pill">
-                  <a href="" class="text-dark">Let's Plan a trip</a>
-                </button>
+               </div>
+            <div class="sidebar-box ftco-animate mb-5">
+              <div class="row">
+                <div
+                  class="col-md-12 d-flex flex-column justify-content-around align-items-center rounded-3 py-4 bg-primary">
+                  <h3 class="text-white">Customize Your Own Safari</h3>
+                  <p class="text-center text-white">
+                    Please tell us what you want, and we can deliver
+                    what you want.
+                  </p>
+                  <button type="button" class="btn bg-warning mb-2 rounded-pill">
+                    <a href="" class="text-dark">Let's Plan a trip</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
