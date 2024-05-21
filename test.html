@@ -1,104 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mount Kilimanjaro Climbing</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Owl Carousel CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
-  <style>
-    /* Custom CSS for the section */
-    .carousel-destination .item {
-      margin-right: 15px; /* Adjust margin as needed */
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiple Slideshow Gallery</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .caption {
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
 </head>
 <body>
 
-<section class="ftco-section img ftco-select-destination" style="background-image: linear-gradient(45deg, rgba(192, 192, 192, 0.651), rgba(34, 33, 33, 0.75)), url('images/kilibg.jpg');">
-  <div class="container">
-    <div class="row justify-content-center pb-4">
-      <div class="col-md-12 heading-section text-center ftco-animate">
-        <span class="subheading text-white" style="font-family: 'Homemade Apple', cursive; font-weight: 400;color: #522e06;">Mount Kilimanjaro Climbing</span>
-        <h2 class="mb-4 text-primary">Select Your Routes</h2>
-      </div>
+<div class="container mt-5">
+  <h2 class="text-center">Slideshow Gallery 1</h2>
+  <div id="slideshow-container-1" class="slideshow-container">
+    <div class="mySlides">
+      <img src="https://via.placeholder.com/800x400?text=Slide+1" class="img-fluid">
+      <div class="caption">Caption Text 1</div>
     </div>
-  </div>
-
-  <div class="container container-2">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="carousel-destination owl-carousel ftco-animate overflow-x-auto" data-bs-ride="carousel" data-bs-interval="2000">
-          <!-- Add data-bs-ride="carousel" and data-bs-interval="5000" attributes to make it auto-slide every 5 seconds -->
-
-          <!-- Your carousel items here -->
-          <div class="item">
-							<div class="project-destination">
-								<a href="lemosho-route-8-days.html" class="img"
-									style="background-image: url(images/lemosho.jpeg);">
-									<div class="text">
-										<h3>Lemosho Route</h3>
-										<span>8 Days</span>
-									</div>
-								</a>
-							</div>
-						</div>
-            <div class="item">
-							<div class="project-destination">
-								<a href="lemosho-route-8-days.html" class="img"
-									style="background-image: url(images/lemosho.jpeg);">
-									<div class="text">
-										<h3>Lemosho Route</h3>
-										<span>8 Days</span>
-									</div>
-								</a>
-							</div>
-						</div>
-            <div class="item">
-							<div class="project-destination">
-								<a href="lemosho-route-8-days.html" class="img"
-									style="background-image: url(images/lemosho.jpeg);">
-									<div class="text">
-										<h3>Lemosho Route</h3>
-										<span>8 Days</span>
-									</div>
-								</a>
-							</div>
-						</div>
-        </div>
-      </div>
+    <div class="mySlides">
+      <img src="https://via.placeholder.com/800x400?text=Slide+2" class="img-fluid">
+      <div class="caption">Caption Text 2</div>
     </div>
+    <div class="mySlides">
+      <img src="https://via.placeholder.com/800x400?text=Slide+3" class="img-fluid">
+      <div class="caption">Caption Text 3</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
   </div>
-</section>
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1, 1)"></span>
+    <span class="dot" onclick="currentSlide(2, 1)"></span>
+    <span class="dot" onclick="currentSlide(3, 1)"></span>
+  </div>
+</div>
 
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-<!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<div class="container mt-5">
+  <h2 class="text-center">Slideshow Gallery 2</h2>
+  <div id="slideshow-container-2" class="slideshow-container">
+    <div class="mySlides">
+      <img src="https://via.placeholder.com/800x400?text=Slide+A" class="img-fluid">
+      <div class="caption">Caption Text A</div>
+    </div>
+    <div class="mySlides">
+      <img src="https://via.placeholder.com/800x400?text=Slide+B" class="img-fluid">
+      <div class="caption">Caption Text B</div>
+    </div>
+    <div class="mySlides">
+      <img src="https://via.placeholder.com/800x400?text=Slide+C" class="img-fluid">
+      <div class="caption">Caption Text C</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+  </div>
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1, 2)"></span>
+    <span class="dot" onclick="currentSlide(2, 2)"></span>
+    <span class="dot" onclick="currentSlide(3, 2)"></span>
+  </div>
+</div>
+
 <script>
-  // Activate Owl Carousel
-  $('.carousel-destination').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots:true,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:2
-      },
-      1000:{
-        items:3
-      }
-    }
-  });
+let slideIndex = [1, 1];
+let slideId = ["slideshow-container-1", "slideshow-container-2"];
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no-1] += n, no);
+}
+
+function currentSlide(n, no) {
+  showSlides(slideIndex[no-1] = n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let slides = document.getElementById(slideId[no-1]).getElementsByClassName("mySlides");
+  let dots = document.getElementById(slideId[no-1]).getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex[no-1] = 1}
+  if (n < 1) {slideIndex[no-1] = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex[no-1]-1].style.display = "block";
+  dots[slideIndex[no-1]-1].className += " active";
+}
+
+showSlides(1, 1);
+showSlides(1, 2);
 </script>
+
 </body>
 </html>
+
+
 
 

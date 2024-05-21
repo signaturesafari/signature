@@ -324,3 +324,5 @@ const multipleItemCarousel = document.querySelector("#testimonialCarousel");
       var url = encodeURIComponent(window.location.href);
       window.open("https://twitter.com/intent/tweet?url=" + url);
     }
+
+	
