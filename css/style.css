@@ -10130,7 +10130,7 @@ textarea.form-control {
   .sticky {
   position: sticky;
   top: 13%;
-  z-index: 10; /* Ensure it's above other content */
+  z-index: 1; /* Ensure it's above other content */
   background-color: white; /* Adjust as needed */
   padding: 10px 0; /* Adjust as needed */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
