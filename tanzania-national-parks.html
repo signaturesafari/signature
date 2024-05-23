@@ -466,7 +466,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-6">
-                    <ul class="nav nav-tabs sticky w-100  d-flex align-items-center justify-content-between">
+                    <ul class="nav nav-tabs sticky w-100  d-flex align-items-center justify-content-between" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link text-center active" data-bs-toggle="tab"
                                 href="#serengeti">Serengeti<br>National park</a>
@@ -2202,6 +2202,7 @@
 
         window.onload = initSlides;
     </script>
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -2218,7 +2219,27 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+        // Get the hash from the URL
+        var hash = window.location.hash;
 
+        // If a hash exists, activate the corresponding tab
+        if (hash) {
+            $('.nav-tabs a[href="' + hash + '"]').tab('show');
+            
+            // Scroll to the tab content
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 390
+            }, 400);
+        }
+
+        // Update the hash in the URL when a tab is shown
+        $('.nav-tabs a').on('shown.bs.tab', function (e) {
+            window.location.hash = e.target.hash;
+        });
+    });
+    </script>
 </body>
 
 </html>
