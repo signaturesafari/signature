@@ -511,31 +511,16 @@
             <div class="form-group">
               <input type="text" class="form-control" name="country" placeholder="Country" required/>
             </div>
-            <h4>Expected time to travel</h4>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="expected-time" value="Within 3 months" id="flexCheckDefault" required/>
-              <label class="form-check-label" for="flexCheckDefault">
-                Within 3 months
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox"  name="expected-time" value="3-6 months" id="flexCheckChecked" required/>
-              <label class="form-check-label" for="flexCheckChecked">
-                3-6 months
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="expected-time" value="6 months to 1 year" id="flexCheckDefault" required/>
-              <label class="form-check-label" for="flexCheckDefault">
-                6 months to 1 year
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="expected-time" value="More than 1 year" id="flexCheckChecked" required/>
-              <label class="form-check-label" for="flexCheckChecked">
-                More than 1 year
-              </label>
-            </div>
+            <h4></h4>
+            
+            <label for="" class="d-block form-label text-dark mt-3">Expected time to travel</label>
+            <select class="form-select col-md-6 col-sm-6 py-2 mb-3" id="tourType" name="tour-type" required>
+              <option value="">Select an option</option>
+              <option value="within 3 months">Within 3 months</option>
+              <option value="3-6 months">3-6 months</option>
+              <option value="6 months to 1 year">6 months to 1 year</option>
+              <option value="more than 1 year">more than 1 year</option>
+            </select>
             <div class="form-group">
               <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
             </div>
