@@ -1706,43 +1706,23 @@
 	<script src="js/main.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>
+          document.addEventListener('DOMContentLoaded', (event) => {
+            const images = [
+                'images/wildbeest.jpg',
+                'images/kenya-banner.jpg',
+                'images/magical-kenya.jpg'
+            ];
+            let currentImageIndex = 0;
 
+            const hero = document.getElementById('hero');
 
-		var images = [
-			{
-				normal: 'images/kenya-banner.jpg',
-				highRes: 'images/kenya-banner@2x.jpg'
-			},
-			{
-				normal: 'images/magical-kenya.jpg',
-				highRes: 'images/magical-kenya@2x.jpg'
-			},
-			{
-				normal: 'images/wildbeest.jpg',
-				highRes: 'images/wildbeest@2x.jpg'
-			}
-		];
+            function changeBackgroundImage() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
+            }
 
-		var currentIndex = 0;
-		var container = document.getElementById('hero');
-
-		// Function to get the correct image URL based on device pixel ratio
-		function getImageUrl(image) {
-			return window.devicePixelRatio > 1 ? image.highRes : image.normal;
-		}
-
-		// Function to change the background image
-		function changeBackgroundImage() {
-			var imageUrl = getImageUrl(images[currentIndex]);
-			container.style.backgroundImage = 'url(' + imageUrl + ')';
-			currentIndex = (currentIndex + 1) % images.length; // Cycle through images
-		}
-
-		// Initial background image change
-		changeBackgroundImage();
-
-		// Set interval to change background image every 5 seconds
-		setInterval(changeBackgroundImage, 5000);
+            setInterval(changeBackgroundImage, 5000);
+        });
 	</script>
 
 </body>
