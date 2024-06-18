@@ -10195,3 +10195,12 @@ textarea.form-control {
       top: 50%;
       transform: translateY(-50%);
     }
+    .label-price {
+      height: 40px;
+    }
+    .lable-details{
+      background-color: #9a662f46;
+    }
+    .box{
+      height: 470px;
+    }
