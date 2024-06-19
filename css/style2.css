@@ -14598,9 +14598,6 @@ textarea.form-control {
   border: 1px solid #f15d30;
 }
 
-.sticky button:active {
-  background-color: #f15d30;
-}
-.sticky li:active{
+.sticky nav button:active {
   background-color: #f15d30;
 }
