@@ -472,34 +472,75 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-6">
-                    <ul class="nav nav-tabs sticky w-100  d-flex align-items-center justify-content-between" id="myTab"
+                    <!-- <ul class="nav nav-tabs sticky w-100  d-flex align-items-center" id="myTab"
                         role="tablist">
-                        <li class="nav-item">
+                        <li class="nav-item col-3">
                             <a class="nav-link text-center active" data-bs-toggle="tab"
-                                href="#serengeti">Serengeti<br>National park</a>
+                                href="#serengeti">Serengeti</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col-3">
                             <a class="nav-link text-center" data-bs-toggle="tab"
-                                href="#ngorongoro">Ngorongoro<br>National park</a>
+                                href="#ngorongoro">Ngorongoro</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-center" data-bs-toggle="tab" href="#manyara">Manyara<br>National
-                                park</a>
+                        <li class="nav-item col-3">
+                            <a class="nav-link text-center" data-bs-toggle="tab" href="#manyara">Manyara</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-center" data-bs-toggle="tab" href="#tarangire">Tarangire<br>National
-                                park</a>
+                        <li class="nav-item col-3">
+                            <a class="nav-link text-center" data-bs-toggle="tab" href="#tarangire">Tarangire</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-center" data-bs-toggle="tab" href="#arushanp">Arusha<br>National
-                                park</a>
+                        <li class="nav-item col-3">
+                            <a class="nav-link text-center" data-bs-toggle="tab" href="#arushanp">Arusha</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item col-3">
                             <a class="nav-link text-center" data-bs-toggle="tab" href="#mountkilimanjaronp">Mount
-                                Kilimanjaro<br>National park</a>
+                                Kilimanjaro</a>
                         </li>
-                    </ul>
+                    </ul> -->
+                    <div class="sticky">
+              <div class="nav nav-tabs d-flex justify-content-center align-items-center" role="tablist">
+                <button type="button" id="serengeti-tab" class="btn my-1 mx-1 py-md-3 py-sm-1 nav-item col-3 active"
+                  data-bs-toggle="tab" data-bs-target="#serengeti" role="tab" aria-controls="serengeti"
+                  aria-selected="false">Serengeti</button>
+                <button type="button" id="ngorongoro-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4"
+                  data-bs-toggle="tab" data-bs-target="#ngorongoro" role="tab" aria-controls="ngorongoro"
+                  aria-selected="false">
+                  Ngorongoro</button>
+                <button type="button" id="manyara-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#manyara" role="tab" aria-controls="manyara"
+                  aria-selected="false">
+                  Manyara</button>
+                <button type="button" id="tarangire-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#tarangire" role="tab" aria-controls="tarangire"
+                  aria-selected="false">Tarangire</button>
+                <button type="button" id="arusha-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#arushanp" role="tab" aria-controls="arusha-tab"
+                  aria-selected="false">Arusha</button>
+                <button type="button" id="kilimanjaro-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4"
+                  data-bs-toggle="tab" data-bs-target="#kilimanjaronp" role="tab" aria-controls="kilimanjaro"
+                  aria-selected="false">Kilimanjaro</button>
+                <button type="button" id="mahale" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#mahale" role="tab" aria-controls="mahale"
+                  aria-selected="false">Mahale</button>
+                  <button type="button" id="Nyerere-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4"
+                  data-bs-toggle="tab" data-bs-target="#nyerere" role="tab" aria-controls="nyerere"
+                  aria-selected="false">
+                  Nyerere</button>
+                <button type="button" id="Katavi-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#katavi" role="tab" aria-controls="katavi"
+                  aria-selected="false">
+                  Katavi</button>
+                <button type="button" id="Gombe-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#gombe" role="tab" aria-controls="gombe"
+                  aria-selected="false">
+                  Gombe</button>
+                <button type="button" id="Ruaha-tab" class="btn  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
+                  data-bs-toggle="tab" data-bs-target="#ruaha" role="tab" aria-controls="ruaha"
+                  aria-selected="false">
+                  Ruaha</button>
+                    
+              </div>
+            </div>
                     <div class="tab-content">
                         <div class="card card-body tab-pane active" id="serengeti" style="height: auto">
                             <div class="row">
@@ -1715,7 +1756,7 @@
                         </div>
                     </div>
                     <div class="tab-content">
-                        <div class="card card-body tab-pane" id="mountkilimanjaronp" style="height: auto">
+                        <div class="card card-body tab-pane" id="kilimanjaronp" style="height: auto">
                             <div class="row">
                                 <div class="col-md-8 border border-3">
                                     <h2 class="text-primary">Mountain Kilimanjaro National park</h2>

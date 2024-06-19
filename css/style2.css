@@ -14601,3 +14601,6 @@ textarea.form-control {
 .sticky button:active {
   background-color: #f15d30;
 }
+.sticky li:active{
+  background-color: #f15d30;
+}

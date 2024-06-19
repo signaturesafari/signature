@@ -10144,6 +10144,7 @@ textarea.form-control {
 .sticky button:active{
   background-color: #f15d30;
 }
+
 .carousel img {
       width: 70px;
       max-height: 70px;
@@ -10203,4 +10204,7 @@ textarea.form-control {
     }
     .box{
       height: 470px;
+    }
+    .lable-detail{
+      background-color: #9a662f;
     }
