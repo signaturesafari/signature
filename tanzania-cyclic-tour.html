@@ -1199,8 +1199,44 @@
       </div>
       <div class="row ftco-animate">
         <div class="col-md-12 bg-white py-4 ">
-          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-          <div class="elfsight-app-099752e3-9a6e-4680-a256-961f152f9789 " data-elfsight-app-lazy></div>
+          <div class="row">
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="images/avata.png" alt="Person" class="rounded-circle me-3" width="50">
+                    <div>
+                      <p class="card-title mb-0 text-primary ps-3"><span class="bolding"> Julia, 2023 tour</span> </p>
+                    </div>
+                  </div>
+                  <p class="card-text text-dark">"I really enjoyed cycling through varied terrain while learning about
+                    the local
+                    history, culture, environment and language from our fantastic guides. We ended each day at beautiful
+                    accommodations with delicious meals. If you’re looking for a cycling trip of a lifetime, I would
+                    highly recommend joining!”</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="images/avata.png" alt="Person" class="rounded-circle me-3" width="50">
+                    <div>
+                      <p class="card-title mb-0 text-primary ps-3"><span class="bolding"> Perry Kulak, 2023 tour</span></p>
+                    </div>
+                  </div>
+                  <p class="card-text text-dark">“I loved the bike trip. It was hot and had hills so it was challenging at times.
+                    However, at the end of the day we were in lovely resorts with great food, swimming pools and,
+                    occasionally, massages for our tired muscles. We had guides at the front and back while we cycled
+                    and the support truck kept stopping often to offer us water and snacks. Everyone was very friendly
+                    and people living along the route would often wave and say hello as we passed by.” </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- <div class="carousel-testimony owl-carousel">
 							<div class="item">
@@ -1526,23 +1562,23 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script>
-		document.addEventListener('DOMContentLoaded', (event) => {
-			const images = [
-				'images/cyclic-hero.jpeg',
-				'images/cyclic-hero1.jpeg',
-			];
-			let currentImageIndex = 0;
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const images = [
+        'images/cyclic-hero.jpeg',
+        'images/cyclic-hero1.jpeg',
+      ];
+      let currentImageIndex = 0;
 
-			const hero = document.getElementById('hero');
+      const hero = document.getElementById('hero');
 
-			function changeBackgroundImage() {
-				currentImageIndex = (currentImageIndex + 1) % images.length;
-				hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
-			}
+      function changeBackgroundImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
+      }
 
-			setInterval(changeBackgroundImage, 5000);
-		});
-	</script>
+      setInterval(changeBackgroundImage, 5000);
+    });
+  </script>
 </body>
 
 </html>
