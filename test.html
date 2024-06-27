@@ -1,64 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board of Trustees</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        .board-member {
-            margin-bottom: 30px;
-        }
-        .member-photo {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-        .member-name {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .member-title {
-            font-size: 1em;
-            color: #555;
-        }
-        .contact-btn {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Board of Trustees</h1>
-        <div class="row">
-            <div class="col-md-4 board-member text-center">
-                <img src="path_to_image1.jpg" alt="Member Photo" class="member-photo">
-                <p class="member-name">John Doe</p>
-                <p class="member-title">Chairman</p>
-                <button class="btn btn-primary contact-btn">Contact</button>
-            </div>
-            <div class="col-md-4 board-member text-center">
-                <img src="path_to_image2.jpg" alt="Member Photo" class="member-photo">
-                <p class="member-name">Jane Smith</p>
-                <p class="member-title">Vice Chairman</p>
-                <button class="btn btn-primary contact-btn">Contact</button>
-            </div>
-            <div class="col-md-4 board-member text-center">
-                <img src="path_to_image3.jpg" alt="Member Photo" class="member-photo">
-                <p class="member-name">Robert Brown</p>
-                <p class="member-title">Secretary</p>
-                <button class="btn btn-primary contact-btn">Contact</button>
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html> 
+<html lang="en"> 
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+<head> 
+	<title>How to make horizontal 
+	scrollable in a bootstrap row?</title> 
+
+	<meta charset="utf-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet"
+		href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<style> 
+		/* The heart of the matter */ 
+		
+		.horizontal-scrollable > .row { 
+			overflow-x: auto; 
+			white-space: nowrap; 
+		} 
+		
+		.horizontal-scrollable > .row > .col-xs-4 { 
+			display: inline-block; 
+			float: none; 
+		} 
+		/* Decorations */ 
+		
+		.col-xs-4 { 
+			color: white; 
+			font-size: 24px; 
+			padding-bottom: 20px; 
+			padding-top: 18px; 
+		} 
+		
+		.col-xs-4:nth-child(2n+1) { 
+			background: green; 
+		} 
+		
+		.col-xs-4:nth-child(2n+2) { 
+			background: black; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<center> 
+		<div class="container"> 
+
+			<h1 style="text-align:center;color:green;"> 
+			GeeksforGeeks 
+		</h1> 
+			<h3> 
+			To make horizontal scrollable in a bootstrap row? 
+		</h3> 
+			<div class="container horizontal-scrollable"> 
+				<div class="row text-center"> 
+					<div class="col-xs-4">
+                        
+                    </div> 
+					<div class="col-xs-4">2</div> 
+					<div class="col-xs-4">3</div> 
+					<div class="col-xs-4">4</div> 
+					<div class="col-xs-4">5</div> 
+					<div class="col-xs-4">6</div> 
+					<div class="col-xs-4">7</div> 
+				</div> 
+			</div> 
+		</div> 
+	</center> 
+</body> 
+
+</html> 
+
 
 
