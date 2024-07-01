@@ -42,24 +42,39 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <div class="row px-4 d-flex flex-column justify-content-center">
-                    <ul class="navbar-nav px-3 d-md-flex d-none justify-content-between border-bottom">
+                    <ul class="navbar-nav px-3 justify-content-between border-bottom">
                         <span class="d-md-flex">
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-md-flex">
                                 <a href="contact.html" class="nav-link text-white">info@signaturesafari.com</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-md-flex">
                                 <a href="contact.html" class="nav-link text-white">+255 755 880 881</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="m-sm-0" id="google_translate_element"></div>
+                                <select onchange="googleTranslateChangeHandler(this)">
+                                    <option value="">Select Language</option>
+                                    <option value="en"><img
+                                            src="images/12thingsSafariO.jpg"
+                                            alt="English"> English</option>
+                                    <option value="es"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/32px-Flag_of_Spain.svg.png"
+                                            alt="Spanish"> Spanish</option>
+                                    <option value="fr"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/32px-Flag_of_France.svg.png"
+                                            alt="French"> French</option>
+                                    <!-- Add more options as needed -->
+                                </select>
                             </li>
                         </span>
                         <span class="d-flex">
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-md-flex">
                                 <a href="about-us-signaturesafari.html" class="nav-link text-white">About</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-md-flex">
                                 <a href="blog.html" class="nav-link text-white">Blog</a>
                             </li>
-
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-md-flex">
                                 <a href="contact.html" class="nav-link text-white">Contact</a>
                             </li>
                         </span>
@@ -432,7 +447,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="tanzania-cyclic-tour.html" class="nav-link">Cycling</a>
+                            <a href="tanzania-cycling-tour.html" class="nav-link">Cycling</a>
                         </li>
                         <li class="nav-item d-md-none d-block">
                             <a href="blog.html" class="nav-link text-white">Blog</a>
@@ -1277,8 +1292,14 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
-
-
+<script>
+    function googleTranslateChangeHandler(selectElement) {
+  if (selectElement.value) {
+    var url = 'https://translate.google.com/#view=home&op=translate&sl=auto&tl=' + selectElement.value;
+    window.open(url, '_blank');
+  }
+}
+</script>
 
 </body>
 
