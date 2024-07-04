@@ -14601,3 +14601,6 @@ textarea.form-control {
 .sticky nav button:active {
   background-color: #f15d30;
 }
+body>.skiptranslate {
+  display: none;
+}
