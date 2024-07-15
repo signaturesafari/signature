@@ -6,7 +6,7 @@ class FooterComponent extends HTMLElement {
 
   connectedCallback() {
     this.shadowRoot.innerHTML = `
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,6 +27,7 @@ class FooterComponent extends HTMLElement {
 
   <script src="https://kit.fontawesome.com/5fe73a6d63.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 
       <footer class="ftco-footer" style="
         background-image: linear-gradient(
@@ -114,6 +115,7 @@ class FooterComponent extends HTMLElement {
           </div>
         </div>
       </footer>
+      
     `;
   }
 }
