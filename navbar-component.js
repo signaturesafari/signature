@@ -111,7 +111,7 @@ class NavbarComponent extends HTMLElement {
                             Kenya Safari Packages
                           </h5>
                           <p class="text-white text-center">
-                            <a href="5-days-masaimara-great-migration-safaris.html">5 Days Masai Mara Great Migration Safari</a>
+                            <a href="">5 Days Masai Mara Great Migration Safari</a>
                           </p>
                           <p class="text-center text-white">
                             <a href="8-days-magical-kenya-luxury-safari.html">8 Days Magical Kenya Luxury Safari</a>
