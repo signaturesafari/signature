@@ -6,10 +6,10 @@
 	<meta charset="utf-8">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <meta name="description" content="Welcome to our gateway to adventure! Embark on a journey of discovery through some of
+	<meta name="description" content="Welcome to our gateway to adventure! Embark on a journey of discovery through some of
 							Africa's most captivating destinations: Tanzania, Kenya, Uganda, Rwanda, Botswana, and South
 							Africa.">
-							
+
 	<!-- Open Graph meta tags for social sharing -->
 	<meta property="og:url" content="https://www.signaturesafari.com/">
 
@@ -1304,7 +1304,19 @@
 			}
 
 			setInterval(changeBackgroundImage, 5000);
+
+			// Preload images and start changing background images
+			preloadImages(images, () => {
+				// Initially set the first background image
+				document.getElementById('background').style.backgroundImage = images[0];
+				// Change background image every 5 seconds
+				setInterval(changeBackgroundImage, 5000);
+			});
+			
 		});
+
+
+
 		//google translations
 		function googleTranslateElementInit() {
 			new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,fr,de,zh-CN,it,ru' }, 'google_translate_element');

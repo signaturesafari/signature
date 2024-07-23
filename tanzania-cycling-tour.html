@@ -1533,7 +1533,16 @@
       }
 
       setInterval(changeBackgroundImage, 5000);
+
+      // Preload images and start changing background images
+      preloadImages(images, () => {
+      // Initially set the first background image
+      document.getElementById('background').style.backgroundImage = images[0];
+      // Change background image every 5 seconds
+      setInterval(changeBackgroundImage, 5000);
     });
+    });
+    
   </script>
   <script src="footer-component.js" defer></script>
 </body>
