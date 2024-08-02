@@ -1,7 +1,7 @@
 class FooterComponent extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
@@ -38,7 +38,8 @@ class FooterComponent extends HTMLElement {
           url(images/animalbg.jpg);
           backgound-position:center;
           background-size:cover;
-          background-repeat: no-repeat;">
+          background-repeat: no-repeat;
+          ">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md pt-5">
@@ -83,33 +84,36 @@ class FooterComponent extends HTMLElement {
                     <li><a href="#"><span class="icon fa fa-whatsapp"></span><p class="text-white">+255 783 880 881</p></a></li>
                     <li><a href="#"><span class="icon fa fa-paper-plane"></span><p class="text-white">info@signaturesafari.com</p></a></li>
                   </ul>
-                  <div class="text-center mb-4">
-                    <h2 class="fw-bold text-white">Subscribe to our Newsletter</h2>
-                    <p class="text-white">Stay updated with our latest news and offers.</p>
-                  </div>
-                  <form>
-                    <div class="mb-3">
-                      <label for="name" class="form-label text-white">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label text-white">Email address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <button type="submit" class="btn text-white w-100" style="background-color:#f15d30;">Subscribe</button>
-                  </form>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6 text-center">
+          <form>
+          <div class="text-center mb-4 d-block">
+                  <h2 class="fw-bold text-white">Subscribe to our Newsletter</h2>
+                  <p class="text-white">Stay updated with our latest news and offers.</p>
+              </div>
+          <div class="row align-items-center">
+              
+              <div class="col">
+                 <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                 <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+          
+              <button type="submit" class="btn text-white w-100 col" style="background-color:#f15d30;">Subscribe</button>
+          
+          </div>
+          </form>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12 col-sm-6 text-center">
               <h2 class="fw-bold text-white">We're happy to be trusted by</h2>
-              <p class="text-white>The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="#">www.safarigo.com</a></span></p>
+              <p class="text-white>The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="#">www.safarigo.com</a></span><br>
+              <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span>
+              </p>
             </div>
-            <div class="col-md-6 col-sm-6 text-center">
-              <h2 class="fw-bold text-white">We're happy to be trusted by</h2>
-              <p class="text-white>The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span></p>
             </div>
           </div>
           <div class="row mt-5">
@@ -124,4 +128,4 @@ class FooterComponent extends HTMLElement {
   }
 }
 
-customElements.define('footer-component', FooterComponent);
+customElements.define("footer-component", FooterComponent);
