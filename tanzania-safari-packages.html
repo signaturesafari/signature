@@ -67,8 +67,19 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
+<<<<<<< HEAD
     gtag('config', 'AW-764919916');
   </script>
+=======
+  gtag('config', 'AW-764919916');
+</script>
+<!-- Event snippet for Submit lead form conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+   function gtag_report_conversion(url) 
+   { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } };
+   gtag('event', 'conversion', { 'send_to': 'AW-764919916/CNvFCKbdwMYZEOyA3-wC', 'value': 1.0, 'currency': 'USD', 'event_callback': callback }); return false; }
+</script>	
+>>>>>>> refs/remotes/origin/main
   <style>
     .nav-tabs .nav-item.active {
       background-color: #f15d30;
