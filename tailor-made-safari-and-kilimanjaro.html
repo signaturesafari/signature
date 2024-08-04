@@ -56,7 +56,21 @@
 
     gtag('config', 'G-L9LZ71S74Y');
   </script>
-
+ <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-764919916">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-764919916');
+</script>
+<!-- Event snippet for Submit lead form conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+   function gtag_report_conversion(url) 
+   { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } };
+   gtag('event', 'conversion', { 'send_to': 'AW-764919916/CNvFCKbdwMYZEOyA3-wC', 'value': 1.0, 'currency': 'USD', 'event_callback': callback }); return false; }
+</script>	
 </head>
 
 <body>
@@ -558,7 +572,7 @@
         <div class="form-group mt-3">
           <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary my-4">Submit</button>
+        <button type="submit" class="btn btn-primary my-4" onclick="return gtag_report_conversion('https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro.html');" href="https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro.html">Submit</button>
       </form>
     </div>
   </section>
