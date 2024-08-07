@@ -63,7 +63,7 @@ class FooterComponent extends HTMLElement {
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                 <h2 class="ftco-heading-2 text-white">Important Link</h2>
                 <ul class="list-unstyled text-white">
-                  <li><a href="best_kilimanjaro_trekking_group_join_with_signature_safari_2023_2024_2025.html" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
+                  <li><a href="best-kilimanjaro-trekking-group-join-with-signature-safari.html" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
                   <li><a href="technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Technical Clothing for Mount Kilimanjaro</a></li>
                   <li><a href="tanzania-safari-packing-list.html" class="py-2 d-block text-white">Tanzania Safari Packing List</a></li>
                   <li><a href="technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Technical Clothing for Mt Kilimanjaro Clothing</a></li>
