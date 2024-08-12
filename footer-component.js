@@ -131,7 +131,7 @@ class FooterComponent extends HTMLElement {
           font-size: 14px;
           cursor: pointer;
           border-radius: 5px;
-          transition: background-color 0.3s;">Accept</button>
+          transition: background-color 0.3s;">Got it</button>
         <a class="ps-4" href="/privacy-policy" style="color: #00bcd4; margin-left: 15px; font-size: 14px; text-decoration: none;">Learn More</a>
       </div>
 
