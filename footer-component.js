@@ -36,7 +36,7 @@ class FooterComponent extends HTMLElement {
             <div class="col-md pt-5">
               <div class="ftco-footer-widget pt-md-5 mb-4">
                 <h2 class="ftco-heading-2 text-white">About</h2>
-                <a class="navbar-brand bg-white mb-5 px-2 py-2" href="index.html">
+                <a class="navbar-brand bg-white mb-5 px-2 py-2" href="/">
                   <img src="images/signature-safari-official-logo.png" height="100px" width="150px" />
                 </a>
                 <p class="text-white">Signature Safari is a sustainable and locally-owned tour operator in Tanzania, offering a personalized and comprehensive service at an affordable value...</p>
@@ -53,14 +53,14 @@ class FooterComponent extends HTMLElement {
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                 <h2 class="ftco-heading-2 text-white">Important Link</h2>
                 <ul class="list-unstyled text-white">
-                  <li><a href="best-kilimanjaro-trekking-group-join-with-signature-safari.html" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
-                  <li><a href="technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Technical Clothing for Mount Kilimanjaro</a></li>
-                  <li><a href="tanzania-safari-packing-list.html" class="py-2 d-block text-white">Tanzania Safari Packing List</a></li>
-                  <li><a href="technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Technical Clothing for Mt Kilimanjaro Clothing</a></li>
-                  <li><a href="tanzania-safari-packing-list.html" class="py-2 d-block text-white">Tanzania Safari Packaging List</a></li>
-                  <li><a href="sustainable-tourism-in-tanzania-with-signature-safari.html" class="py-2 d-block text-white">Sustainable Tourism in Tanzania</a></li>
-                  <li><a href="mt-kilimanjaro-and-meru-with-sar.html" class="py-2 d-block text-white">Kilimanjaro Search, Rescue and Safety Service</a></li>
-                  <li><a href="signature-safari-trustee-board.html" class="py-2 d-block text-white">Board of Trustees</a></li>
+                  <li><a href="/best-kilimanjaro-trekking-group-join-with-signature-safari" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
+                  <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Technical Clothing for Mount Kilimanjaro</a></li>
+                  <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Tanzania Safari Packing List</a></li>
+                  <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Technical Clothing for Mt Kilimanjaro Clothing</a></li>
+                  <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Tanzania Safari Packaging List</a></li>
+                  <li><a href="/sustainable-tourism-in-tanzania-with-signature-safari" class="py-2 d-block text-white">Sustainable Tourism in Tanzania</a></li>
+                  <li><a href="/mt-kilimanjaro-and-meru-with-sar" class="py-2 d-block text-white">Kilimanjaro Search, Rescue and Safety Service</a></li>
+                  <li><a href="/signature-safari-trustee-board" class="py-2 d-block text-white">Board of Trustees</a></li>
                 </ul>
               </div>
             </div>

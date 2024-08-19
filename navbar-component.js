@@ -256,7 +256,7 @@ class NavbarComponent extends LitElement {
               </ul>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">Home</a>
+                  <a href="/" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
                   <a href="/about-us-signaturesafari" class="nav-link">About</a>
@@ -512,7 +512,7 @@ class NavbarComponent extends LitElement {
                   <a href="/zanzibar-holiday-beaches" class="nav-link">Zanzibar</a>
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" href="safari-packages.html" role="button" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="/safari-packages" role="button" aria-expanded="false">
                     Destinations
                   </a>
                   <ul class="dropdown-menu">
