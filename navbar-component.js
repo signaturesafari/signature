@@ -26,7 +26,7 @@ class NavbarComponent extends LitElement {
       justify-content: flex-end;
     }
     .navbar {
-      background-color: #1f1f1f34;
+      background-color: black;
       padding: 0.5rem 1rem;
     }
     .box h5{
@@ -35,7 +35,7 @@ class NavbarComponent extends LitElement {
       text-align:center;
     }
     .scrolled {
-      background-color: rgba(255, 255, 255, 0.9) !important;
+      background-color: rgba(255, 255, 255,1) !important;
       color: black !important;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     }
@@ -484,27 +484,30 @@ class NavbarComponent extends LitElement {
                   </div>
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" href="/tanzania-safari-packages" role="button" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">
                     Tanzania
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/tanzania-safari-packages">Tanzania Safari
-                        Packages</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="/tanzania-national-parks">Tanzania National
-                        Parks</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
+                    <li><a class="dropdown-item" href="/tanzania-high-end-safari">High End Safari
+                       Packages</a></li>
+                    <li><a class="dropdown-item" href="/tanzania-luxury-safaris">Luxury Safari
+                       Packages</a></li>
+                    <li><a class="dropdown-item" href="/tanzania-flying-safaris">Flying Safari
+                       Packages</a></li>   
+                    <li><a class="dropdown-item" href="/tanzania-honeymoons">Honeymoon Safari
+                       Packages</a></li>
+                    <li><a class="dropdown-item" href="/family-safaris">Family Safari
+                       Packages</a></li>
+                    <li><a class="dropdown-item" href="/tanzania-midrange-safaris">Midrange Safari
+                       Packages</a></li>
+                    <li><a class="dropdown-item" href="/tanzania-horse-riding">Horse Riding Safari
+                       Packages</a></li>
+                    <li><a class="dropdown-item" href="/tanzania-camping-safaris">Camping Safari
+                       Packages</a></li>                    
                     <li><a class="dropdown-item" href="/tanzania-day-trip-excursions">Tanzania
                         Daytrips</a></li>
                     <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="/tanzania-pratical-information">Tanzania Pratical
-                        Information</a>
+                       <a class="dropdown-item" href="/tanzania-national-parks">Tanzania National Parks</a>
                     </li>
                   </ul>
                 </li>
@@ -544,14 +547,14 @@ class NavbarComponent extends LitElement {
                   <a href="/tanzania-cycling-tour" class="nav-link">Cycling</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/blog" class="nav-link text-dark">Blog</a>
+                  <a href="/blog" class="nav-link ">Blog</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/signature-safari-trustee-board" class="nav-link text-dark">Board of
+                  <a href="/signature-safari-trustee-board" class="nav-link ">Board of
                     Trustees</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/contact" class="nav-link text-dark">Contact</a>
+                  <a href="/contact" class="nav-link ">Contact</a>
                 </li>
               </ul>
             </div>
