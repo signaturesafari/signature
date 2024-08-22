@@ -225,7 +225,7 @@ class NavbarComponent extends LitElement {
           <a class="navbar-brand" href="/">
             <img src="images/signature-safari-official-logo.png" height="90px" width="150px" alt="signature-safari-official-logo"/>
           </a>
-          <button class="navbar-toggler" style="color:#f15d30; border: 1px solid #f15d30;" type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" style="color:#f15d30; " type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             MENU
           </button>
           <div class="collapse navbar-collapse" id="ftco-nav">
