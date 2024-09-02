@@ -397,7 +397,7 @@ class NavbarComponent extends LitElement {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/kilibg.jpg');
+                                url('images/kilibg.avif');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;

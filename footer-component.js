@@ -27,7 +27,7 @@ class FooterComponent extends HTMLElement {
             rgba(0, 0, 0, 0.459),
             rgba(5, 5, 5, 0.459)
           ),
-          url(images/animalbg.jpg);
+          url(images/animalbg.avif);
           backgound-position:center;
           background-size:cover;
           background-repeat: no-repeat;">
