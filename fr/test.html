@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar with LitElement</title>
+
+  <style>
+    /* Style for the Google Translate button */
+    #google_translate_icon {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #google_translate_icon img {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* Styling the dropdown to make it appear above the icon */
+
+
+    /* Hide the actual Google Translate element */
+    .goog-te-gadget-simple {
+      border: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+    }
+
+    .goog-te-gadget-icon {
+      display: none;
+    }
+
+    .goog-te-menu-value {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    --------------------------------------------- Google Translator style --------------------------------------------- */ .fixed-con {
+      z-index: 1 !important;
+      background-color: #f7f8fc;
+      display: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+
+    .VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+      z-index: 9724790009779 !important;
+      top: 0;
+      left: unset;
+      display: none !important;
+      border-radius: 50%;
+      border: 2px solid gold;
+    }
+
+    .VIpgJd-ZVi9od-aZ2wEe-OiiCO {
+      width: 80px;
+      height: 80px;
+    }
+
+    /*hide google translate link | logo | banner-frame */
+    .goog-logo-link,
+    .gskiptranslate,
+    .goog-te-gadget span,
+    .goog-te-banner-frame,
+    #goog-gt-tt,
+    .goog-te-balloon-frame,
+    div#goog-gt- {
+      display: none !important;
+    }
+
+    .goog-te-gadget {
+      color: transparent !important;
+      font-size: 0px;
+    }
+
+    .goog-text-highlight {
+      background: none !important;
+      box-shadow: none !important;
+      display: none;
+    }
+
+    /*google translate Dropdown */
+
+    #google_translate_element select {
+      background: rgb(253, 253, 253);
+      color: #383ffa;
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 4px 6px;
+      width: 105px;
+      margin-top: 20px;
+      margin-left: 10px;
+      position: fixed;
+      bottom: 60px;
+      left: 10px;
+      z-index: 1000;
+      display: none;
+    }
+
+    body>.skiptranslate {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <navbar-component></navbar-component>
+
+  <section class="hero-wrap hero-wrap-2 js-fullheight"
+    style="background-image: url('images/EAST-AFRICA-SAFARI-PACKING-LIST.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+          <p class="breadcrumbs">
+            <span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
+            <span><a href="https://www.signaturesafari.com/tanzania-safari-packing-list">Tanzania Safari Packing
+                List</a><i class="fa fa-chevron-right"></i></span>
+          </p>
+          <h1 class="mb-0 bread">Tanzania Safari Packing List</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Translate Icon -->
+  <div id="google_translate_icon">
+    <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" alt="Translate Icon">
+  </div>
+
+  <!-- Placeholder for the Google Translate element -->
+  <div id="google_translate_element"></div>
+
+  <!-- Navbar Component -->
+  <script type="module" src="navbar-component.js"></script>
+
+  <!-- Google Translate Script -->
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'sw,zh-CN,fr,es,it,de,ru',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+
+    // Show/hide the Google Translate widget when the icon is clicked
+    document.getElementById('google_translate_icon').addEventListener('click', function () {
+      const translateElement = document.getElementById('google_translate_element');
+      translateElement.style.display = translateElement.style.display === 'none' || translateElement.style.display === '' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+
+</html>
