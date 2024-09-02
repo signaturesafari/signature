@@ -84,6 +84,31 @@
 
 		gtag('config', 'AW-764919916');
 	</script>
+	<style>
+		.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.marquee-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100%; /* Initial offset to start animation outside the visible area */
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+	</style>
 </head>
 
 <body>
@@ -395,7 +420,7 @@
 								alt="marangu route" /> -->
 							<div class="col-md-12 col-sm-6"
 								style=" height: 185px; background-image: url('images/Marangu-route.webp'); background-position: center; background-repeat: no-repeat;background-size: cover;">
-							</div>	
+							</div>
 						</div>
 						<div class="col-md-7 col-sm-6 d-flex flex-column align-items-between justify-content-around">
 							<p class="text-dark">
@@ -801,28 +826,23 @@
 						<div class="overlay"></div>
 						<h2>Affiliations</h2>
 						<p>Signature Safari is partnered with following</p>
-						<div class="row d-flex justify-content-center align-items-between py-3"
+						<div class="row marquee-container d-flex justify-content-center align-items-between py-3"
 							style="background-color: #ffffff5d;">
-							<marquee>
-								<img srcset="images/ATTA-logo.png" class="mx-3" width="120px;" height="60px;"
-									alt="affilliations">
-								<img srcset="images/nomad.png" class="mx-3" width="110px;" height="40px;"
-									alt="affilliations">
-								<img srcset="images/tanapa.avif" class="mx-3" width="90px;" height="60px;"
-									alt="affilliations">
-								<img srcset="images/tato.PNG" class="mx-3" width="120px;" height="60px;"
-									alt="affilliations">
-								<img srcset="images/Travelife.webp" class="mx-3" width="120px;" height="50px;"
-									alt="affilliations">
-								<img srcset="images/trip-advisor-logo-png-1024x483.png" class="mx-3" width="150px;"
-									height="60px;" alt="affilliations">
-								<img srcset="images/SafariBooking.png" class="mx-3" width="150px;" height="60px;"
-									alt="affilliations">
-								<img srcset="images/safarigo.png" class="mx-3" width="150px;" height="40px;"
-									alt="affilliations">
-								<img srcset="images/touristlink-logo.png" class="mx-3" width="150px;" height="40px;"
-									alt="affilliations">
-							</marquee>
+							
+								<div class="marquee-content">
+								  <!-- Your existing div elements for the images -->
+								  <div style="width: 120px; height: 60px; background-image: url('images/ATTA-logo.png'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/nomad.png'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/tanapa.avif'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/tato.PNG'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/Travelife.webp'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/trip-advisor-logo-png-1024x483.png'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/SafariBooking.png'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/safarigo.png'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								  <div style="width: 120px; height: 60px; background-image: url('images/touristlink-logo.png'); background-position: center; background-repeat: no-repeat;background-size: contain;"></div>
+								</div>
+							  
+							  
 						</div>
 					</div>
 				</div>
