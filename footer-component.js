@@ -17,7 +17,7 @@ class FooterComponent extends HTMLElement {
       <link rel="stylesheet" href="css/jquery.timepicker.css">
       <link rel="stylesheet" href="css/flaticon.css">
       <link rel="stylesheet" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <script async src="https://kit.fontawesome.com/5fe73a6d63.js" crossorigin="anonymous"></script>
       <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
