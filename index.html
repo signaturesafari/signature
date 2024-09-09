@@ -931,20 +931,11 @@
 		});
 
 
-		document.addEventListener('DOMContentLoaded', function () {
-			let observer = new IntersectionObserver(function (entries, observer) {
-				entries.forEach(function (entry) {
-					if (entry.isIntersecting) {
-						let script = document.createElement('script');
-						script.src = 'https://static.elfsight.com/app/tripadvisorReviews.js';
-						document.body.appendChild(script);
-						observer.unobserve(entry.target); // Stop observing once loaded
-					}
-				});
-			});
-
-			let target = document.querySelector('#tripadvisor-widget');
-			if (target) observer.observe(target);
+		
+		window.addEventListener('load', function () {
+			var script = document.createElement('script');
+			script.src = 'https://static.elfsight.com/app/tripadvisorReviews.js';
+			document.body.appendChild(script);
 		});
 
 
