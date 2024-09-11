@@ -96,7 +96,7 @@ class FooterComponent extends HTMLElement {
           <div class="row mt-3">
             <div class="col-md-12 col-sm-6 text-center">
               <h2 class="fw-bold text-white">We're happy to be trusted by</h2>
-              <p class="text-white">The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="#">www.safarigo.com</a></span><br>
+              <p class="text-white text-center">The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="https://www.safarigo.com/">www.safarigo.com</a></span><br>
               <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span></p>
             </div>
           </div>
