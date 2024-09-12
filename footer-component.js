@@ -19,7 +19,36 @@ class FooterComponent extends HTMLElement {
       <link rel="preload" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <script async src="https://kit.fontawesome.com/5fe73a6d63.js" crossorigin="anonymous"></script>
       <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
+      <style>
+      .block-23 ul {
+        padding: 0;
+      }
+      
+      .block-23 ul li,
+      .block-23 ul li>a {
+        display: table;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+      
+      .block-23 ul li span {
+        color: rgba(0, 0, 0, 0.7);
+      }
+      
+      .block-23 ul li .icon,
+      .block-23 ul li .text {
+        display: table-cell;
+        vertical-align: top;
+        color: rgba(0, 0, 0, 0.5) !important;
+      }
+      
+      .block-23 ul li .icon {
+        width: 40px;
+        font-size: 18px;
+        padding-top: 2px;
+        color: #f15d30 !important;
+      }
+      </style>
       <footer class="ftco-footer" style="
         background-image: linear-gradient(
             45deg,
