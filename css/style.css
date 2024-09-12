@@ -196,6 +196,18 @@ h5,
   margin-left: auto;
 }
 
+@media (min-width: 576px) {
+  .col-sm {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,16 +218,7 @@ h5,
   margin-left: -15px;
 }
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
 
-.no-gutters>.col,
-.no-gutters>[class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
 
 .col-1,
 .col-2,
@@ -13727,13 +13730,6 @@ textarea.form-control {
   box-shadow: none;
 }
 
-#ftco-loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
 
 #ftco-loader .circular {
   -webkit-animation: loader-rotate 2s linear infinite;
@@ -13947,69 +13943,6 @@ textarea.form-control {
   color: #522e06;
 }
 
---------------------------------------------- Google Translator style --------------------------------------------- */ .fixed-con {
-  z-index: 1 !important;
-  background-color: #f7f8fc;
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: auto;
-}
-
-.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
-  z-index: 9724790009779 !important;
-  top: 0;
-  left: unset;
-  display: none !important;
-  border-radius: 50%;
-  border: 2px solid gold;
-}
-
-.VIpgJd-ZVi9od-aZ2wEe-OiiCO {
-  width: 80px;
-  height: 80px;
-}
-
-/*hide google translate link | logo | banner-frame */
-.goog-logo-link,
-.gskiptranslate,
-.goog-te-gadget span,
-.goog-te-banner-frame,
-#goog-gt-tt,
-.goog-te-balloon-frame,
-div#goog-gt- {
-  display: none !important;
-}
-
-.goog-te-gadget {
-  color: transparent !important;
-  font-size: 0px;
-}
-
-.goog-text-highlight {
-  background: none !important;
-  box-shadow: none !important;
-  display: none;
-}
-
-/*google translate Dropdown */
-
-#google_translate_element select {
-  background: rgb(253, 253, 253);
-  color: #383ffa;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 4px 6px;
-  width: 105px;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-body>.skiptranslate {
-  display: none;
-}
 
 .label-popular {
   position: absolute;
