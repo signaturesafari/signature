@@ -9,7 +9,6 @@ class FooterComponent extends HTMLElement {
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="css/magnific-popup.css">
@@ -52,7 +51,7 @@ class FooterComponent extends HTMLElement {
             <div class="col-md pt-5 border-left">
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                 <h2 class="ftco-heading-2 text-white">Important Link</h2>
-                <ul class="list-unstyled text-white">
+                <ul class=" text-white">
                   <li><a href="/best-kilimanjaro-trekking-group-join-with-signature-safari" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
                   <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Technical Clothing for Mount Kilimanjaro</a></li>
                   <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Tanzania Safari Packing List</a></li>
