@@ -105,6 +105,53 @@ class NavbarComponent extends LitElement {
      justify-content: center;
      align-items: space-around;
     }
+    .sticky {
+      position: sticky;
+      top: 15%;
+      z-index: 1;
+      /* Ensure it's above other content */
+      background-color: white;
+      /* Adjust as needed */
+      padding: 10px 0;
+      /* Adjust as needed */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      /* Optional: Add a shadow */
+    }
+    
+    .sticky button {
+      border: 1px solid #f15d30;
+    }
+    
+    .sticky button:active {
+      background-color: #f15d30;
+    }
+
+    .mega-menu1 {
+      width: 900px;
+      margin-left: -180px;
+    }
+    
+    .mega-menu1 a:hover {
+      text-decoration: underline;
+      color: rgb(255, 255, 255);
+    }
+    
+    /* Adjust width for mobile devices */
+    @media (max-width: 767px) {
+      .mega-menu1 {
+        max-width: 400px;
+        margin-left: 5px;
+      }
+    
+      /* Style for navbar when screen width is less than or equal to 767px */
+      .navbar-nav {
+        max-height: 80vh;
+        /* Adjust max-height as needed */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+      }
+    }
+    
     @media (max-width: 991.98px) {
       .dropdown-menu {
         position: static;
