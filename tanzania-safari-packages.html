@@ -68,13 +68,14 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'AW-764919916');
-</script>
-<!-- Event snippet for Submit lead form conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-   function gtag_report_conversion(url) 
-   { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } };
-   gtag('event', 'conversion', { 'send_to': 'AW-764919916/CNvFCKbdwMYZEOyA3-wC', 'value': 1.0, 'currency': 'USD', 'event_callback': callback }); return false; }
-</script>	
+  </script>
+  <!-- Event snippet for Submit lead form conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () { if (typeof (url) != 'undefined') { window.location = url; } };
+      gtag('event', 'conversion', { 'send_to': 'AW-764919916/CNvFCKbdwMYZEOyA3-wC', 'value': 1.0, 'currency': 'USD', 'event_callback': callback }); return false;
+    }
+  </script>
   <style>
     .nav-tabs .nav-item.active {
       background-color: #f15d30;
@@ -86,6 +87,28 @@
     .nav-tabs .nav-item {
       background-color: initial;
       color: initial;
+    }
+
+    .blog-entry .text .heading a:hover,
+    .blog-entry .text .heading a:focus,
+    .blog-entry .text .heading a:active {
+      color: #f15d30;
+    }
+
+    .blog-entry .meta>div {
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .blog-entry .meta>div a {
+      color: gray;
+      font-size: 15px;
+    }
+
+    .blog-entry .meta>div a:hover {
+      color: #666666;
     }
   </style>
 </head>
@@ -123,13 +146,15 @@
               <input type="date" class="form-control" id="inputAddress" placeholder="">
             </div>
             <div class="col-12 my-3">
-              <button type="submit" class="btn btn-warning w-100"><a class="text-dark" onclick="return gtag_report_conversion('https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro');" href="https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro">Get Quote</a></button>
+              <button type="submit" class="btn btn-warning w-100"><a class="text-dark"
+                  onclick="return gtag_report_conversion('https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro');"
+                  href="https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro">Get Quote</a></button>
             </div>
           </form>
         </div>
         <div class="col-md-9 ftco-animate  text-center">
-          <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i
-                  class="fa fa-chevron-right"></i></a></span> <span><a href="https://www.signaturesafari.com/tanzania-safari-packages">Tanzania Safari Packages</a> <i
+          <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
+            <span><a href="https://www.signaturesafari.com/tanzania-safari-packages">Tanzania Safari Packages</a> <i
                 class="fa fa-chevron-right"></i></span></p>
         </div>
       </div>
@@ -140,7 +165,8 @@
     <div class="container">
       <h2 class="text-primary text-center">Tanzania Safari Tours Packages</h2>
       <p class="text-dark">Embark on an unforgettable journey through the untamed wilderness of Tanzania,
-        where the rhythm of nature beats in harmony with the pulse of life itself. Our <b>Tanzania Safari</b> Packages offer
+        where the rhythm of nature beats in harmony with the pulse of life itself. Our <b>Tanzania Safari</b> Packages
+        offer
         you the opportunity to immerse yourself in the breathtaking landscapes, diverse wildlife, and rich cultures that
         define this East African gem.</p>
       <div class="tabs-content">
@@ -148,43 +174,45 @@
           <div class="nav-wrapper  w-100">
             <div class="">
               <div class="nav nav-tabs d-flex justify-content-center align-items-center" role="tablist">
-                <button type="button" id="high-end-tab" class="border border-primary btn my-1 mx-1 py-md-3 py-sm-1 nav-item col-5 active"
-                  data-bs-toggle="tab" data-bs-target="#high-end" role="tab" aria-controls="high-end"
-                  aria-selected="false">High-end
+                <button type="button" id="high-end-tab"
+                  class="border border-primary btn my-1 mx-1 py-md-3 py-sm-1 nav-item col-5 active" data-bs-toggle="tab"
+                  data-bs-target="#high-end" role="tab" aria-controls="high-end" aria-selected="false">High-end
                   Luxury Safaris</button>
-                <button type="button" id="luxury-safari-tab" class="border border-primary btn my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
-                  data-bs-toggle="tab" data-bs-target="#luxury-safari" role="tab" aria-controls="luxury-safari"
-                  aria-selected="false">
+                <button type="button" id="luxury-safari-tab"
+                  class="border border-primary btn my-1 mx-1 py-md-3 py-sm-1 nav-item col-3" data-bs-toggle="tab"
+                  data-bs-target="#luxury-safari" role="tab" aria-controls="luxury-safari" aria-selected="false">
                   Luxury Safaris</button>
-                <button type="button" id="southern-tab" class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
-                  data-bs-toggle="tab" data-bs-target="#southern-safari" role="tab" aria-controls="southern-safari"
-                  aria-selected="false">
+                <button type="button" id="southern-tab"
+                  class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3" data-bs-toggle="tab"
+                  data-bs-target="#southern-safari" role="tab" aria-controls="southern-safari" aria-selected="false">
                   Southern Safaris</button>
-                <button type="button" id="honeymoon-tab" class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4"
-                  data-bs-toggle="tab" data-bs-target="#honeymoon" role="tab" aria-controls="honeymoon"
-                  aria-selected="false">Honeymoon Safaris</button>
-                <button type="button" id="midrange-tab" class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4"
-                  data-bs-toggle="tab" data-bs-target="#midrange" role="tab" aria-controls="midrange-tab"
-                  aria-selected="false">Mid-Range Safaris</button>
-                <button type="button" id="budget-camping-tab" class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
-                  data-bs-toggle="tab" data-bs-target="#budget-camping" role="tab" aria-controls="budget-camping"
-                  aria-selected="false">
+                <button type="button" id="honeymoon-tab"
+                  class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4" data-bs-toggle="tab"
+                  data-bs-target="#honeymoon" role="tab" aria-controls="honeymoon" aria-selected="false">Honeymoon
+                  Safaris</button>
+                <button type="button" id="midrange-tab"
+                  class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-4" data-bs-toggle="tab"
+                  data-bs-target="#midrange" role="tab" aria-controls="midrange-tab" aria-selected="false">Mid-Range
+                  Safaris</button>
+                <button type="button" id="budget-camping-tab"
+                  class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3" data-bs-toggle="tab"
+                  data-bs-target="#budget-camping" role="tab" aria-controls="budget-camping" aria-selected="false">
                   Camping Safaris</button>
-                <button type="button" id="Family-tab" class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
-                  data-bs-toggle="tab" data-bs-target="#family-safari" role="tab" aria-controls="family-safari"
-                  aria-selected="false">Family
+                <button type="button" id="Family-tab"
+                  class="btn border border-primary  my-1 mx-1 py-md-3 py-sm-1 nav-item col-3" data-bs-toggle="tab"
+                  data-bs-target="#family-safari" role="tab" aria-controls="family-safari" aria-selected="false">Family
                   Safaris</button>
-                <button type="button" id="flying" class="btn border border-primary my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
-                  data-bs-toggle="tab" data-bs-target="#flying-safari" role="tab" aria-controls="flying-safari"
-                  aria-selected="false">Flying
+                <button type="button" id="flying"
+                  class="btn border border-primary my-1 mx-1 py-md-3 py-sm-1 nav-item col-3" data-bs-toggle="tab"
+                  data-bs-target="#flying-safari" role="tab" aria-controls="flying-safari" aria-selected="false">Flying
                   Safaris</button>
-                <button type="button" id="Horse-tab" class="btn border border-primary my-1 mx-1 py-md-3 py-sm-1 nav-item col-2"
-                  data-bs-toggle="tab" data-bs-target="#horse-safari" role="tab" aria-controls="horse-safari"
-                  aria-selected="false">
+                <button type="button" id="Horse-tab"
+                  class="btn border border-primary my-1 mx-1 py-md-3 py-sm-1 nav-item col-2" data-bs-toggle="tab"
+                  data-bs-target="#horse-safari" role="tab" aria-controls="horse-safari" aria-selected="false">
                   Horse Riding</button>
-                <button type="button" id="Western-tab" class="btn border border-primary my-1 mx-1 py-md-3 py-sm-1 nav-item col-3"
-                  data-bs-toggle="tab" data-bs-target="#western-safari" role="tab" aria-controls="western-safari"
-                  aria-selected="false">
+                <button type="button" id="Western-tab"
+                  class="btn border border-primary my-1 mx-1 py-md-3 py-sm-1 nav-item col-3" data-bs-toggle="tab"
+                  data-bs-target="#western-safari" role="tab" aria-controls="western-safari" aria-selected="false">
                   Western Safari</button>
               </div>
             </div>
@@ -685,8 +713,7 @@
                   </div>
                   <div class="col-md-4 ftco-animate">
                     <div class="project-wrap destination">
-                      <a href="/7-days-midrange-safari" class="img"
-                        style="background-image: url(images/caption.jpg)">
+                      <a href="/7-days-midrange-safari" class="img" style="background-image: url(images/caption.jpg)">
                         <span class="price">From $1592/person</span>
                       </a>
                       <div class="text p-4 mt-1">
@@ -1302,8 +1329,7 @@
       <div class="row px-3">
         <div class="col-md-4 ftco-animate">
           <div class="project-wrap destination">
-            <a href="/kenya-safari-packages" class="img"
-              style="background-image: url(images/kenya-destination.jpg)">
+            <a href="/kenya-safari-packages" class="img" style="background-image: url(images/kenya-destination.jpg)">
               <h2 class="text-center text-white py-5 px-2" style="text-shadow: 2px 2.5px 2px black;"> Kenya Safari
                 Packages</h2>
             </a>
@@ -1311,8 +1337,7 @@
         </div>
         <div class="col-md-4 ftco-animate">
           <div class="project-wrap destination">
-            <a href="/uganda-safari-packages" class="img"
-              style="background-image: url(images/uganda-destination.jpg)">
+            <a href="/uganda-safari-packages" class="img" style="background-image: url(images/uganda-destination.jpg)">
               <h2 class="text-center text-white py-5 px-2" style="text-shadow: 2px 2.5px 2px black;">Uganda Safari
                 Packages</h2>
             </a>
@@ -1320,8 +1345,7 @@
         </div>
         <div class="col-md-4 ftco-animate">
           <div class="project-wrap destination">
-            <a href="/rwanda-safari-packages" class="img"
-              style="background-image: url(images/rwanda-destination.webp)">
+            <a href="/rwanda-safari-packages" class="img" style="background-image: url(images/rwanda-destination.webp)">
               <h2 class="text-center text-white py-5" style="text-shadow: 2px 2.5px 2px black;">Rwanda Safari Packages
               </h2>
             </a>
@@ -1329,8 +1353,7 @@
         </div>
         <div class="col-md-4 ftco-animate">
           <div class="project-wrap destination">
-            <a href="/botswana-safari-packages" class="img"
-              style="background-image: url(images/botswana-hippo.jpg)">
+            <a href="/botswana-safari-packages" class="img" style="background-image: url(images/botswana-hippo.jpg)">
               <h2 class="text-center text-white py-5 px-2" style="text-shadow: 2px 2.5px 2px black;">Botswana Safai
                 Packages</h2>
             </a>
@@ -1590,8 +1613,7 @@
                   </ul>
                   </p>
                   <p class="text-dark">
-                    Learn more about best time to visit tanzania in this <a
-                      href="/tanzania-safari-topics">article</a>
+                    Learn more about best time to visit tanzania in this <a href="/tanzania-safari-topics">article</a>
                   </p>
                 </div>
               </div>
@@ -1599,7 +1621,8 @@
             <div class="card">
               <div class="card-header" style="background-color: #eca324">
                 <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-                  <h2 class="bolding" style="font-size: 16px;">What are the must-visit national parks and reserves in Tanzania for a
+                  <h2 class="bolding" style="font-size: 16px;">What are the must-visit national parks and reserves in
+                    Tanzania for a
                     safari?</h2>
                 </a>
               </div>
@@ -1671,7 +1694,8 @@
             <div class="card">
               <div class="card-header" style="background-color: #eca324">
                 <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-                  <h2 class="bolding" style="font-size: 16px;">What animals can I expect to see during a safari in Tanzania?</h2>
+                  <h2 class="bolding" style="font-size: 16px;">What animals can I expect to see during a safari in
+                    Tanzania?</h2>
                 </a>
               </div>
               <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
@@ -1722,7 +1746,8 @@
             <div class="card">
               <div class="card-header" style="background-color: #eca324">
                 <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-                  <h2 class="bolding" style="font-size: 16px;">What are the different types of safari experiences available in Tanzania?</h2>
+                  <h2 class="bolding" style="font-size: 16px;">What are the different types of safari experiences
+                    available in Tanzania?</h2>
                 </a>
               </div>
               <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
@@ -1819,7 +1844,8 @@
             <div class="card">
               <div class="card-header" style="background-color: #eca324">
                 <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-                  <h2 class="bolding" style="font-size: 16px;">What are the accommodation options available during a safari in Tanzania?</h2>
+                  <h2 class="bolding" style="font-size: 16px;">What are the accommodation options available during a
+                    safari in Tanzania?</h2>
                 </a>
               </div>
               <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
@@ -1964,7 +1990,8 @@
             <div class="card">
               <div class="card-header" style="background-color: #eca324">
                 <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-                  <h2 class="bolding" style="font-size: 16px;">What is the cost of a safari in Tanzania, and what factors influence the
+                  <h2 class="bolding" style="font-size: 16px;">What is the cost of a safari in Tanzania, and what
+                    factors influence the
                     pricing?</h2>
                 </a>
               </div>

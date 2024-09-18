@@ -13207,28 +13207,6 @@ textarea.form-control {
   color: #000000;
 }
 
-.blog-entry .text .heading a:hover,
-.blog-entry .text .heading a:focus,
-.blog-entry .text .heading a:active {
-  color: #f15d30;
-}
-
-.blog-entry .meta>div {
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.blog-entry .meta>div a {
-  color: gray;
-  font-size: 15px;
-}
-
-.blog-entry .meta>div a:hover {
-  color: #666666;
-}
-
 .blog-entry .topp {
   position: absolute;
   top: -7px;
@@ -13285,13 +13263,6 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.8);
 }
 
-
-.block-9 .form-control {
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  font-size: 15px;
-}
 
 #ftco-loader {
   position: fixed;

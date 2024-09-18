@@ -57,13 +57,57 @@
 
     gtag('config', 'G-L9LZ71S74Y');
   </script>
+  <style>
+    .contact-section .contact-info p a {
+      color: #1a1a1a;
+    }
 
+    .contact-section .box {
+      width: 100%;
+      display: block;
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-section .box .icon {
+      width: 100px;
+      height: 100px;
+      background: #f15d30;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+    }
+
+    .contact-section .box .icon span {
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .contact-section .box h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #f15d30;
+    }
+
+    .contact-section .contact-form {
+      width: 100%;
+    }
+
+    .block-9 .form-control {
+      outline: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      font-size: 15px;
+    }
+  </style>
 </head>
 
 <body>
   <!--Start Nav-->
-    <navbar-component></navbar-component>
-    <!-- END Nav -->
+  <navbar-component></navbar-component>
+  <!-- END Nav -->
 
   <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/lions-crater.jpeg')">
     <div class="overlay"></div>
@@ -72,7 +116,8 @@
         <div class="col-md-9 ftco-animate pb-5 text-center">
           <p class="breadcrumbs">
             <span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
-            <span><a href="https://www.signaturesafari.com/contact">Contact us</a> <i class="fa fa-chevron-right"></i></span>
+            <span><a href="https://www.signaturesafari.com/contact">Contact us</a> <i
+                class="fa fa-chevron-right"></i></span>
           </p>
           <h1 class="mb-0 bread">Contact us</h1>
         </div>
@@ -133,8 +178,7 @@
         <div class="col-md-6 order-md-last d-flex">
           <form action="https://formcarry.com/s/TghgVt7rjJO" method="POST" enctype="multipart/form-data"
             class="bg-light p-5 contact-form">
-            <input type="hidden" class="form-control" value="https://www.signaturesafari.com/contact"
-              name="title" />
+            <input type="hidden" class="form-control" value="https://www.signaturesafari.com/contact" name="title" />
             <div class="form-group">
               <input type="text" class="form-control" name="name" placeholder="Your Name" required />
             </div>
@@ -339,7 +383,8 @@
                 <img src="images/tanapa.png" class="mx-3" width="90px;" height="60px;" alt="Affiliations">
                 <img src="images/tato.PNG" class="mx-3" width="120px;" height="60px;" alt="Affiliations">
                 <img src="images/Travelife.webp" class="mx-3" width="120px;" height="50px;" alt="Affiliations">
-                <img src="images/trip-advisor-logo-png-1024x483.png" class="mx-3" width="150px;" height="60px;" alt="Affiliations">
+                <img src="images/trip-advisor-logo-png-1024x483.png" class="mx-3" width="150px;" height="60px;"
+                  alt="Affiliations">
                 <img src="images/SafariBooking.png" class="mx-3" width="150px;" height="60px;" alt="Affiliations">
                 <img src="images/safarigo.png" class="mx-3" width="150px;" height="40px;" alt="Affiliations">
                 <img src="images/touristlink-logo.png" class="mx-3" width="150px;" height="40px;" alt="Affiliations">
@@ -375,8 +420,8 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script
-    async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <!-- script -->
