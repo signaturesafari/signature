@@ -541,7 +541,7 @@ class NavbarComponent extends LitElement {
                        Packages</a></li>
                     <li><a class="dropdown-item" href="/tanzania-flying-safaris">Flying Safari
                        Packages</a></li>   
-                    <li><a class="dropdown-item" href="/tanzania-honeymoons">Honeymoon Safari
+                    <li><a class="dropdown-item" href="/honeymoon-safari">Honeymoon Safari
                        Packages</a></li>
                     <li><a class="dropdown-item" href="/family-safaris">Family Safari
                        Packages</a></li>

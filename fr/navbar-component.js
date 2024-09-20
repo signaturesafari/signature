@@ -541,7 +541,7 @@ class NavbarComponent extends LitElement {
                     Forfaits</a></li>
                     <li><a class="dropdown-item" href="/tanzania-flying-safaris">Safari volant
                     Forfaits</a></li>   
-                    <li><a class="dropdown-item" href="/tanzania-honeymoons">Safari Lune de Miel
+                    <li><a class="dropdown-item" href="/honeymoon-safari">Safari Lune de Miel
                     Forfaits</a></li>
                     <li><a class="dropdown-item" href="/family-safaris">Safari en famille
                     Forfaits</a></li>
