@@ -282,15 +282,25 @@ class NavbarComponent extends LitElement {
                   <li class="nav-item d-none d-md-flex">
                     <a href="/contact" class="nav-link ">info@signaturesafari.com</a>
                   </li>
-                  <li class="nav-item">
-                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/usa-icon.png" style="width:30px; height:30px;"></a>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/united-states.png" style="width:25px; height:25px;"></a>
                   </li>
-                  <li class="nav-item">
-                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:30px; height:30px;"></a>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:25px; height:25px;"></a>
                   </li>
-                  <li class="nav-item">
-                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:30px; height:30px;"></a>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:25px; height:325x;"></a>
                   </li>
+                  <li class="nav-item dropdown my-3 d-md-none d-sm-block" @click="${this.toggleDropdown}">
+                  <a class="nav-link dropdown-toggle btn-primary w-50" role="button" aria-expanded="false">
+                    Languages
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li class="ps-4"> <a class="text-dark" href="https://www.signaturesafari.com/" class="nav-link "><img src="images/united-states.png" style="width:25px; height:25px;"> ENGLISH </a></li>
+                    <li class="ps-4"> <a class="text-dark" href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:25px; height:25px;"> FRANCE </a></li>
+                    <li class="ps-4"><a class="text-dark" href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:25px; height:25px;"> ITALY</a></li>   
+                  </ul>
+                </li>
                 </span>
                 <span class="d-flex">
                   <li class="nav-item d-none d-md-flex">
