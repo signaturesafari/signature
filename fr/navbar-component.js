@@ -282,11 +282,14 @@ class NavbarComponent extends LitElement {
                   <li class="nav-item d-none d-md-flex">
                     <a href="/contact" class="nav-link ">info@signaturesafari.com</a>
                   </li>
-                  <li class="nav-item d-none d-md-flex">
-                    <a href="/contact" class="nav-link ">+255 755 880 881</a>
+                  <li class="nav-item">
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/usa-icon.png" style="width:30px; height:30px;"></a>
                   </li>
                   <li class="nav-item">
-                    <div class="m-sm-0" id="google_translate_element"></div>
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:30px; height:30px;"></a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:30px; height:30px;"></a>
                   </li>
                 </span>
                 <span class="d-flex">

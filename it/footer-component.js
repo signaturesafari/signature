@@ -420,7 +420,7 @@ class FooterComponent extends HTMLElement {
                 <a class="navbar-brand bg-white mb-5 px-2 py-2" href="/">
                   <img src="/images/signature-safari-official-logo.avif" height="100px" width="150px" />
                 </a>
-                <p class="text-white">Signature Safari is a sustainable and locally-owned tour operator in Tanzania, offering a personalized and comprehensive service at an affordable value...</p>
+                <p class="text-white">Signature Safari è un tour operator sostenibile e di proprietà locale in Tanzania, che offre un servizio personalizzato e completo a un valore conveniente...</p>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft text-white">
                   <li><a href="https://www.linkedin.com/in/signature-safari-78184311b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9TO8MfqdQ%2ByGTR9dJT5DeQ%3D%3D" class="d-flex align-items-center justify-content-center" style="background-color: #0077B5;"><span class="icon fa fa-linkedin"></span></a></li>
                   <li><a href="https://www.youtube.com/@signaturesafari" class="d-flex align-items-center justify-content-center" style="background-color: red;"><span class="icon fa fa-youtube"></span></a></li>
@@ -432,22 +432,22 @@ class FooterComponent extends HTMLElement {
             </div>
             <div class="col-md pt-5 border-left">
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-                <h2 class="ftco-heading-2 text-white">Important Link</h2>
+                <h2 class="ftco-heading-2 text-white">Collegamento importante</h2>
                 <ul class=" text-white">
-                  <li><a href="/it/best-kilimanjaro-trekking-group-join-with-signature-safari.html" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
-                  <li><a href="/it/technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Technical Clothing for Mount Kilimanjaro</a></li>
-                  <li><a href="/it/tanzania-safari-packing-list" class="py-2 d-block text-white.html">Tanzania Safari Packing List</a></li>
-                  <li><a href="/it/technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Technical Clothing for Mt Kilimanjaro Clothing</a></li>
+                  <li><a href="/it/best-kilimanjaro-trekking-group-join-with-signature-safari.html" class="py-2 d-block text-white">Kilimanjaro si unisce al gruppo</a></li>
+                  <li><a href="/it/technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Abbigliamento tecnico per il Monte Kilimanjaro</a></li>
+                  <li><a href="/it/tanzania-safari-packing-list" class="py-2 d-block text-white.html">Lista di imballaggio per il Safari in Tanzania</a></li>
+                  <li><a href="/it/technical-clothing-for-mount-kilimanjaro-trek.html" class="py-2 d-block text-white">Abbigliamento tecnico per l'abbigliamento del Monte Kilimanjaro</a></li>
                   <li><a href="/it/tanzania-safari-packing-list.html" class="py-2 d-block text-white">Tanzania Safari Packaging List</a></li>
-                  <li><a href="/it/sustainable-tourism-in-tanzania-with-signature-safari.html" class="py-2 d-block text-white">Sustainable Tourism in Tanzania</a></li>
-                  <li><a href="/it/mt-kilimanjaro-and-meru-with-sar.html" class="py-2 d-block text-white">Kilimanjaro Search, Rescue and Safety Service</a></li>
-                  <li><a href="/it/signature-safari-trustee-board.html" class="py-2 d-block text-white">Board of Trustees</a></li>
+                  <li><a href="/it/sustainable-tourism-in-tanzania-with-signature-safari.html" class="py-2 d-block text-white">Turismo sostenibile in Tanzania</a></li>
+                  <li><a href="/it/mt-kilimanjaro-and-meru-with-sar.html" class="py-2 d-block text-white">Servizio di ricerca, salvataggio e sicurezza del Kilimangiaro</a></li>
+                  <li><a href="/it/signature-safari-trustee-board.html" class="py-2 d-block text-white">Consiglio di fondazione</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-md pt-5 border-left">
               <div class="ftco-footer-widget pt-md-5 mb-4">
-                <h2 class="ftco-heading-2 text-white">Stay in touch 24/7</h2>
+                <h2 class="ftco-heading-2 text-white">Rimani in contatto 24 ore su 24, 7 giorni su 7</h2>
                 <div class="block-23 mb-3">
                   <ul class="text-white">
                     <li><span class="icon fa fa-map-marker"></span><p class="text-white">Arusha, Tanzania</p></li>
@@ -461,29 +461,29 @@ class FooterComponent extends HTMLElement {
           </div>
           <form>
             <div class="text-center mb-4 d-block">
-              <h2 class="fw-bold text-white">Subscribe to our Newsletter</h2>
-              <p class="text-white">Stay updated with our latest news and offers.</p>
+              <h2 class="fw-bold text-white">Iscriviti alla nostra newsletter</h2>
+              <p class="text-white">Rimani aggiornato con le nostre ultime novità e offerte.</p>
             </div>
             <div class="row align-items-center">
               <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                <input type="text" class="form-control" placeholder="Nome di battesimo" aria-label="Nome di battesimo">
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome">
               </div>
-              <div type="submit" class="btn text-white w-100 col-3" style="background-color:#f15d30;">Subscribe</div>
+              <div type="submit" class="btn text-white w-100 col-3" style="background-color:#f15d30;">Iscriviti</div>
             </div>
           </form>
           <div class="row mt-3">
             <div class="col-md-12 col-sm-6 text-center">
-              <h2 class="fw-bold text-white">We're happy to be trusted by</h2>
-              <p class="text-white text-center">The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="https://www.safarigo.com/">www.safarigo.com</a></span><br>
+              <h2 class="fw-bold text-white">Siamo felici di ricevere la fiducia di</h2>
+              <p class="text-white text-center">La più grande piattaforma di prenotazione di safari africani <span class="bolding text-primary"><a class="text-primary" href="https://www.safarigo.com/">www.safarigo.com</a></span><br>
               <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span></p>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col-md-12 text-center">
-              <p class="text-white">&copy; 2024 Signature Safari, All Right Reserved.</p>
+              <p class="text-white">&copy; Safari firmato 2024, tutti i diritti riservati.</p>
             </div>
           </div>
         </div>
@@ -502,7 +502,7 @@ class FooterComponent extends HTMLElement {
         font-family: Arial, sans-serif;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;">
-        <p style="margin: 0; font-size: 14px; line-height: 1.5;">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        <p style="margin: 0; font-size: 14px; line-height: 1.5;">Utilizziamo i cookie per migliorare la tua esperienza. Continuando a visitare questo sito accetti il ​​nostro utilizzo dei cookie.</p>
         <button id="acceptCookies" style="
           background-color: #4CAF50;
           color: white;
@@ -512,8 +512,8 @@ class FooterComponent extends HTMLElement {
           font-size: 14px;
           cursor: pointer;
           border-radius: 5px;
-          transition: background-color 0.3s;">Got it</button>
-        <a class="ps-4" href="/privacy-policy" style="color: #00bcd4; margin-left: 15px; font-size: 14px; text-decoration: none;">Learn More</a>
+          transition: background-color 0.3s;">Fatto</button>
+        <a class="ps-4" href="/privacy-policy" style="color: #00bcd4; margin-left: 15px; font-size: 14px; text-decoration: none;">Saperne di più</a>
       </div>
 
     

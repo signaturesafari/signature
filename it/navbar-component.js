@@ -282,31 +282,34 @@ class NavbarComponent extends LitElement {
                   <li class="nav-item d-none d-md-flex">
                     <a href="/it/contact.html" class="nav-link ">info@signaturesafari.com</a>
                   </li>
-                  <li class="nav-item d-none d-md-flex">
-                    <a href="/it/contact.html" class="nav-link ">+255 755 880 881</a>
+                  <li class="nav-item">
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/usa-icon.png" style="width:30px; height:30px;"></a>
                   </li>
                   <li class="nav-item">
-                    <div class="m-sm-0" id="google_translate_element"></div>
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:30px; height:30px;"></a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:30px; height:30px;"></a>
                   </li>
                 </span>
                 <span class="d-flex">
                   <li class="nav-item d-none d-md-flex">
-                    <a href="/it/about-us-signaturesafari.html" class="nav-link">About</a>
+                    <a href="/it/about-us-signaturesafari.html" class="nav-link">Informazioni</a>
                   </li>
                   <li class="nav-item d-none d-md-flex">
                     <a href="/it/blog.html" class="nav-link">Blog</a>
                   </li>
                   <li class="nav-item d-none d-md-flex">
-                    <a href="/it/contact.html" class="nav-link">Contact</a>
+                    <a href="/it/contact.html" class="nav-link">Contatto</a>
                   </li>
                 </span>
               </ul>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a href="/it/" class="nav-link">Home</a>
+                  <a href="/it/" class="nav-link">Casa</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/it/about-us-signaturesafari.html" class="nav-link">About</a>
+                  <a href="/it/about-us-signaturesafari.html" class="nav-link">Informazioni</a>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Safari</a>
@@ -328,18 +331,18 @@ class NavbarComponent extends LitElement {
                               background-size: cover;
                             ">
                           <h5 class="text-center py-2 fw-bold"> 
-                            Tanzania Safari Packages
+                            Pacchetti Safari in Tanzania
                           </h5>
                           <p class=" text-center"  style="color:white;">
-                            <a href="/it/7-days-flying-beach-to-bush.html">7 Days Flying Beach to
+                            <a href="/it/7-days-flying-beach-to-bush.html">7 giorni di volo in spiaggia a
                               Bush</a>
                           </p>
                           <p class="text-center " style="color:white">
-                            <a href="/it/8-days-midrange-great-migration-safari.html">8 Days Migration
+                            <a href="/it/8-days-midrange-great-migration-safari.html">Migrazione di 8 giorni
                               Safari in Tanzania</a>
                           </p>
                           <button type="button" class="btn btn-primary mb-2">
-                            <a href="/it/tanzania-safari-packages.html">View all Packages</a>
+                            <a href="/it/tanzania-safari-packages.html">Visualizza tutti i pacchetti</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -356,18 +359,18 @@ class NavbarComponent extends LitElement {
                               overflow: hidden;
                             ">
                           <h5 class="text-center  py-2 fw-bold">
-                            Kenya Safari Packages
+                            Pacchetti Safari in Kenya
                           </h5>
                           <p class="text-center" style="color:white">
-                            <a href="/it/5-days-masaimara-kenya-safari.html">5 Days Masai
-                              Mara Kenya Safari</a>
+                            <a href="/it/5-days-masaimara-kenya-safari.html">5 giorni Masai
+                              Mara Kenia Safari</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="/it/8-days-magical-kenya-luxury-safari.html">8 Days Magical Kenya
-                              Luxury Safari</a>
+                            <a href="/it/8-days-magical-kenya-luxury-safari.html">8 giorni nel magico Kenya
+                              Safari di lusso</a>
                           </p>
                           <button type="button" class="btn btn-primary">
-                            <a href="/it/kenya-safari-packages.html">View all Packages</a>
+                            <a href="/it/kenya-safari-packages.html">Visualizza tutti i pacchetti</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -384,18 +387,18 @@ class NavbarComponent extends LitElement {
                               overflow: hidden;
                             ">
                           <h5 class="text-center fw-bold py-2" style="color:white">
-                            Uganda Safari Packages
+                            Pacchetti Safari in Uganda
                           </h5>
                           <p class="text-center" style="color:white">
                             <a href="/it/7-days-uganda-gorilla-and-chimpanzee-trekking-safari.html">7
-                              Days Uganda Gorilla Trekking Safari</a>
+                              Giorni di safari con trekking tra gorilla in Uganda</a>
                           </p>
                           <p class="text-center" style="color:white">
                             <a href="/it/3-days-signature-safari-queen-elizabeth-national-park.html">3
-                              Days Queen Elizabeth National Park</a>
+                              Giorni Parco Nazionale Queen Elizabeth</a>
                           </p>
                           <button type="button" class="btn btn-primary ">
-                            <a href="/it/uganda-safari-packages.html">View all Packages</a>
+                            <a href="/it/uganda-safari-packages.html">Visualizza tutti i pacchetti</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -412,18 +415,18 @@ class NavbarComponent extends LitElement {
                               overflow: hidden;
                             ">
                           <button type="button" class="btn btn-primary" >
-                            <a href="/it/safari-packages.html">View Destinations</a>
+                            <a href="/it/safari-packages.html">Visualizza destinazioni</a>
                           </button>
-                          <h5 class=" pt-3" style="color:white">SAFARI TIPS</h5>
+                          <h5 class=" pt-3" style="color:white">CONSIGLI PER IL SAFARI</h5>
                           <p class="text-center" style="color:white">
-                            <a href="/it/tanzania-safari-packing-list.html">Tanzania Safari Packing
-                              List</a>
+                            <a href="/it/tanzania-safari-packing-list.html">Imballaggio per il safari in Tanzania
+                              Elenco</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="">About Tanzania</a>
+                            <a href="">Informazioni sulla Tanzania</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="">Safari Faqs</a>
+                            <a href="">Domande frequenti su Safari</a>
                           </p>
                         </div>
                       </div>
@@ -431,7 +434,7 @@ class NavbarComponent extends LitElement {
                   </div>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Climbing</a>
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Arrampicata</a>
                   <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
                     <div class="container w-100">
                       <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
@@ -450,10 +453,10 @@ class NavbarComponent extends LitElement {
                               background-size: cover;
                             ">
                           <h5 class="text-center py-2 fw-bold">
-                            Mountain Kilimanjaro & Routes
+                           Montagna Kilimanjaro e percorsi
                           </h5>
                           <button type="button" class="btn btn-primary mb-2">
-                            <a href="/it/kilimanjaro-climbing-routes.html">View all Routes</a>
+                            <a href="/it/kilimanjaro-climbing-routes.html">Visualizza tutti i percorsi</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center box" style="
@@ -470,11 +473,11 @@ class NavbarComponent extends LitElement {
                               overflow: hidden;
                             ">
                            <h5 class="text-center py-2 fw-bold" style="color:white">
-                            Kilimanjaro Group Joining 2024-2025
+                            Adesione al Gruppo del Kilimangiaro nel periodo 2024-2025
                           </h5>
                           <button type="button" class="btn btn-primary">
-                            <a href="/it/best-kilimanjaro-trekking-group-join-with-signature-safari.html">View
-                              all Groups</a>
+                            <a href="/it/best-kilimanjaro-trekking-group-join-with-signature-safari.html">Visualizzazione
+                              tutti i gruppi</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box"
@@ -492,11 +495,11 @@ class NavbarComponent extends LitElement {
                               overflow: hidden;
                             ">
                           <h5 class=" text-center pt-3" style="color:white;">
-                            Mountain Meru
+                            Montagna Meru
                           </h5>
                           <button type="button" class="btn mb-2 btn-primary">
-                            <a href="/it/mount-meru-climbing.html">View
-                              all Routes</a>
+                            <a href="/it/mount-meru-climbing.html">Visualizzazione
+                              tutti i percorsi</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -512,18 +515,18 @@ class NavbarComponent extends LitElement {
                               background-size: cover;
                               overflow: hidden;
                             ">
-                          <h5 class=" pt-3" style="color:white;">KILIMANJARO TIPS</h5>
+                          <h5 class=" pt-3" style="color:white;">CONSIGLI PER IL KILIMANGIARO</h5>
                           <p class="text-center text-white">
-                            <a href="/it/technical-clothing-for-mount-kilimanjaro-trek.html">Technical
-                              Clothing for Mount Kilimanjaro Trekking</a>
+                            <a href="/it/technical-clothing-for-mount-kilimanjaro-trek.html">Tecnico
+                              Abbigliamento per il Trekking sul Kilimanjaro</a>
                           </p>
                           <p class="text-center text-white">
-                            <a href="/it/tip-for-kilimanjaro-climber-and-weather.html">Tips for
-                              Kilimanjaro Climbing and Weather</a>
+                            <a href="/it/tip-for-kilimanjaro-climber-and-weather.html">Suggerimenti per
+                              Arrampicata e meteo sul Kilimangiaro</a>
                           </p>
                           <p class="text-center text-white">
-                            <a href="/it/mt-kilimanjaro-and-meru-with-sar.html">Kilimanjaro Search,
-                              Rescue and Safety Service</a>
+                            <a href="/it/mt-kilimanjaro-and-meru-with-sar.html">Ricerca sul Kilimangiaro,
+                              Servizio di salvataggio e sicurezza</a>
                           </p>
                         </div>
                       </div>
@@ -537,24 +540,24 @@ class NavbarComponent extends LitElement {
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/it/tanzania-high-end-safari.html">High End Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/it/tanzania-luxury-safaris.html">Luxury Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/it/tanzania-flying-safaris.html">Flying Safari
-                       Packages</a></li>   
-                    <li><a class="dropdown-item" href="/it/honeymoon-safari.html">Honeymoon Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/it/family-safaris.html">Family Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/it/tanzania-midrange-safaris.html">Midrange Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/it/tanzania-horse-riding.html">Horse Riding Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/it/tanzania-camping-safaris.html">Camping Safari
-                       Packages</a></li>                    
+                    <li><a class="dropdown-item" href="/it/tanzania-luxury-safaris.html">Safari di lusso
+                       Pacchetti</a></li>
+                    <li><a class="dropdown-item" href="/it/tanzania-flying-safaris.html">Safari volante
+                       Pacchetti</a></li>
+                    <li><a class="dropdown-item" href="/it/honeymoon-safari.html">Safari in luna di miele
+                       Pacchetti</a></li>
+                    <li><a class="dropdown-item" href="/it/family-safaris.html">Safari in famiglia
+                       Pacchetti</a></li>
+                    <li><a class="dropdown-item" href="/it/tanzania-midrange-safaris.html">Safari di fascia media
+                       Pacchetti</a></li>
+                    <li><a class="dropdown-item" href="/it/tanzania-horse-riding.html">Safari a cavallo
+                       Pacchetti</a></li>
+                    <li><a class="dropdown-item" href="/it/tanzania-camping-safaris.html">Safari in campeggio
+                       Pacchetti</a></li>
                     <li><a class="dropdown-item" href="/it/tanzania-day-trip-excursions.html">Tanzania
-                        Daytrips</a></li>
+                        Gite giornaliere</a></li>
                     <li>
-                       <a class="dropdown-item" href="/it/tanzania-national-parks.html">Tanzania National Parks</a>
+                       <a class="dropdown-item" href="/it/tanzania-national-parks.html">Parchi nazionali della Tanzania</a>
                     </li>
                   </ul>
                 </li>
@@ -563,14 +566,14 @@ class NavbarComponent extends LitElement {
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle" href="/it/safari-packages.html" role="button" aria-expanded="false">
-                    Destinations
+                    Destinazioni
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/it/tanzania-safari-packages.html">Tanzania</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/it/kenya-safari-packages.html">Kenya</a></li>
+                    <li><a class="dropdown-item" href="/it/kenya-safari-packages.html">Kenia</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
@@ -591,22 +594,22 @@ class NavbarComponent extends LitElement {
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="/it/tanzania-cycling-tour.html" class="nav-link">Cycling</a>
+                  <a href="/it/tanzania-cycling-tour.html" class="nav-link">Ciclismo</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
                   <a href="/it/blog.html" class="nav-link ">Blog</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/it/signature-safari-trustee-board.html" class="nav-link ">Board of
-                    Trustees</a>
+                  <a href="/it/signature-safari-trustee-board.html" class="nav-link ">Consiglio di
+                    Amministratori</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/it/contact.html" class="nav-link ">Contact</a>
+                  <a href="/it/contact.html" class="nav-link ">Contatto</a>
                 </li>
               </ul>
             </div>
             <p class="">
-              <a href="/it/tailor-made-safari-and-kilimanjaro.html" class="btn btn-primary">Make a Request</a>
+              <a href="/it/tailor-made-safari-and-kilimanjaro.html" class="btn btn-primary">Fai una richiesta</a>
             </p>
           </div>
         </div>
