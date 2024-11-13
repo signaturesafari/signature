@@ -9,13 +9,13 @@ class FooterComponent extends HTMLElement {
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="css/magnific-popup.css">
-      <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-      <link rel="stylesheet" href="css/jquery.timepicker.css">
-      <link rel="stylesheet" href="css/flaticon.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/css/magnific-popup.css">
+      <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+      <link rel="stylesheet" href="/css/jquery.timepicker.css">
+      <link rel="stylesheet" href="/css/flaticon.css">
+      <link rel="stylesheet" href="/css/style.css">
       <link rel="preload" href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <script async src="https://kit.fontawesome.com/5fe73a6d63.js" crossorigin="anonymous"></script>
       <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -55,7 +55,7 @@ class FooterComponent extends HTMLElement {
             rgba(0, 0, 0, 0.459),
             rgba(5, 5, 5, 0.459)
           ),
-          url(images/animalbg.avif);
+          url(/images/animalbg.avif);
           backgound-position:center;
           background-size:cover;
           background-repeat: no-repeat;">
@@ -64,8 +64,8 @@ class FooterComponent extends HTMLElement {
               <div class="col-md pt-5">
                   <div class="ftco-footer-widget pt-md-5 mb-4">
                       <h2 class="ftco-heading-2 text-white">À Propos</h2>
-                      <a class="navbar-brand bg-white mb-5 px-2 py-2" href="/">
-                          <img src="images/signature-safari-official-logo.avif" height="100px" width="150px" />
+                      <a class="navbar-brand bg-white mb-5 px-2 py-2" href="https://www.signaturesafari.com/fr/">
+                          <img src="/images/signature-safari-official-logo.avif" height="100px" width="150px" />
                       </a>
                       <p class="text-white">Signature Safari est un tour opérateur durable et local en Tanzanie, offrant un service personnalisé et complet à un prix abordable...</p>
                       <ul class="ftco-footer-social list-unstyled float-md-left float-lft text-white">
@@ -81,14 +81,14 @@ class FooterComponent extends HTMLElement {
                   <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                       <h2 class="ftco-heading-2 text-white">Liens Importants</h2>
                       <ul class="text-white">
-                          <li><a href="/best-kilimanjaro-trekking-group-join-with-signature-safari" class="py-2 d-block text-white">Groupe de Montée au Kilimandjaro</a></li>
-                          <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Vêtements Techniques pour le Mont Kilimandjaro</a></li>
-                          <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Liste d'Emballage pour Safari en Tanzanie</a></li>
-                          <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Vêtements Techniques pour le Mont Kilimandjaro</a></li>
-                          <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Liste d'Emballage pour Safari en Tanzanie</a></li>
-                          <li><a href="/sustainable-tourism-in-tanzania-with-signature-safari" class="py-2 d-block text-white">Tourisme Durable en Tanzanie</a></li>
-                          <li><a href="/mt-kilimanjaro-and-meru-with-sar" class="py-2 d-block text-white">Service de Recherche, de Secours et de Sécurité au Kilimandjaro</a></li>
-                          <li><a href="/signature-safari-trustee-board" class="py-2 d-block text-white">Conseil des Administrateurs</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/best-kilimanjaro-trekking-group-join-with-signature-safari" class="py-2 d-block text-white">Groupe de Montée au Kilimandjaro</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Vêtements Techniques pour le Mont Kilimandjaro</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/tanzania-safari-packing-list" class="py-2 d-block text-white">Liste d'Emballage pour Safari en Tanzanie</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Vêtements Techniques pour le Mont Kilimandjaro</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/tanzania-safari-packing-list" class="py-2 d-block text-white">Liste d'Emballage pour Safari en Tanzanie</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/sustainable-tourism-in-tanzania-with-signature-safari" class="py-2 d-block text-white">Tourisme Durable en Tanzanie</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/mt-kilimanjaro-and-meru-with-sar" class="py-2 d-block text-white">Service de Recherche, de Secours et de Sécurité au Kilimandjaro</a></li>
+                          <li><a href="https://www.signaturesafari.com/fr/signature-safari-trustee-board" class="py-2 d-block text-white">Conseil des Administrateurs</a></li>
                       </ul>
                   </div>
               </div>
@@ -111,14 +111,14 @@ class FooterComponent extends HTMLElement {
                   <h2 class="fw-bold text-white">Abonnez-vous à notre Newsletter</h2>
                   <p class="text-white">Restez informé de nos dernières nouvelles et offres.</p>
               </div>
-              <div class="row align-items-center">
-                  <div class="col">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-md-3 col-sm-6">
                       <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom">
                   </div>
-                  <div class="col">
+                  <div class="col-md-3 col-sm-6">
                       <input type="text" class="form-control" placeholder="Nom" aria-label="Nom">
                   </div>
-                  <button type="submit" class="btn text-white w-100 col" style="background-color:#f15d30;">S'abonner</button>
+                  <button type="submit" class="btn text-white w-100 col-md-3 col-sm-6" style="background-color:#f15d30;">S'abonner</button>
               </div>
           </form>
           <div class="row mt-3">
