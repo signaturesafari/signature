@@ -204,62 +204,73 @@ class NavbarComponent extends LitElement {
 }
   `;
 
-
-  firstUpdated() {
-    // Load the Google Translate script dynamically
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    document.head.appendChild(script);
-
-    // Initialize the Google Translate widget
-    window.googleTranslateElementInit = () => {
-      new google.translate.TranslateElement(
-        { pageLanguage: 'en', includedLanguages: 'en,es,fr,de,zh-CN,it,ru' },
-        'google_translate_element_global'
-      );
-    };
-  }
   constructor() {
     super();
+    // Add the Google Tag Manager script dynamically
+    const gtmScript = document.createElement('script');
+    gtmScript.textContent = `
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WQTGVBG7'); // Replace 'GTM-WQTGVBG7' with your GTM ID
+`;
+    document.head.appendChild(gtmScript);
+// Add GTM noscript fallback
+const gtmNoscript = document.createElement('noscript');
+gtmNoscript.innerHTML = `
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQTGVBG7"
+            height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+`; // Replace 'GTM-WQTGVBG7' with your GTM ID
+document.body.appendChild(gtmNoscript);
+  
+
     this.isCollapsed = true;  // State to track the collapse state
   }
 
-  firstUpdated() {
-    window.addEventListener('scroll', this.handleScroll.bind(this));
-  }
+firstUpdated() {
+  window.addEventListener('scroll', this.handleScroll.bind(this));
+}
 
-  disconnectedCallback() {
-    window.removeEventListener('scroll', this.handleScroll.bind(this));
-    super.disconnectedCallback();
-  }
+disconnectedCallback() {
+  window.removeEventListener('scroll', this.handleScroll.bind(this));
+  super.disconnectedCallback();
+}
 
-  handleScroll() {
-    const navbar = this.shadowRoot.querySelector('.navbar');
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+handleScroll() {
+  const navbar = this.shadowRoot.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
   }
+}
 
-  toggleCollapse() {
-    const collapseElement = this.shadowRoot.querySelector('#ftco-nav');
-    this.isCollapsed = !this.isCollapsed;
-    if (this.isCollapsed) {
-      collapseElement.classList.remove('show');
-    } else {
-      collapseElement.classList.add('show');
-    }
+toggleCollapse() {
+  const collapseElement = this.shadowRoot.querySelector('#ftco-nav');
+  this.isCollapsed = !this.isCollapsed;
+  if (this.isCollapsed) {
+    collapseElement.classList.remove('show');
+  } else {
+    collapseElement.classList.add('show');
   }
+}
 
-  toggleDropdown(event) {
-    const dropdown = event.currentTarget;
-    dropdown.classList.toggle('show');
-  }
+toggleDropdown(event) {
+  const dropdown = event.currentTarget;
+  dropdown.classList.toggle('show');
+}
 
-  render() {
-    return html`
+render() {
+  return html`
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
@@ -625,7 +636,7 @@ class NavbarComponent extends LitElement {
         </div>
       </nav>
     `;
-  }
+}
 }
 
 customElements.define('navbar-component', NavbarComponent);
