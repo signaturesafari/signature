@@ -206,6 +206,14 @@ class NavbarComponent extends LitElement {
 
   constructor() {
     super();
+     // Add the Tawk.to script dynamically
+     const tawkScript = document.createElement("script");
+     tawkScript.type = "text/javascript";
+     tawkScript.async = true;
+     tawkScript.src = "https://embed.tawk.to/5b346b8aeba8cd3125e3401c/default";
+     tawkScript.charset = "UTF-8";
+     tawkScript.setAttribute("crossorigin", "*");
+     document.head.appendChild(tawkScript);
     // Add the Google Tag Manager script dynamically
     const gtmScript = document.createElement('script');
     gtmScript.textContent = `
