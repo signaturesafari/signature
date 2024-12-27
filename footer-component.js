@@ -528,7 +528,6 @@ class FooterComponent extends HTMLElement {
       })();
       </script>
       <!--End of Tawk.to Script-->
-    
     `;
     // Add JavaScript functionality
     this.shadowRoot.getElementById('acceptCookies').addEventListener('click', () => {
