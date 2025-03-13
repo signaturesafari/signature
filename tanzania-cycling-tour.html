@@ -36,6 +36,7 @@
 
   <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
   <link rel="stylesheet" href="css/jquery.timepicker.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <link rel="stylesheet" href="css/flaticon.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -74,6 +75,167 @@
     img {
       vertical-align: middle;
     }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .mySlides {
+      height: 100vh;
+      width: 100%;
+    }
+
+    .cycle-title {
+      margin-top: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .mySlides {
+        height: 50vh;
+        margin-top: 110px;
+      }
+
+      .cycle-title {
+        margin-top: 30px;
+      }
+
+    }
   </style>
 </head>
 
@@ -81,26 +243,23 @@
   <!--Start Nav-->
   <navbar-component></navbar-component>
   <!-- END Nav -->
-
-  <section class="hero-wrap hero-wrap-2 js-fullheight" id="hero" style="background-image: url('images/cyclic00.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-        <div class="col-md-9 ftco-animate pb-5 text-center">
-          <p class="breadcrumbs">
-            <span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span>
-            <span><a href="https://www.signaturesafari.com/tanzania-cycling-tour">Cycle Kilimanjaro to Zanzibar</a><i
-                class="fa fa-chevron-right"></i></span>
-          </p>
-          <h1 class="mb-0 bread">Cycle Kilimanjaro to Zanzibar</h1>
-        </div>
+  <section id="heroSlider hero-banner">
+    <div class="w3-container-full w-100 container-fluid">
+      <img class="mySlides" src="images/IMG_7244.jpg">
+      <img class="mySlides" src="images/cyclic00.jpg">
+      <img class="mySlides" src="images/cyclic-hero.jpeg">
+      <div class="w3-display-middle w3-container w-100 cycle-title">
+        <h1 class="mb-0 bread fw-bold text-white text-center d-md-block d-none"
+          style="font-weight: bolder; font-size: xx-large;text-shadow: 3px 4px 5px black; margin-top: 60px;">Cycle Kilimanjaro to Zanzibar
+        </h1>
+        <p class="mb-0 bread fw-bold text-white text-center d-block d-md-none"
+          style="font-size: 28px; text-shadow: 4px 5px 5px black;line-height: 40px;margin-top: 90px;">Cycle Kilimanjaro to Zanzibar</p>
       </div>
     </div>
   </section>
-
   <section class="ftco-section ftco-no-pb contact-section mb-4">
     <div class="container">
-      <h3 class="fw-bold">Embark on a cycling adventure in Tanzania</h3>
+      <h3 class="fw-bold text-center">Embark on a cycling adventure in Tanzania</h3>
       <p class="text-dark">
         Explore the heart of East Africa on two wheels with our exciting cycling tour in Tanzania, in partnership with
         Canadian adventurer <b>Josée Clermont</b>. Our meticulously crafted route takes you through diverse landscapes
@@ -189,7 +348,7 @@
           style="height: 450px; background-image: url('images/map1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
         </div>
       </div>
-      <div class="row d-block">
+      <div class="row d-block bg-white">
         <ul class="nav nav-tabs sticky">
           <li class="nav-item">
             <a class="nav-link active" data-bs-toggle="tab" href="#home">Itinerary</a>
@@ -200,8 +359,8 @@
         </ul>
 
         <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane container active" id="home">
+        <div class="tab-content bg-white">
+          <div class="tab-pane bg-white active" id="home">
             <h2 class="fw-bold py-2">12 Days Northeastern Tanzania Cycle Tour</h2>
             <p class="text-dark">
               Explore North-Eastern Tanzania’s stunning vistas by bicycle
@@ -309,11 +468,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
                     Day 3: Marangu – Lake Chala – February 05, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       Lake Chala is a hidden gem, a perfect place to relax and
@@ -357,11 +516,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
                     Day 4: Lake Chala – Mambo View Point – February 06, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       After breakfast, you will have an early departure and
@@ -391,12 +550,12 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
                     Day 5: Mambo View Point – Lushoto (IRENTE VIEW POINT)
                     February 07, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       You will cycle from the lodge at Usambara Mountains
@@ -424,11 +583,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
                     Day 6: Full day Mambo View Point February 08, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       You will hike through the beautiful Magamba Nature
@@ -455,11 +614,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
                     Day 7: Lushoto – Korogwe – February 09, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       Today you will already be tackling your last bike stage.
@@ -488,11 +647,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
                     Day 8: Korogwe – Muheza – February 10, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseNine" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       Cycling from Korogwe to Muheza can be a wonderful
@@ -518,11 +677,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
                     Day 9: Muheza – Pangani – February 11, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseTen" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       Cycling from Muheza to Pangani offers another exciting
@@ -551,11 +710,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEleven">
                     Day 10: Pangani – February 12, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       Pangani is an ancient town believed to date from before
@@ -576,11 +735,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwelve">
                     Day 11: Pangani – Nungwi (ZANZIBAR) – February 13, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       An early boat transfer takes us to Nungwi at the north
@@ -604,12 +763,12 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse13">
                     Day 12: Nungwi – Zanzibar town (STONE TOWN) – February 14,
                     2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapse13" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       Zanzibar Island has lured traders, adventurers and
@@ -634,11 +793,11 @@
               </div>
               <div class="card">
                 <div class="card-header" style="background-color: #eca324">
-                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse14">
                     DAY 13: Departure day from ZANZIBAR – February 15, 2025
                   </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div id="collapse14" class="collapse" data-bs-parent="#accordion">
                   <div class="card-body">
                     <p class="text-dark">
                       It’s time to say goodbye to Zanzibar as our Tanzanian
@@ -653,7 +812,7 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane container fade" id="menu1">
+          <div class="tab-pane bg-white fade" id="menu1">
             <div class="row py-3">
               <div class="col-md-6 col-sm-6">
                 <h3>Tour Includes</h3>
@@ -842,9 +1001,12 @@
         </div>
         <div class="col-md-9 col-sm-6 px-4 py-4">
           <p class="text-dark"><b>Josée Clermont</b></p>
-          <h5>Dates don’t fit? Create a private trip. If you have your own group, talk to me about it. If not, simply book with me.</h5>
-          <p class="text-dark"><i class="bi bi-envelope fw-bold" style="font-size: 24px;"></i> <strong>cliclermont@gmail.com</strong>&nbsp;&nbsp;&nbsp;<span
-              class="icon fa fa-whatsapp fw-bold" style="font-size: 24px;"></span>&nbsp;&nbsp;<strong>+1 (867) 445-2167</strong></p>
+          <h5>Dates don’t fit? Create a private trip. If you have your own group, talk to me about it. If not, simply
+            book with me.</h5>
+          <p class="text-dark"><i class="bi bi-envelope fw-bold" style="font-size: 24px;"></i>
+            <strong>cliclermont@gmail.com</strong>&nbsp;&nbsp;&nbsp;<span class="icon fa fa-whatsapp fw-bold"
+              style="font-size: 24px;"></span>&nbsp;&nbsp;<strong>+1 (867) 445-2167</strong>
+          </p>
           <button type="button" class="btn btn-success"><a href="https://wa.me/+18674452167" class="text-white"> <span
                 class="icon fa fa-whatsapp"></span>
               Chat</a></button>
@@ -1060,33 +1222,22 @@
     </svg>
   </div>
   <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
     }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
-      let captionText = document.getElementById("caption");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
+      x[slideIndex - 1].style.display = "block";
     }
   </script>
   <script src="js/jquery.min.js"></script>
@@ -1106,41 +1257,23 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <!-- script -->
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  <script>
-    //google translations
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,fr,de,zh-CN,it,ru' }, 'google_translate_element');
-    }
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      const images = [
-        'images/cyclic-hero.jpeg',
-        'images/cyclic-hero1.jpeg',
-        'images/cyclic00.jpg'
-      ];
-      let currentImageIndex = 0;
 
-      const hero = document.getElementById('hero');
 
-      function changeBackgroundImage() {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-
-      setInterval(changeBackgroundImage, 5000);
-
-      // Preload images and start changing background images
-      preloadImages(images, () => {
-        // Initially set the first background image
-        document.getElementById('background').style.backgroundImage = images[0];
-        // Change background image every 5 seconds
-        setInterval(changeBackgroundImage, 5000);
-      });
-    });
-
+      slideIndex++;
+      if (slideIndex > x.length) { slideIndex = 1 }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
   </script>
   <script type="module" src="navbar-component.js"></script>
   <script src="footer-component.js" defer></script>
