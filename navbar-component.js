@@ -223,15 +223,7 @@ class NavbarComponent extends LitElement {
      document.head.appendChild(gtagScript);
      document.head.appendChild(inlineScript);
 
-     // Add the Tawk.to script dynamically
-     const tawkScript = document.createElement("script");
-     tawkScript.type = "text/javascript";
-     tawkScript.async = true;
-     tawkScript.src = "https://embed.tawk.to/5b346b8aeba8cd3125e3401c/default";
-     tawkScript.charset = "UTF-8";
-     tawkScript.setAttribute("crossorigin", "*");
-     document.head.appendChild(tawkScript);
-    this.isCollapsed = true;  // State to track the collapse state
+     
   }
 
 firstUpdated() {
