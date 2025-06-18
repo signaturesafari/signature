@@ -238,7 +238,7 @@
       }
 
       .cycle-title {
-        margin-top: 30px;
+        margin-top: 40px;
       }
 
       .book-btn {
@@ -272,7 +272,7 @@
           Kilimanjaro to Zanzibar
         </h1>
 
-       <center> <button class="btn btn-primary" id="bookNowBtn">Book This Tour</button></center>
+        <center> <button class="btn btn-primary" id="bookNowBtn">Book This Tour</button></center>
 
       </div>
     </div>
@@ -280,7 +280,7 @@
   <section class="ftco-section ftco-no-pb contact-section mb-4">
     <div class="container">
       <h3 class="fw-bold text-center mb-3">Embark on a cycling adventure in Tanzania</h3>
-      <h5>Overview</h5>
+      <p class="text-dark">Join us nkw on this unique cycling tour</p>
       <p class="text-dark">
         The scenic beauty and variety of landscape in Tanzania are stunning. This country is famous for its majestic
         vistas, traditional tribespeople, exceptional wildlife, and the kindness of its people.
@@ -768,7 +768,7 @@
           <div class="tab-pane bg-white fade" id="menu1">
             <div class="row py-3">
               <div class="col-8 px-5">
-                <h2 class="text-center">The Cycling & Hiking</h2>
+                <h3 class="px-4">The Cycling & Hiking</h3>
                 <p class="text-dark" style="text-align: justify;">
                   Your tour itinerary averages 50 km of cycling per day for a total distance of 350 km. The average
                   daily
@@ -790,14 +790,14 @@
 
                   <b>Group Size</b>: 3-10 cyclists.
                 </p>
-                <h2 class="text-center">Accommodations and Meals</h2>
+                <h3 class="px-4">Accommodations and Meals</h3>
                 <p class="text-dark" style="text-align: justify;">
                   All accommodations are included for the duration of the trip. Ten nights are in three-star lodges
                   while two nights are in a guesthouse. Accommodations have been carefully selected for your comfort and
                   enjoyment. Meals are all included except for two evening meals and a lunch in Zanzibar, which will be
                   at your own cost to give you the opportunity to explore a variety of cuisine.
                 </p>
-                <h2 class="text-center">Preparing for Your Cycling Tour</h2>
+                <h3 class="px-4">Preparing for Your Cycling Tour</h3>
                 <p class="text-dark" style="text-align: justify;">
                   Your cycling tour includes a ride of up to 60 km on one day and a climb of up 950m on another. Please
                   read about the daily rides, distances and elevation gain, taking note of the riding surface in the
@@ -805,7 +805,7 @@
                   You should be comfortable riding 3-5 times a week with regular rides of 20-60 km in length. Preparing
                   for your cycle tour should include some hills.
                 </p>
-                <h2 class="text-center">Airports</h2>
+                <h3 class="px-4">Airports</h3>
                 <p class="text-dark" style="text-align: justify;">
                   <b>Start</b>: Moshi (Kilimanjaro Airport)
                 </p>
@@ -864,7 +864,16 @@
                   <li>Personal vaccinations or personal equipment</li>
                 </ul>
               </div>
+              <div class="col-8">
+                <h3 class="px-4">Booking</h3>
+                <p class="text-dark" style="text-align: justify;">
+                  A deposit of 25% of the full price of the package is required per person upon booking.
+                  Final payment must be made at least 60 days before the departure date. If the reservation is made less
+                  than 60 days before departure, the traveller must pay the full price of the package.
 
+                  You can book via this website or contact us directly at <a href="mailto:cliclermont@gmail.com">cliclermont@gmail.com</a>.
+                </p>
+              </div>
             </div>
           </div>
           <div class="tab-pane bg-white fade" id="menu3">
@@ -1267,27 +1276,27 @@
       x[slideIndex - 1].style.display = "block";
     }
   </script>
- <script>
-  document.getElementById("bookNowBtn").addEventListener("click", function () {
-    // Get the tab link
-    var tabTrigger = document.querySelector('a[href="#menu3"]');
-    if (tabTrigger) {
-      // Bootstrap 5 tab activation
-      var tab = new bootstrap.Tab(tabTrigger);
-      tab.show();
-    }
+  <script>
+    document.getElementById("bookNowBtn").addEventListener("click", function () {
+      // Get the tab link
+      var tabTrigger = document.querySelector('a[href="#menu3"]');
+      if (tabTrigger) {
+        // Bootstrap 5 tab activation
+        var tab = new bootstrap.Tab(tabTrigger);
+        tab.show();
+      }
 
-    // Scroll to the target tab content
-    var formSection = document.getElementById("menu3");
-    if (formSection) {
-      setTimeout(function () {
-        formSection.scrollIntoView({ behavior: "smooth" });
-      }, 200); // Delay allows tab content to render
-    }
-  });
-</script>
+      // Scroll to the target tab content
+      var formSection = document.getElementById("menu3");
+      if (formSection) {
+        setTimeout(function () {
+          formSection.scrollIntoView({ behavior: "smooth" });
+        }, 200); // Delay allows tab content to render
+      }
+    });
+  </script>
 
-  
+
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
