@@ -493,7 +493,7 @@ document.body.appendChild(gtmNoscript);
                               overflow: hidden;
                             ">
                            <h5 class="text-center py-2 fw-bold" style="color:white">
-                            Adesione al Gruppo del Kilimangiaro nel periodo 2024-2025
+                            Adesione al Gruppo del Kilimangiaro nel periodo 2025-2026
                           </h5>
                           <button type="button" class="btn btn-primary">
                             <a href="/it/best-kilimanjaro-trekking-group-join-with-signature-safari.html">Visualizzazione

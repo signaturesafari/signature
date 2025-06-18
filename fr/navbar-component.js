@@ -504,7 +504,7 @@ document.body.appendChild(gtmNoscript);
                               overflow: hidden;
                             ">
                            <h5 class="text-center py-2 fw-bold" style="color:white">
-                             Adhésion du groupe Kilimandjaro en 2024-2025
+                            Adhésion du groupe Kilimandjaro en 2025-2026
                           </h5>
                           <button type="button" class="btn btn-primary">
                             <a href="https://www.signaturesafari.com/fr/best-kilimanjaro-trekking-group-join-with-signature-safari">Voir

@@ -484,7 +484,7 @@ render() {
                               overflow: hidden;
                             ">
                            <h5 class="text-center py-2 fw-bold" style="color:white">
-                            Kilimanjaro Group Joining 2024-2025
+                             Kilimanjaro Group Joining 2025-2026
                           </h5>
                           <button type="button" class="btn btn-primary">
                             <a href="/best-kilimanjaro-trekking-group-join-with-signature-safari">View
