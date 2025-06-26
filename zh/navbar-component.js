@@ -284,13 +284,13 @@ render() {
                     <a href="/contact" class="nav-link ">info@signaturesafari.com</a>
                   </li>
                   <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/united-states.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="/images/united-states.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="/images/france.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="/images/italy.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item dropdown my-3 d-md-none d-sm-block" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle btn-primary w-50" role="button" aria-expanded="false">
@@ -317,10 +317,10 @@ render() {
               </ul>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a href="/" class="nav-link">Home</a>
+                  <a href="/zh/" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/about-us-signaturesafari" class="nav-link">About</a>
+                  <a href="/zh/about-us-signaturesafari" class="nav-link">About</a>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Safari</a>
@@ -345,15 +345,15 @@ render() {
                             Tanzania Safari Packages
                           </h5>
                           <p class=" text-center"  style="color:white;">
-                            <a href="/7-days-flying-beach-to-bush">7 Days Flying Beach to
+                            <a href="/zh/7-days-flying-beach-to-bush">7 Days Flying Beach to
                               Bush</a>
                           </p>
                           <p class="text-center " style="color:white">
-                            <a href="/8-days-midrange-great-migration-safari">8 Days Migration
+                            <a href="/zh/8-days-midrange-great-migration-safari">8 Days Migration
                               Safari in Tanzania</a>
                           </p>
                           <button type="button" class="btn btn-primary mb-2">
-                            <a href="/tanzania-safari-packages">View all Packages</a>
+                            <a href="/zh/tanzania-safari-packages">View all Packages</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -373,15 +373,15 @@ render() {
                             Kenya Safari Packages
                           </h5>
                           <p class="text-center" style="color:white">
-                            <a href="/5-days-masaimara-kenya-safari">5 Days Masai
+                            <a href="/zh/5-days-masaimara-kenya-safari">5 Days Masai
                               Mara Kenya Safari</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="/8-days-magical-kenya-luxury-safari">8 Days Magical Kenya
+                            <a href="/zh/8-days-magical-kenya-luxury-safari">8 Days Magical Kenya
                               Luxury Safari</a>
                           </p>
                           <button type="button" class="btn btn-primary">
-                            <a href="/kenya-safari-packages">View all Packages</a>
+                            <a href="/zh/kenya-safari-packages">View all Packages</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -401,15 +401,15 @@ render() {
                             Uganda Safari Packages
                           </h5>
                           <p class="text-center" style="color:white">
-                            <a href="/7-days-uganda-gorilla-and-chimpanzee-trekking-safari">7
+                            <a href="/zh/7-days-uganda-gorilla-and-chimpanzee-trekking-safari">7
                               Days Uganda Gorilla Trekking Safari</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="/3-days-signature-safari-queen-elizabeth-national-park">3
+                            <a href="/zh/3-days-signature-safari-queen-elizabeth-national-park">3
                               Days Queen Elizabeth National Park</a>
                           </p>
                           <button type="button" class="btn btn-primary ">
-                            <a href="/uganda-safari-packages">View all Packages</a>
+                            <a href="/zh/uganda-safari-packages">View all Packages</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -426,11 +426,11 @@ render() {
                               overflow: hidden;
                             ">
                           <button type="button" class="btn btn-primary" >
-                            <a href="/safari-packages">View Destinations</a>
+                            <a href="/zh/safari-packages">View Destinations</a>
                           </button>
                           <h5 class=" pt-3" style="color:white">SAFARI TIPS</h5>
                           <p class="text-center" style="color:white">
-                            <a href="/tanzania-safari-packing-list">Tanzania Safari Packing
+                            <a href="/zh/tanzania-safari-packing-list">Tanzania Safari Packing
                               List</a>
                           </p>
                           <p class="text-center" style="color:white">
@@ -467,7 +467,7 @@ render() {
                             Mountain Kilimanjaro & Routes
                           </h5>
                           <button type="button" class="btn btn-primary mb-2">
-                            <a href="/kilimanjaro-climbing-routes">View all Routes</a>
+                            <a href="/zh/kilimanjaro-climbing-routes">View all Routes</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center box" style="
@@ -487,7 +487,7 @@ render() {
                              Kilimanjaro Group Joining 2025-2026
                           </h5>
                           <button type="button" class="btn btn-primary">
-                            <a href="/best-kilimanjaro-trekking-group-join-with-signature-safari">View
+                            <a href="/zh/best-kilimanjaro-trekking-group-join-with-signature-safari">View
                               all Groups</a>
                           </button>
                         </div>
@@ -509,7 +509,7 @@ render() {
                             Mountain Meru
                           </h5>
                           <button type="button" class="btn mb-2 btn-primary">
-                            <a href="/mount-meru-climbing">View
+                            <a href="/zh/mount-meru-climbing">View
                               all Routes</a>
                           </button>
                         </div>
@@ -528,15 +528,15 @@ render() {
                             ">
                           <h5 class=" pt-3" style="color:white;">KILIMANJARO TIPS</h5>
                           <p class="text-center text-white">
-                            <a href="/technical-clothing-for-mount-kilimanjaro-trek">Technical
+                            <a href="/zh/technical-clothing-for-mount-kilimanjaro-trek">Technical
                               Clothing for Mount Kilimanjaro Trekking</a>
                           </p>
                           <p class="text-center text-white">
-                            <a href="/tip-for-kilimanjaro-climber-and-weather">Tips for
+                            <a href="/zh/tip-for-kilimanjaro-climber-and-weather">Tips for
                               Kilimanjaro Climbing and Weather</a>
                           </p>
                           <p class="text-center text-white">
-                            <a href="/mt-kilimanjaro-and-meru-with-sar">Kilimanjaro Search,
+                            <a href="/zh/mt-kilimanjaro-and-meru-with-sar">Kilimanjaro Search,
                               Rescue and Safety Service</a>
                           </p>
                         </div>
@@ -545,83 +545,83 @@ render() {
                   </div>
                 </li>
                 <li class="nav-item">
-                <a href="/tanzania-cycling-tour" class="nav-link">Cycling</a>
+                <a href="/zh/tanzania-cycling-tour" class="nav-link">Cycling</a>
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">
                     Tanzania
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/tanzania-high-end-safari">High End Safari
+                    <li><a class="dropdown-item" href="/zh/tanzania-high-end-safari">High End Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-luxury-safaris">Luxury Safari
+                    <li><a class="dropdown-item" href="/zh/tanzania-luxury-safaris">Luxury Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-flying-safaris">Flying Safari
+                    <li><a class="dropdown-item" href="/zh/tanzania-flying-safaris">Flying Safari
                        Packages</a></li>   
-                    <li><a class="dropdown-item" href="/honeymoon-safari">Honeymoon Safari
+                    <li><a class="dropdown-item" href="/zh/honeymoon-safari">Honeymoon Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/family-safaris">Family Safari
+                    <li><a class="dropdown-item" href="/zh/family-safaris">Family Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-midrange-safaris">Midrange Safari
+                    <li><a class="dropdown-item" href="/zh/tanzania-midrange-safaris">Midrange Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-horse-riding">Horse Riding Safari
+                    <li><a class="dropdown-item" href="/zh/tanzania-horse-riding">Horse Riding Safari
                        Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-camping-safaris">Camping Safari
+                    <li><a class="dropdown-item" href="/zh/tanzania-camping-safaris">Camping Safari
                        Packages</a></li>                    
-                    <li><a class="dropdown-item" href="/tanzania-day-trip-excursions">Tanzania
+                    <li><a class="dropdown-item" href="/zh/tanzania-day-trip-excursions">Tanzania
                         Daytrips</a></li>
                     <li>
-                       <a class="dropdown-item" href="/tanzania-national-parks">Tanzania National Parks</a>
+                       <a class="dropdown-item" href="/zh/tanzania-national-parks">Tanzania National Parks</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="/zanzibar-holiday-beaches" class="nav-link">Zanzibar</a>
+                  <a href="/zh/zanzibar-holiday-beaches" class="nav-link">Zanzibar</a>
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" href="/safari-packages" role="button" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="/zh/safari-packages" role="button" aria-expanded="false">
                     Destinations
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/tanzania-safari-packages">Tanzania</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-safari-packages">Tanzania</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/kenya-safari-packages">Kenya</a></li>
+                    <li><a class="dropdown-item" href="/zh/kenya-safari-packages">Kenya</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/uganda-safari-packages">Uganda</a></li>
+                    <li><a class="dropdown-item" href="/zh/uganda-safari-packages">Uganda</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/rwanda-safari-packages">Rwanda</a></li>
+                    <li><a class="dropdown-item" href="/zh/rwanda-safari-packages">Rwanda</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/botswana-safari-packages">Botswana</a></li>
+                    <li><a class="dropdown-item" href="/zh/botswana-safari-packages">Botswana</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/south-africa-safari-packages">South Africa</a>
+                    <li><a class="dropdown-item" href="/zh/south-africa-safari-packages">South Africa</a>
                     </li>
                   </ul>
                 </li>
                
                 <li class="nav-item d-md-none d-block">
-                  <a href="/blog" class="nav-link ">Blog</a>
+                  <a href="/zh/blog" class="nav-link ">Blog</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/signature-safari-trustee-board" class="nav-link ">Board of
+                  <a href="/zh/signature-safari-trustee-board" class="nav-link ">Board of
                     Trustees</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/contact" class="nav-link ">Contact</a>
+                  <a href="/zh/contact" class="nav-link ">Contact</a>
                 </li>
               </ul>
             </div>
             <p class="">
-              <a href="/tailor-made-safari-and-kilimanjaro" class="btn btn-primary">Make a Request</a>
+              <a href="/zh/tailor-made-safari-and-kilimanjaro" class="btn btn-primary">Make a Request</a>
             </p>
           </div>
         </div>

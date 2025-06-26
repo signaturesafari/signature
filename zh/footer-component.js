@@ -418,7 +418,7 @@ class FooterComponent extends HTMLElement {
               <div class="ftco-footer-widget pt-md-5 mb-4">
                 <h2 class="ftco-heading-2 text-white">About</h2>
                 <a class="navbar-brand bg-white mb-5 px-2 py-2" href="/">
-                  <img src="images/signature-safari-official-logo.avif" height="100px" width="150px" />
+                  <img src="/images/signature-safari-official-logo.avif" height="100px" width="150px" />
                 </a>
                 <p class="text-white">Signature Safari is a sustainable and locally-owned tour operator in Tanzania, offering a personalized and comprehensive service at an affordable value...</p>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft text-white">
