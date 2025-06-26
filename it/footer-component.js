@@ -465,13 +465,15 @@ class FooterComponent extends HTMLElement {
               <p class="text-white">Rimani aggiornato con le nostre ultime novità e offerte.</p>
             </div>
             <div class="row align-items-center">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Nome di battesimo" aria-label="Nome di battesimo">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome">
-              </div>
-              <div type="submit" class="btn text-white w-100 col-3" style="background-color:#f15d30;">Iscriviti</div>
+            <div class="col-6 ">
+            <input type="text" class="form-control" placeholder="Nome di battesimo" aria-label="First name">
+          </div>
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Cognome" aria-label="Last name">
+          </div>
+          <div class="col-12  d-flex align-items-center justify-content-center mt-4">
+          <button class="btn text-white" style="background-color:#f15d30; max-width:100%;">Iscriviti</button>
+          </div>
             </div>
           </form>
           <div class="row mt-3">

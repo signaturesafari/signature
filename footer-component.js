@@ -464,16 +464,16 @@ class FooterComponent extends HTMLElement {
               <h2 class="fw-bold text-white">Subscribe to our Newsletter</h2>
               <p class="text-white">Stay updated with our latest news and offers.</p>
             </div>
-            <div class="row align-items-center">
-              <div class="col">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-6 ">
                 <input type="text" class="form-control" placeholder="First name" aria-label="First name">
               </div>
-              <div class="col">
+              <div class="col-6">
                 <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
               </div>
-              <center>
-              <div type="submit" class="btn text-white col-sm-6 col-md-4" style="background-color:#f15d30; max-width:100%;">Subscribe</div>
-              </center>
+              <div class="col-12  d-flex align-items-center justify-content-center mt-4">
+              <button class="btn text-white" style="background-color:#f15d30; max-width:100%;">Subscribe</button>
+              </div>
             </div>
           </form>
           <div class="row mt-3">

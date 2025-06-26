@@ -416,11 +416,11 @@ class FooterComponent extends HTMLElement {
           <div class="row mb-5">
             <div class="col-md pt-5">
               <div class="ftco-footer-widget pt-md-5 mb-4">
-                <h2 class="ftco-heading-2 text-white">About</h2>
+                <h2 class="ftco-heading-2 text-white">关于</h2>
                 <a class="navbar-brand bg-white mb-5 px-2 py-2" href="/">
                   <img src="/images/signature-safari-official-logo.avif" height="100px" width="150px" />
                 </a>
-                <p class="text-white">Signature Safari is a sustainable and locally-owned tour operator in Tanzania, offering a personalized and comprehensive service at an affordable value...</p>
+                <p class="text-white">Signature Safari 是坦桑尼亚一家可持续发展的本地旅行社，以实惠的价格提供个性化和全面的服务...</p>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft text-white">
                   <li><a href="https://www.linkedin.com/in/signature-safari-78184311b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9TO8MfqdQ%2ByGTR9dJT5DeQ%3D%3D" class="d-flex align-items-center justify-content-center" style="background-color: #0077B5;"><span class="icon fa fa-linkedin"></span></a></li>
                   <li><a href="https://www.youtube.com/@signaturesafari" class="d-flex align-items-center justify-content-center" style="background-color: red;"><span class="icon fa fa-youtube"></span></a></li>
@@ -432,22 +432,22 @@ class FooterComponent extends HTMLElement {
             </div>
             <div class="col-md pt-5 border-left">
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-                <h2 class="ftco-heading-2 text-white">Important Link</h2>
+                <h2 class="ftco-heading-2 text-white">重要链接</h2>
                 <ul class=" text-white">
-                  <li><a href="/best-kilimanjaro-trekking-group-join-with-signature-safari" class="py-2 d-block text-white">Kilimanjaro Joining Group</a></li>
-                  <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Technical Clothing for Mount Kilimanjaro</a></li>
-                  <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Tanzania Safari Packing List</a></li>
-                  <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">Technical Clothing for Mt Kilimanjaro Clothing</a></li>
-                  <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">Tanzania Safari Packaging List</a></li>
-                  <li><a href="/sustainable-tourism-in-tanzania-with-signature-safari" class="py-2 d-block text-white">Sustainable Tourism in Tanzania</a></li>
-                  <li><a href="/mt-kilimanjaro-and-meru-with-sar" class="py-2 d-block text-white">Kilimanjaro Search, Rescue and Safety Service</a></li>
-                  <li><a href="/signature-safari-trustee-board" class="py-2 d-block text-white">Board of Trustees</a></li>
+                  <li><a href="/best-kilimanjaro-trekking-group-join-with-signature-safari" class="py-2 d-block text-white">乞力马扎罗山加入小组</a></li>
+                  <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">乞力马扎罗山技术服装</a></li>
+                  <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">坦桑尼亚野生动物园行李清单</a></li>
+                  <li><a href="/technical-clothing-for-mount-kilimanjaro-trek" class="py-2 d-block text-white">乞力马扎罗山专业服装</a></li>
+                  <li><a href="/tanzania-safari-packing-list" class="py-2 d-block text-white">坦桑尼亚Safari包装清单</a></li>
+                  <li><a href="/sustainable-tourism-in-tanzania-with-signature-safari" class="py-2 d-block text-white">坦桑尼亚的可持续旅游业</a></li>
+                  <li><a href="/mt-kilimanjaro-and-meru-with-sar" class="py-2 d-block text-white">乞力马扎罗搜救和安全服务</a></li>
+                  <li><a href="/signature-safari-trustee-board" class="py-2 d-block text-white">董事会</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-md pt-5 border-left">
               <div class="ftco-footer-widget pt-md-5 mb-4">
-                <h2 class="ftco-heading-2 text-white">Stay in touch 24/7</h2>
+                <h2 class="ftco-heading-2 text-white">全天候保持联系</h2>
                 <div class="block-23 mb-3">
                   <ul class="text-white">
                     <li><span class="icon fa fa-map-marker"></span><p class="text-white">Arusha, Tanzania</p></li>
@@ -465,15 +465,16 @@ class FooterComponent extends HTMLElement {
               <p class="text-white">Stay updated with our latest news and offers.</p>
             </div>
             <div class="row align-items-center">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-              </div>
-              <center>
-              <div type="submit" class="btn text-white col-sm-6 col-md-4" style="background-color:#f15d30; max-width:100%;">Subscribe</div>
-              </center>
+            <div class="row align-items-center justify-content-center">
+            <div class="col-6 ">
+              <input type="text" class="form-control" placeholder="名" aria-label="First name">
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="姓" aria-label="Last name">
+            </div>
+            <div class="col-12  d-flex align-items-center justify-content-center mt-4">
+            <button class="btn text-white" style="background-color:#f15d30; max-width:100%;">订阅</button>
+            </div>
             </div>
           </form>
           <div class="row mt-3">
@@ -485,7 +486,7 @@ class FooterComponent extends HTMLElement {
           </div>
           <div class="row mt-5">
             <div class="col-md-12 text-center">
-              <p class="text-white">&copy; 2025 Signature Safari, All Right Reserved.</p>
+              <p class="text-white">&copy; 2025 Signature Safari，保留所有权利。</p>
             </div>
           </div>
         </div>
