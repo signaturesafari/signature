@@ -271,7 +271,7 @@ render() {
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="ftco-navbar">
         <div class="container">
           <a class="navbar-brand" href="/">
-           <img src="./images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
+           <img src="/images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
           </a>
           <button class="navbar-toggler" style="color:#f15d30; " type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             MENU
@@ -323,7 +323,7 @@ render() {
                   <a href="/zh/about-us-signaturesafari" class="nav-link">关于</a>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Safari</a>
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">狩猎之旅</a>
                   <div class="dropdown-menu  mega-menu1" style="backgrond-color:white;" aria-labelledby="megaMenuDropdown">
                     <div class="container w-100">
                       <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
@@ -441,7 +441,7 @@ render() {
                   </div>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Climbing</a>
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">攀登</a>
                   <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
                     <div class="container w-100">
                       <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
