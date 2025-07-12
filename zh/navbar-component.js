@@ -271,7 +271,7 @@ render() {
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="ftco-navbar">
         <div class="container">
           <a class="navbar-brand" href="/">
-            <img src="/images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
+           <img src="./images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
           </a>
           <button class="navbar-toggler" style="color:#f15d30; " type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             MENU
