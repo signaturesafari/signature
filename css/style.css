@@ -73,7 +73,9 @@ body {
   background-color: #fff;
 }
 
-
+p{
+  text-align: justify;
+}
 
 h1,
 h2,
