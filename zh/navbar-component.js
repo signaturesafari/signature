@@ -263,7 +263,7 @@ render() {
   return html`
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
-   <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+   <link rel="stylesheet" href="/css/bootstrap-datepicker.css" />
  
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
       <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -271,7 +271,7 @@ render() {
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="ftco-navbar">
         <div class="container">
           <a class="navbar-brand" href="/">
-            <img src="images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
+           <img src="/images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
           </a>
           <button class="navbar-toggler" style="color:#f15d30; " type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             MENU
@@ -284,16 +284,13 @@ render() {
                     <a href="/contact" class="nav-link ">info@signaturesafari.com</a>
                   </li>
                   <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/united-states.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="/images/united-states.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="/images/france.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:25px; height:25px;"></a>
-                  </li>
-                  <li class="nav-item d-md-block d-none">
-                  <a href="https://www.signaturesafari.com/zh" class="nav-link "><img src="images/china.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="/images/italy.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item dropdown my-3 d-md-none d-sm-block" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle btn-primary w-50" role="button" aria-expanded="false">
@@ -308,25 +305,25 @@ render() {
                 </span>
                 <span class="d-flex">
                   <li class="nav-item d-none d-md-flex">
-                    <a href="/about-us-signaturesafari" class="nav-link">About</a>
+                    <a href="/zh/about-us-signaturesafari" class="nav-link">关于</a>
                   </li>
                   <li class="nav-item d-none d-md-flex">
-                    <a href="/blog" class="nav-link">Blog</a>
+                    <a href="/zh/blog" class="nav-link">博客</a>
                   </li>
                   <li class="nav-item d-none d-md-flex">
-                    <a href="/contact" class="nav-link">Contact</a>
+                    <a href="/zh/contact" class="nav-link">接触</a>
                   </li>
                 </span>
               </ul>
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a href="/" class="nav-link">Home</a>
+                  <a href="/zh/" class="nav-link">家</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/about-us-signaturesafari" class="nav-link">About</a>
+                  <a href="/zh/about-us-signaturesafari" class="nav-link">关于</a>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Safari</a>
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">狩猎之旅</a>
                   <div class="dropdown-menu  mega-menu1" style="backgrond-color:white;" aria-labelledby="megaMenuDropdown">
                     <div class="container w-100">
                       <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
@@ -339,24 +336,23 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/kilinp.jpg');
+                                url('/images/kilinp.jpg');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                             ">
                           <h5 class="text-center py-2 fw-bold"> 
-                            Tanzania Safari Packages
+                          坦桑尼亚游猎套餐
                           </h5>
                           <p class=" text-center"  style="color:white;">
-                            <a href="/7-days-flying-beach-to-bush">7 Days Flying Beach to
-                              Bush</a>
+                            <a href="/zh/7-days-flying-beach-to-bush">7天飞行海滩至布什</a>
                           </p>
                           <p class="text-center " style="color:white">
-                            <a href="/8-days-midrange-great-migration-safari">8 Days Migration
-                              Safari in Tanzania</a>
+                            <a href="/zh/8-days-midrange-great-migration-safari">8天迁徙之旅
+                            坦桑尼亚野生动物园</a>
                           </p>
                           <button type="button" class="btn btn-primary mb-2">
-                            <a href="/tanzania-safari-packages">View all Packages</a>
+                            <a href="/zh/tanzania-safari-packages">查看所有套餐</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -366,25 +362,25 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/magical-kenya.jpg');
+                                url('/images/magical-kenya.jpg');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                               overflow: hidden;
                             ">
                           <h5 class="text-center  py-2 fw-bold">
-                            Kenya Safari Packages
+                                肯尼亚游猎套餐
                           </h5>
                           <p class="text-center" style="color:white">
-                            <a href="/5-days-masaimara-kenya-safari">5 Days Masai
-                              Mara Kenya Safari</a>
+                            <a href="/zh/5-days-masaimara-kenya-safari">5 日 马赛
+                              马拉肯尼亚野生动物园</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="/8-days-magical-kenya-luxury-safari">8 Days Magical Kenya
-                              Luxury Safari</a>
+                            <a href="/zh/8-days-magical-kenya-luxury-safari">8天奇幻肯尼亚之旅
+                            豪华游猎</a>
                           </p>
                           <button type="button" class="btn btn-primary">
-                            <a href="/kenya-safari-packages">View all Packages</a>
+                            <a href="/zh/kenya-safari-packages">查看所有套餐</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -394,25 +390,23 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/uganda-destination.jpg');
+                                url('/images/uganda-destination.jpg');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                               overflow: hidden;
                             ">
                           <h5 class="text-center fw-bold py-2" style="color:white">
-                            Uganda Safari Packages
+                          乌干达游猎套餐
                           </h5>
                           <p class="text-center" style="color:white">
-                            <a href="/7-days-uganda-gorilla-and-chimpanzee-trekking-safari">7
-                              Days Uganda Gorilla Trekking Safari</a>
+                            <a href="/zh/7-days-uganda-gorilla-and-chimpanzee-trekking-safari">7天乌干达大猩猩徒步之旅</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="/3-days-signature-safari-queen-elizabeth-national-park">3
-                              Days Queen Elizabeth National Park</a>
+                            <a href="/zh/3-days-signature-safari-queen-elizabeth-national-park">3 伊丽莎白女王国家公园</a>
                           </p>
                           <button type="button" class="btn btn-primary ">
-                            <a href="/uganda-safari-packages">View all Packages</a>
+                            <a href="/zh/uganda-safari-packages">查看所有套餐</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -422,25 +416,24 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/mud.avif');
+                                url('/images/mud.avif');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                               overflow: hidden;
                             ">
                           <button type="button" class="btn btn-primary" >
-                            <a href="/safari-packages">View Destinations</a>
+                            <a href="/zh/safari-packages">查看目的地</a>
                           </button>
-                          <h5 class=" pt-3" style="color:white">SAFARI TIPS</h5>
+                          <h5 class=" pt-3" style="color:white">游猎小贴士</h5>
                           <p class="text-center" style="color:white">
-                            <a href="/tanzania-safari-packing-list">Tanzania Safari Packing
-                              List</a>
+                            <a href="/zh/tanzania-safari-packing-list">坦桑尼亚狩猎旅行打包清单</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="">About Tanzania</a>
+                            <a href="">关于坦桑尼亚</a>
                           </p>
                           <p class="text-center" style="color:white">
-                            <a href="">Safari Faqs</a>
+                            <a href="">Safari 常见问题解答</a>
                           </p>
                         </div>
                       </div>
@@ -448,7 +441,7 @@ render() {
                   </div>
                 </li>
                 <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Climbing</a>
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">攀登</a>
                   <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
                     <div class="container w-100">
                       <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
@@ -461,16 +454,16 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/kilibg.avif');
+                                url('/images/kilibg.avif');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                             ">
                           <h5 class="text-center py-2 fw-bold">
-                            Mountain Kilimanjaro & Routes
+                          乞力马扎罗山及路线
                           </h5>
                           <button type="button" class="btn btn-primary mb-2">
-                            <a href="/kilimanjaro-climbing-routes">View all Routes</a>
+                            <a href="/zh/kilimanjaro-climbing-routes">查看所有路线</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center box" style="
@@ -480,18 +473,17 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/mount-kenya1.jpg');
+                                url('/images/mount-kenya1.jpg');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                               overflow: hidden;
                             ">
                            <h5 class="text-center py-2 fw-bold" style="color:white">
-                             Kilimanjaro Group Joining 2025-2026
+                           乞力马扎罗山集团加入2025-2026
                           </h5>
                           <button type="button" class="btn btn-primary">
-                            <a href="/best-kilimanjaro-trekking-group-join-with-signature-safari">View
-                              all Groups</a>
+                            <a href="/zh/best-kilimanjaro-trekking-group-join-with-signature-safari">查看所有群组</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box"
@@ -502,18 +494,17 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/mount-meru-peak.avif');
+                                url('/images/mount-meru-peak.avif');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                               overflow: hidden;
                             ">
                           <h5 class=" text-center pt-3" style="color:white;">
-                            Mountain Meru
+                          须弥山
                           </h5>
                           <button type="button" class="btn mb-2 btn-primary">
-                            <a href="/mount-meru-climbing">View
-                              all Routes</a>
+                            <a href="/zh/mount-meru-climbing">查看所有路线</a>
                           </button>
                         </div>
                         <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
@@ -523,24 +514,21 @@ render() {
                                   rgba(15, 15, 15, 0.612),
                                   rgba(15, 15, 15, 0.612)
                                 ),
-                                url('images/paper-bg.jpg');
+                                url('/images/paper-bg.jpg');
                               background-position: center;
                               background-repeat: no-repeat;
                               background-size: cover;
                               overflow: hidden;
                             ">
-                          <h5 class=" pt-3" style="color:white;">KILIMANJARO TIPS</h5>
+                          <h5 class=" pt-3" style="color:white;">乞力马扎罗山小贴士</h5>
                           <p class="text-center text-white">
-                            <a href="/technical-clothing-for-mount-kilimanjaro-trek">Technical
-                              Clothing for Mount Kilimanjaro Trekking</a>
+                            <a href="/zh/technical-clothing-for-mount-kilimanjaro-trek">乞力马扎罗山徒步专业服装</a>
                           </p>
                           <p class="text-center text-white">
-                            <a href="/tip-for-kilimanjaro-climber-and-weather">Tips for
-                              Kilimanjaro Climbing and Weather</a>
+                            <a href="/zh/tip-for-kilimanjaro-climber-and-weather">乞力马扎罗山攀登技巧及天气</a>
                           </p>
                           <p class="text-center text-white">
-                            <a href="/mt-kilimanjaro-and-meru-with-sar">Kilimanjaro Search,
-                              Rescue and Safety Service</a>
+                            <a href="/zh/mt-kilimanjaro-and-meru-with-sar">乞力马扎罗山搜救和安全服务</a>
                           </p>
                         </div>
                       </div>
@@ -548,83 +536,78 @@ render() {
                   </div>
                 </li>
                 <li class="nav-item">
-                <a href="/tanzania-cycling-tour" class="nav-link">Cycling</a>
+                <a href="/zh/tanzania-cycling-tour" class="nav-link">骑自行车</a>
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">
-                    Tanzania
+                  坦桑尼亚
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/tanzania-high-end-safari">High End Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-luxury-safaris">Luxury Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-flying-safaris">Flying Safari
-                       Packages</a></li>   
-                    <li><a class="dropdown-item" href="/honeymoon-safari">Honeymoon Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/family-safaris">Family Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-midrange-safaris">Midrange Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-horse-riding">Horse Riding Safari
-                       Packages</a></li>
-                    <li><a class="dropdown-item" href="/tanzania-camping-safaris">Camping Safari
-                       Packages</a></li>                    
-                    <li><a class="dropdown-item" href="/tanzania-day-trip-excursions">Tanzania
-                        Daytrips</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-high-end-safari">高端游猎套餐</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-luxury-safaris">豪华游猎套餐</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-flying-safaris">飞行狩猎之旅
+                    套餐</a></li>   
+                    <li><a class="dropdown-item" href="/zh/honeymoon-safari">蜜月游猎
+                    套餐</a></li>
+                    <li><a class="dropdown-item" href="/zh/family-safaris">家庭游猎套餐</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-midrange-safaris">中档Safari套餐</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-horse-riding">骑马游猎
+                    套餐</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-camping-safaris">露营探险
+                    套餐</a></li>                    
+                    <li><a class="dropdown-item" href="/zh/tanzania-day-trip-excursions">坦桑尼亚
+                    一日游</a></li>
                     <li>
-                       <a class="dropdown-item" href="/tanzania-national-parks">Tanzania National Parks</a>
+                       <a class="dropdown-item" href="/zh/tanzania-national-parks">坦桑尼亚国家公园</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="/zanzibar-holiday-beaches" class="nav-link">Zanzibar</a>
+                  <a href="/zh/zanzibar-holiday-beaches" class="nav-link">桑给巴尔</a>
                 </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
-                  <a class="nav-link dropdown-toggle" href="/safari-packages" role="button" aria-expanded="false">
-                    Destinations
+                  <a class="nav-link dropdown-toggle" href="/zh/safari-packages" role="button" aria-expanded="false">
+                  目的地
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/tanzania-safari-packages">Tanzania</a></li>
+                    <li><a class="dropdown-item" href="/zh/tanzania-safari-packages">坦桑尼亚</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/kenya-safari-packages">Kenya</a></li>
+                    <li><a class="dropdown-item" href="/zh/kenya-safari-packages">肯尼亚</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/uganda-safari-packages">Uganda</a></li>
+                    <li><a class="dropdown-item" href="/zh/uganda-safari-packages">乌干达</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/rwanda-safari-packages">Rwanda</a></li>
+                    <li><a class="dropdown-item" href="/zh/rwanda-safari-packages">卢旺达</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/botswana-safari-packages">Botswana</a></li>
+                    <li><a class="dropdown-item" href="/zh/botswana-safari-packages">博茨瓦纳</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/south-africa-safari-packages">South Africa</a>
+                    <li><a class="dropdown-item" href="/zh/south-africa-safari-packages">南非</a>
                     </li>
                   </ul>
                 </li>
                
                 <li class="nav-item d-md-none d-block">
-                  <a href="/blog" class="nav-link ">Blog</a>
+                  <a href="/zh/blog" class="nav-link ">Blog</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/signature-safari-trustee-board" class="nav-link ">Board of
-                    Trustees</a>
+                  <a href="/zh/signature-safari-trustee-board" class="nav-link ">董事会</a>
                 </li>
                 <li class="nav-item d-md-none d-block">
-                  <a href="/contact" class="nav-link ">Contact</a>
+                  <a href="/zh/contact" class="nav-link ">接触</a>
                 </li>
               </ul>
             </div>
             <p class="">
-              <a href="/tailor-made-safari-and-kilimanjaro" class="btn btn-primary">Make a Request</a>
+              <a href="/zh/tailor-made-safari-and-kilimanjaro" class="btn btn-primary">提出请求</a>
             </p>
           </div>
         </div>
