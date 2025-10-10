@@ -47,9 +47,9 @@
   <link rel="canonical" href="https://www.signaturesafari.com/tailor-made-safari-and-kilimanjaro">
 
   <script src="https://kit.fontawesome.com/5fe73a6d63.js" crossorigin="anonymous"></script>
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16835956925"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16835956925"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -57,12 +57,15 @@
 
   gtag('config', 'AW-16835956925');
 </script>-->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WQTGVBG7');</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WQTGVBG7');</script>
   <!-- End Google Tag Manager -->
 </head>
 
@@ -92,7 +95,8 @@
         Maybe you didn’t find what you were looking for. Don’t worry, you can customize your own. Please tell us what
         you want and we will deliver it.
       </p>
-      <form action="https://formcarry.com/s/TghgVt7rjJO" method="POST" enctype="multipart/form-data" class="bg-light p-5 contact-form">
+      <form action="https://formcarry.com/s/TghgVt7rjJO" method="POST" enctype="multipart/form-data"
+        class="bg-light p-5 contact-form">
         <input type="hidden" class="form-control" value="Tailor made Safari Customization" name="title" />
         <div class="row justify-content-between align-items-center">
           <div class="mb-3 mt-3 col-md-6 col-sm-6">
@@ -121,10 +125,18 @@
             <input type="number" class="form-control" id="phone" placeholder="No. of Adults" name="no.adults"
               required />
           </div>
+          
           <div class="mb-md-0 mb-sm-3 col-md-6 col-sm-6">
-            <label for="pwd" class="form-label text-dark">No. of Children</label>
-            <input type="number" class="form-control" id="pwd" placeholder="No. of Children" name="no.children"
-              required />
+              <label for="childrenCount" class="form-label text-dark">No. of children</label>
+              <input type="number" id="childrenCount" name="Children" class="form-control" min="0" max="100">
+          </div>
+          <div class="mb-md-0 mb-sm-3 col-md-6 col-sm-6">
+            
+              <div id="childrenAgesWrapper" class="hidden">
+                <label for="childrenAges" class="form-label text-dark">Enter age of each child:</label>
+                <div id="childrenAges"></div>
+              </div>
+            
           </div>
         </div>
         <div class="row justify-content-between align-items-center">
@@ -183,7 +195,7 @@
           <span class="subheading fs-1"
             style="font-family: 'Homemade Apple', cursive; font-weight: 400; font-size: xx-large; color: #ffffff;">Testimonial</span>
           <h2 class="mb-4 text-primary">Tourist Feedback</h2>
-	  <a href="https://www.signaturesafari.com/thanks" class="d-none">Thanks</a>	
+          <a href="https://www.signaturesafari.com/thanks" class="d-none">Thanks</a>
         </div>
       </div>
       <div class="row ftco-animate">
@@ -334,8 +346,8 @@
   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
   <div class="elfsight-app-6dac6107-ee32-45af-af94-eec75f36c4f7" data-elfsight-app-lazy></div>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQTGVBG7"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQTGVBG7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <footer-component></footer-component>
 
@@ -376,19 +388,44 @@
   <script type="module" src="navbar-component.js"></script>
   <script src="footer-component.js" defer></script>
   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-	s1.async=true;
-	s1.src='https://embed.tawk.to/67ebeed292dd7a190be3e5e3/1inoppqhg';
-	s1.charset='UTF-8';
-	s1.setAttribute('crossorigin','*');
-	s0.parentNode.insertBefore(s1,s0);
-	})();
-	</script>
-	<!--End of Tawk.to Script-->
-	
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/67ebeed292dd7a190be3e5e3/1inoppqhg';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+    const childrenCountInput = document.getElementById('childrenCount');
+    const childrenAgesWrapper = document.getElementById('childrenAgesWrapper');
+    const childrenAgesContainer = document.getElementById('childrenAges');
+
+    // Generate age fields when number of children is entered
+    childrenCountInput.addEventListener('input', () => {
+      const count = parseInt(childrenCountInput.value) || 0;
+      childrenAgesContainer.innerHTML = '';
+
+      if (count > 0) {
+        childrenAgesWrapper.classList.remove('hidden');
+        for (let i = 1; i <= count; i++) {
+          const input = document.createElement('input');
+          input.type = 'number';
+          input.name = `childAge${i}`;
+          input.min = 0;
+          input.max = 17;
+          input.placeholder = `Child ${i} Age`;
+          input.classList.add('form-control','child-age');
+          childrenAgesContainer.appendChild(input);
+        }
+      } else {
+        childrenAgesWrapper.classList.add('hidden');
+      }
+    });
+  </script>
+  <!--End of Tawk.to Script-->
+
 </body>
 
 </html>
