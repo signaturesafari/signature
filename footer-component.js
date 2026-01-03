@@ -483,9 +483,9 @@ class FooterComponent extends HTMLElement {
              <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span></p>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-md-12 text-center">
-              <p class="text-white">&copy; 2025 Signature Safari, All Right Reserved.</p>
+          <div class="row mt-5 d-flex justify-content-center align-items-center">
+            <div class="col-md-12 text-center  d-flex justify-content-center align-items-center">
+              <p class="text-white">&copy; 2026 Signature Safari, All Right Reserved.</p>
             </div>
           </div>
         </div>
