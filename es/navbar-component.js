@@ -1,0 +1,640 @@
+import { LitElement, html, css } from 'https://cdn.skypack.dev/pin/lit@v2.3.1-xx2m8Ol8q0zpWqDkqruF/mode=imports,min/optimized/lit.js';
+
+
+
+class NavbarComponent extends LitElement {
+  static styles = css`
+    :host {
+      display: block;
+    }
+    .top-bar {
+      background-color: #f8f9fa;
+      color: white;
+      padding: 5px 0;
+      font-size: 14px;
+    }
+    .top-bar a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    .top-bar a:hover {
+      text-decoration: underline;
+    }
+    .top-bar .social-icons {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .navbar {
+      background-color: black;
+      padding: 0.5rem 1rem;
+    }
+    .box h5{
+      color:white;
+      width:200px;
+      text-align:center;
+    }
+    .scrolled {
+      background-color: rgba(255, 255, 255,1) !important;
+      color: black !important;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .scrolled a{
+     color:black;
+    }  
+    .scrolled .box a{
+      color:white;
+    } 
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+    }
+   
+   
+    .nav-link {
+      
+      color:white;
+      margin-right: 20px;
+      font-size: 16px;
+    }
+    .nav-link.active {
+      color: #f15d30;
+    }
+    .nav-link:hover {
+      color: #f15d30;
+    }
+    .navbar-toggler {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-primary {
+      background-color: #ff6a2d;
+      border: none;
+      border-radius: 18px;
+      padding: 10px 20px;
+    }
+    .btn-primary:hover {
+      background-color: #e5551d;
+      border-color: #e5551d;
+    }
+    .divider {
+      margin: 0 10px;
+      border-left: 1px solid #ccc;
+      height: 15px;
+    }
+     .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+      z-index: 1000;
+    }
+    .dropdown.show .dropdown-menu {
+      display: block;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* Optional: Adjust this value to control spacing between the dropdown and the nav item */
+    }
+    .box{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: space-around;
+    }
+    .sticky {
+      position: sticky;
+      top: 15%;
+      z-index: 1;
+      /* Ensure it's above other content */
+      background-color: white;
+      /* Adjust as needed */
+      padding: 10px 0;
+      /* Adjust as needed */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      /* Optional: Add a shadow */
+    }
+    
+    .sticky button {
+      border: 1px solid #f15d30;
+    }
+    
+    .sticky button:active {
+      background-color: #f15d30;
+    }
+
+    .mega-menu1 {
+      width: 900px;
+      margin-left: -180px;
+    }
+    
+    .mega-menu1 a:hover {
+      text-decoration: underline;
+      color: rgb(255, 255, 255);
+    }
+    
+    /* Adjust width for mobile devices */
+    @media (max-width: 767px) {
+      .mega-menu1 {
+        max-width: 400px;
+        margin-left: 5px;
+      }
+    
+      /* Style for navbar when screen width is less than or equal to 767px */
+      .navbar-nav {
+        max-height: 80vh;
+        /* Adjust max-height as needed */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+      }
+    }
+    
+    @media (max-width: 991.98px) {
+      .dropdown-menu {
+        position: static;
+        float: none;
+        box-shadow: none;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: none; /* Disable hover behavior on mobile */
+      }
+      .dropdown.show .dropdown-menu {
+        display: block;
+      }
+    }
+
+    body {
+      padding-top: 120px; /* Adjust this value based on your navbar's height */
+    }
+     
+
+    .mega-menu1 {
+  width: 900px;
+  margin-left: -180px;
+  z-index: 1000;
+  background-color:white;
+}
+ 
+
+.mega-menu1 a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+/* Adjust width for mobile devices */
+@media (max-width: 767px) {
+  .mega-menu1 {
+    max-width: 100%;
+    
+  }
+
+
+  /* Style for navbar when screen width is less than or equal to 767px */
+  .navbar-nav {
+    max-height: 80vh;
+    /* Adjust max-height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+  }
+}
+ 
+}
+  `;
+
+  constructor() {
+    super();
+
+    // Add the Google Analytics script dynamically
+    const gtagScript = document.createElement('script');
+    gtagScript.async = true;
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16835956925';
+
+    const inlineScript = document.createElement('script');
+    inlineScript.text = `
+       window.dataLayer = window.dataLayer || [];
+       function gtag() { dataLayer.push(arguments); }
+       gtag('js', new Date());
+       gtag('config', 'AW-16835956925');
+     `;
+
+    document.head.appendChild(gtagScript);
+    document.head.appendChild(inlineScript);
+
+
+  }
+
+  firstUpdated() {
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('scroll', this.handleScroll.bind(this));
+    super.disconnectedCallback();
+  }
+
+  handleScroll() {
+    const navbar = this.shadowRoot.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+
+  toggleCollapse() {
+    const collapseElement = this.shadowRoot.querySelector('#ftco-nav');
+    this.isCollapsed = !this.isCollapsed;
+    if (this.isCollapsed) {
+      collapseElement.classList.remove('show');
+    } else {
+      collapseElement.classList.add('show');
+    }
+  }
+
+  toggleDropdown(event) {
+    const dropdown = event.currentTarget;
+    dropdown.classList.toggle('show');
+  }
+
+  render() {
+    return html`
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="/css/bootstrap-datepicker.css" />
+ 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+      <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="/images/signature-safari-official-logo.avif" height="90px" width="150px" alt="signature-safari-official-logo"/>
+          </a>
+          <button class="navbar-toggler" style="color:#f15d30; " type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            MENU
+          </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <div class="row px-4 d-flex flex-column justify-content-center">
+              <ul class="navbar-nav px-3 justify-content-between border-bottom">
+                <span class="d-md-flex">
+                  <li class="nav-item d-none d-md-flex">
+                    <a href="/es/contact" class="nav-link ">info@signaturesafari.com</a>
+                  </li>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="/images/united-states.png" style="width:25px; height:25px;"></a>
+                  </li>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="/images/france.png" style="width:25px; height:25px;"></a>
+                  </li>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="/images/italy.png" style="width:25px; height:25px;"></a>
+                  </li>
+                  <li class="nav-item d-md-block d-none">
+                  <a href="https://www.signaturesafari.com/zh" class="nav-link "><img src="/images/china.png" style="width:25px; height:25px;"></a>
+                  </li>
+                  <li class="nav-item dropdown my-3 d-md-none d-sm-block" @click="${this.toggleDropdown}">
+                  <a class="nav-link dropdown-toggle btn-primary w-50" role="button" aria-expanded="false">
+                    Languages
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li class="ps-4"> <a class="text-dark" href="https://www.signaturesafari.com/" class="nav-link "><img src="/images/united-states.png" style="width:25px; height:25px;"> ENGLISH </a></li>
+                    <li class="ps-4"> <a class="text-dark" href="https://www.signaturesafari.com/fr" class="nav-link "><img src="/images/france.png" style="width:25px; height:25px;"> FRANCE </a></li>
+                    <li class="ps-4"><a class="text-dark" href="https://www.signaturesafari.com/it" class="nav-link "><img src="/images/italy.png" style="width:25px; height:25px;"> ITALY</a></li>   
+                  </ul>
+                </li>
+                </span>
+                <span class="d-flex">
+                  <li class="nav-item d-none d-md-flex">
+                    <a href="/es/about-us-signaturesafari" class="nav-link">Acerca de</a>
+                  </li>
+                  <li class="nav-item d-none d-md-flex">
+                    <a href="/es/blog" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item d-none d-md-flex">
+                    <a href="/es/contact" class="nav-link">Contacto</a>
+                  </li>
+                </span>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="/es/" class="nav-link">Hogar</a>
+                </li>
+                <li class="nav-item d-md-none d-block">
+                  <a href="/es/about-us-signaturesafari" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Safari</a>
+                  <div class="dropdown-menu  mega-menu1" style="backgrond-color:white;" aria-labelledby="megaMenuDropdown">
+                    <div class="container w-100">
+                      <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
+                        <div
+                          class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box"
+                          style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/kilinp.jpg');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                            ">
+                          <h5 class="text-center py-2 fw-bold"> 
+                          Paquetes de safari en Tanzania
+                                                    </h5>
+                          <p class=" text-center"  style="color:white;">
+                            <a href="/es/7-days-flying-beach-to-bush">7 días volando de la playa a
+                            la selva</a>
+                          </p>
+                          <p class="text-center " style="color:white">
+                            <a href="/es/8-days-midrange-great-migration-safari">Safari de 8 días
+                            siguiendo la migración en Tanzania</a>
+                          </p>
+                          <button type="button" class="btn btn-primary mb-2">
+                            <a href="/es/tanzania-safari-packages">View all Packages</a>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('images/magical-kenya.jpg');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              overflow: hidden;
+                            ">
+                          <h5 class="text-center  py-2 fw-bold">
+                            Kenya Safari Packages
+                          </h5>
+                          <p class="text-center" style="color:white">
+                            <a href="/5-days-masaimara-kenya-safari">5 Days Masai
+                              Mara Kenya Safari</a>
+                          </p>
+                          <p class="text-center" style="color:white">
+                            <a href="/8-days-magical-kenya-luxury-safari">8 Days Magical Kenya
+                              Luxury Safari</a>
+                          </p>
+                          <button type="button" class="btn btn-primary">
+                            <a href="/kenya-safari-packages">Ver todos los paquetes</a>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/uganda-destination.jpg');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              overflow: hidden;
+                            ">
+                          <h5 class="text-center fw-bold py-2" style="color:white">
+                          Paquetes de safari en Uganda
+                          </h5>
+                          <p class="text-center" style="color:white">
+                            <a href="/es/7-days-uganda-gorilla-and-chimpanzee-trekking-safari">7
+                            días de safari y senderismo con gorilas en Uganda</a>
+                          </p>
+                          <p class="text-center" style="color:white">
+                            <a href="/es/3-days-signature-safari-queen-elizabeth-national-park">3 días en el Parque Nacional Queen Elizabeth</a>
+                          </p>
+                          <button type="button" class="btn btn-primary ">
+                            <a href="/es/uganda-safari-packages">Ver todos los paquetes</a>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/mud.avif');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              overflow: hidden;
+                            ">
+                          <button type="button" class="btn btn-primary" >
+                            <a href="/es/safari-packages">Ver destinos</a>
+                          </button>
+                          <h5 class=" pt-3" style="color:white">Consejos para el safari</h5>
+                          <p class="text-center" style="color:white">
+                            <a href="/es/tanzania-safari-packing-list">Lista de equipaje para un safari en Tanzania</a>
+                          </p>
+                          <p class="text-center" style="color:white">
+                            <a href="">Sobre Tanzania</a>
+                          </p>
+                          <p class="text-center" style="color:white">
+                            <a href="">Preguntas frecuentes sobre Safari</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown mega-menu" @click="${this.toggleDropdown}">
+                  <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Escalada</a>
+                  <div class="dropdown-menu bg-white mega-menu1" aria-labelledby="megaMenuDropdown">
+                    <div class="container w-100">
+                      <div class="row bg-warning w-100 d-flex justify-content-between align-items-center">
+                        <div
+                          class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box"
+                          style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/kilibg.avif');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                            ">
+                          <h5 class="text-center py-2 fw-bold">
+                          Monte Kilimanjaro y rutas
+                          </h5>
+                          <button type="button" class="btn btn-primary mb-2">
+                            <a href="/es/kilimanjaro-climbing-routes">Ver todas las rutas</a>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center box" style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/mount-kenya1.jpg');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              overflow: hidden;
+                            ">
+                           <h5 class="text-center py-2 fw-bold" style="color:white">
+                           Unirse a un grupo para el Kilimanjaro 2025-2026                          </h5>
+                          <button type="button" class="btn btn-primary">
+                            <a href="/es/best-kilimanjaro-trekking-group-join-with-signature-safari">Ver
+                            todos los grupos</a>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box"
+                          style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/mount-meru-peak.avif');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              overflow: hidden;
+                            ">
+                          <h5 class=" text-center pt-3" style="color:white;">
+                          Monte Meru
+                          </h5>
+                          <button type="button" class="btn mb-2 btn-primary">
+                            <a href="/es/mount-meru-climbing">Ver todas las rutas</a>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 d-flex flex-column justify-content-center align-items-center py-3 box" style="
+                              height: 350px;
+                              background-image: linear-gradient(
+                                  45deg,
+                                  rgba(15, 15, 15, 0.612),
+                                  rgba(15, 15, 15, 0.612)
+                                ),
+                                url('/images/paper-bg.jpg');
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: cover;
+                              overflow: hidden;
+                            ">
+                          <h5 class=" pt-3" style="color:white;">Consejos para el Kilimanjaro</h5>
+                          <p class="text-center text-white">
+                            <a href="/es/technical-clothing-for-mount-kilimanjaro-trek">Ropa técnica para el trekking al Monte Kilimanjaro</a>
+                          </p>
+                          <p class="text-center text-white">
+                            <a href="/es/tip-for-kilimanjaro-climber-and-weather">Consejos para
+                            la escalada al Kilimanjaro y el clima</a>
+                          </p>
+                          <p class="text-center text-white">
+                            <a href="/es/mt-kilimanjaro-and-meru-with-sar">Servicio de Búsqueda,
+                            Rescate y Seguridad del Kilimanjaro</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                <a href="/es/tanzania-cycling-tour" class="nav-link">Ciclismo</a>
+                </li>
+                <li class="nav-item dropdown" @click="${this.toggleDropdown}">
+                  <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+                    Tanzania
+                  </a>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/es/tanzania-high-end-safari">Paquetes de safari
+                  exclusivos</a></li>
+               <li><a class="dropdown-item" href="/es/tanzania-luxury-safaris">Paquetes de safari
+                  de lujo</a></li>
+               <li><a class="dropdown-item" href="/es/tanzania-flying-safaris">Paquetes de safari
+                  con vuelos</a></li>   
+               <li><a class="dropdown-item" href="/es/honeymoon-safari">Paquetes de safari
+                  para luna de miel</a></li>
+               <li><a class="dropdown-item" href="/es/family-safaris">Paquetes de safari
+                  en familia</a></li>
+               <li><a class="dropdown-item" href="/es/tanzania-midrange-safaris">Paquetes de safari
+                  de gama media</a></li>
+               <li><a class="dropdown-item" href="/es/tanzania-horse-riding">Paquetes de safari
+                  a caballo</a></li>
+               <li><a class="dropdown-item" href="/es/tanzania-camping-safaris">Paquetes de safari
+                  con acampada</a></li>                    
+               <li><a class="dropdown-item" href="/es/tanzania-day-trip-excursions">Excursiones de un día
+                   en Tanzania</a></li>
+               <li>
+                  <a class="dropdown-item" href="/es/tanzania-national-parks">Parques nacionales de Tanzania</a>
+               </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="/es/zanzibar-holiday-beaches" class="nav-link">Zanzibar</a>
+                </li>
+                <li class="nav-item dropdown" @click="${this.toggleDropdown}">
+                <a class="nav-link dropdown-toggle" href="/es/safari-packages" role="button" aria-expanded="false">
+                Destinos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/es/tanzania-safari-packages">Tanzania</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/es/kenya-safari-packages">Kenia</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/es/uganda-safari-packages">Uganda</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/es/rwanda-safari-packages">Ruanda</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/es/botswana-safari-packages">Botsuana</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/es/south-africa-safari-packages">Sudáfrica</a>
+                </li>
+              </ul>
+            </li>
+               
+                <li class="nav-item d-md-none d-block">
+                  <a href="/es/blog" class="nav-link ">Blog</a>
+                </li>
+                <li class="nav-item d-md-none d-block">
+                  <a href="/es/signature-safari-trustee-board" class="nav-link ">Junta Directiva</a>
+                </li>
+                <li class="nav-item d-md-none d-block">
+                  <a href="/es/contact" class="nav-link ">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <p class="">
+              <a href="/es/tailor-made-safari-and-kilimanjaro" class="btn btn-primary">Realizar una solicitud</a>
+            </p>
+          </div>
+        </div>
+      </nav>
+    `;
+  }
+}
+
+customElements.define('navbar-component', NavbarComponent);
+
+
+
+
+
+
+
+
+
+
